@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'font-bold';
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'font-regular';
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'font-light';
+  font-weight: 100;
+}
+
+body {
+  font-family: 'Euclid Flex', 'font-regular', 'Apple SD Gothic Neo', Sans-serif;
+  font-size: 16px;
+  letter-spacing: -.015em;
+  word-spacing: .09em;
+  word-break: keep-all;
+  color: $black;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: -.03em;
+}
+
+h2 {
+  font-family: 'font-light';
+  font-size: 40px;
+  letter-spacing: -.03em;
+}
+
+h3 {
+  font-family: 'font-light';
+  font-size: 30px;
+  letter-spacing: -.02em;
+  color: white;
+}
+
+h4 {
+  font-family: 'font-bold';
+  font-size: 20px;
+}
+
+h5 {
+  font-family: 'font-light';
+  font-size: 10px;
+}
+
+p {
+  font-family: 'font-regular';
+  font-size: 16px;
+  line-height: 1.65em;
+}
