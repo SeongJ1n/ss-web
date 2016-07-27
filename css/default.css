@@ -189,11 +189,16 @@ html, body {
     .nav .inline-list-item {
       float: left;
       margin-left: 50px;
+      font-weight: 500;
       color: white;
-      font-weight: 500; }
+      transition: 0.25s all ease; }
+    .nav .inline-list-item:hover {
+      color: #4adaaf; }
     .nav .inline-list .active {
       color: #4adaaf;
       border-bottom: 2px solid #4adaaf; }
+    .nav .inline-list .active:hover {
+      color: #29b68c; }
 
 /* GNB End */
 /* section-intro */
@@ -202,18 +207,32 @@ html, body {
   height: 800px;
   background-color: rgba(0, 0, 0, 0.4);
   overflow: hidden; }
-  .section-intro .content .content-wrapper {
-    margin-top: 30px; }
+  .section-intro .content-wrapper {
+    position: relative;
+    margin-top: 330px;
+    overflow: hidden; }
   .section-intro .content-eng {
     margin-top: 16px;
     color: #4adaaf; }
+    .section-intro .content-eng-wrapper {
+      padding-left: 60px; }
     .section-intro .content-eng:first-child {
       margin-top: 0; }
   .section-intro .content-kor {
+    margin-top: -6px;
+    font-weight: 700;
     color: white;
-    line-height: 1.3em; }
+    line-height: 1.5em; }
     .section-intro .content-kor-wrapper {
-      padding-left: 40px; }
+      padding-left: 210px; }
+  .section-intro .content-line {
+    position: absolute;
+    top: 20px;
+    left: 282px;
+    width: 25%;
+    height: 1px;
+    background-color: white;
+    opacity: 0.5; }
   .section-intro-video {
     position: absolute;
     top: -180px;
