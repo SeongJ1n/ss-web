@@ -172,11 +172,20 @@ p {
   font-size: 16px;
   line-height: 1.65em; }
 
-/* section default */
+/* default */
 .section {
+  text-align: center;
   padding: 140px 0; }
 
-/* section default End */
+.header-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 300;
+  color: #4adaaf;
+  text-decoration: none;
+  border-bottom: 1px solid #4adaaf; }
+
+/* default End */
 /* GNB */
 .nav {
   position: fixed;
@@ -224,7 +233,8 @@ p {
   position: relative;
   max-height: 800px;
   background-color: rgba(0, 0, 0, 0.4);
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 15; }
   .section-intro .content-wrapper {
     position: relative;
     margin-top: 520px;
@@ -265,10 +275,9 @@ p {
 /* section-about */
 .section-about {
   position: relative;
-  padding: 150px 0 140px;
+  text-align: left;
   background: url("../img/section-app-bg.png") no-repeat;
-  background-position: center bottom;
-  z-index: -300; }
+  background-position: center bottom; }
   .section-about .content-wrapper {
     padding-left: 10%; }
   .section-about .content-header {
@@ -279,6 +288,64 @@ p {
     margin-top: 20px;
     line-height: 1.6em;
     color: #999; }
+  .section-about .btn-wrapper {
+    margin-top: 28px;
+    padding-bottom: 4px;
+    overflow: hidden; }
+  .section-about .btn-appstore {
+    float: left;
+    width: 144px;
+    height: 50px;
+    background: url("../img/btn-appstore.png") no-repeat;
+    background-size: cover;
+    border: 1px solid #dedede;
+    transition: 0.3s all ease;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+    box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
+  .section-about .btn-googleplay {
+    float: left;
+    width: 149px;
+    height: 50px;
+    margin-left: 20px;
+    background: url("../img/btn-googleplay.png") no-repeat;
+    background-size: cover;
+    border: 1px solid #dedede;
+    transition: 0.3s all ease;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+    box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
+  .section-about .btn-appstore:hover, .section-about .btn-googleplay:hover {
+    border: 1px solid #666; }
+  .section-about .iphone-wrapper {
+    position: relative;
+    padding-left: 1%; }
+  .section-about .iphone-img {
+    position: absolute;
+    top: -285px;
+    width: 428.4px;
+    height: 657px;
+    background: url("../img/section-app-iphone.png") no-repeat;
+    background-size: cover;
+    -webkit-transition: all 1800ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 1800ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 10; }
+  .section-about .iphone-shadow {
+    position: absolute;
+    top: 475px;
+    width: 385px;
+    height: 20px;
+    background: url("../img/section-app-shadow.png") no-repeat;
+    background-size: cover;
+    opacity: 0;
+    -webkit-transition: all 1800ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 1800ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
   .section-about-pattern {
     position: absolute;
     top: -30px;
@@ -287,28 +354,12 @@ p {
     background: url("../img/section-app-pattern.png") repeat;
     background-size: cover;
     z-index: -200; }
-  .section-about .iphone-wrapper {
-    position: relative;
-    padding-left: 2%; }
-  .section-about .iphone-img {
-    position: absolute;
-    top: -300px;
-    width: 404.6px;
-    height: 620.5px;
-    background: url("../img/section-app-iphone.png") no-repeat;
-    background-size: cover;
-    transition: 1s all ease-out;
-    z-index: -150; }
-  .section-about .iphone-shadow {
-    position: absolute;
-    top: 445px;
-    width: 385px;
-    height: 20px;
-    background: url("../img/section-app-shadow.png") no-repeat;
-    background-size: cover;
-    opacity: 0.1;
-    transition: 1s all ease-out; }
 
 /* section-about End */
+/* section-press */
+.section-press {
+  padding-top: 110px; }
+
+/* section-press End */
 
 /*# sourceMappingURL=default.css.map */

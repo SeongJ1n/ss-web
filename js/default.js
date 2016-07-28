@@ -24,23 +24,6 @@ $(window).on('resize', function(){
   resizeSection();
 });
 
-
-/* nav-scroll */
-$(window).scroll(function() {
-  var winWidth = $(window).width();
-  var winHeight = $(window).height();
-  var $nav = $('#nav');
-    if(winWidth >= 768){
-      if ( ($nav.offset().top)+100 > winHeight) {
-          $nav.addClass("nav-scroll");
-      }
-      else {
-          $nav.removeClass("nav-scroll");
-      }
-    }
-});
-
-/* sectionAbout animation */
 $(window).scroll(function() {
   var winWidth = $(window).width();
   var winHeight = $(window).height();
@@ -48,12 +31,24 @@ $(window).scroll(function() {
   var $iphoneImg = $('#iphoneImg');
   var $iphoneShadow = $('#iphoneShadow');
   var $nav = $('#nav');
+
+  /* nav-scroll */
+  if(winWidth >= 768){
+    if ( ($nav.offset().top)+100 > winHeight) {
+        $nav.addClass("nav-scroll");
+    }
+    else {
+        $nav.removeClass("nav-scroll");
+    }
+  }
+
+  /* sectionAbout animation */
   if( ($nav.offset().top)+200 > $sectionAbout.offset().top){
-    $iphoneImg.css('top', -185);
+    $iphoneImg.css('top', -180);
     $iphoneShadow.css('opacity', 1);
   }
   else {
-    $iphoneImg.css('top', -300);
-    $iphoneShadow.css('opacity', 0.1);
+    $iphoneImg.css('top', -285);
+    $iphoneShadow.css('opacity', 0);
   }
 });
