@@ -17,12 +17,12 @@
         </div>
         <div class="col col-9">
           <ul class="inline-list">
-            <li class="inline-list-item active">About</li>
-            <li class="inline-list-item">Team</li>
-            <li class="inline-list-item">Job</li>
-            <li class="inline-list-item">Blog</li>
-            <li class="inline-list-item">Press</li>
-            <li class="inline-list-item">Contact</li>
+            <li class="inline-list-item"><a class="active" href="">About</a></li>
+            <li class="inline-list-item"><a href="">Team</a></li>
+            <li class="inline-list-item"><a href="">Job</a></li>
+            <li class="inline-list-item"><a href="http://styleshare.github.io" target="_blank">Blog</a></li>
+            <li class="inline-list-item"><a href="">Press</a></li>
+            <li class="inline-list-item"><a href="">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -30,10 +30,9 @@
   </div>
 
 
-  <section class="section-intro">
-
+  <section id="sectionIntro" class="section-intro">
     <div class="container">
-      <div class="content-wrapper">
+      <div id="contentWrapper" class="content-wrapper row">
         <div class="content-eng-wrapper col col-4">
           <h1 class="content-eng">Look Good.</h1>
           <h1 class="content-eng">Feel Good.</h1>
@@ -41,18 +40,31 @@
         </div>
         <div class="content-line"></div>
         <div class="content-kor-wrapper col col-8">
-          <h1 class="content-kor">더 많은 사람들이 더 쉽게 </br>자신만의 멋을 찾아갈 수 있도록</h1>
+          <h1 class="content-kor">더 많은 사람들이 더 쉽게</br> 자신만의 멋을 찾아갈 수 있도록</h1>
         </div>
-
       </div>
     </div>
-
     <video class="section-intro-video" autoplay="autoplay" loop="loop">
-        <source src="mov/test.MOV" type="video/webm">
+        <source src="mov/process-loop.webm" type="video/webm">
     </video>
-
   </section>
 
+  <section class="section section-about">
+    <div class="container">
+      <div class="content-wrapper col col-4">
+        <h2 class="content-header">지금 이 순간 인기스타일과 트렌드를 한 눈에 보세요</h2>
+        <h4 class="content-description"> 요즘 멋쟁이들은 뭘 입고 있을까? 실시간으로 수 많은 패션 소식, 스타일링, 쇼핑 후기를 스타일 피드에서 매일 새롭게 발견해보세요.</p>
+      </div>
+      <div class="iphone-wrapper col col-8">
+        <div class="iphone-img"></div>
+        <div class="iphone-shadow"></div>
+      </div>
+    </div>
+    <div class="section-about-pattern"></div>
+  </section>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/default.js"></script>
 
 </body>
 </html>

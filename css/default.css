@@ -120,56 +120,48 @@ table {
 .col-1 {
   width: 8.333333333333332%; }
 
-@font-face {
-  font-family: 'font-bold';
-  font-weight: 600; }
-@font-face {
-  font-family: 'font-regular';
-  font-weight: 300; }
-@font-face {
-  font-family: 'font-light';
-  font-weight: 100; }
 body {
-  font-family: 'Euclid Flex', 'font-regular', 'Apple SD Gothic Neo', Sans-serif;
-  font-size: 16px;
+  font-family: 'Euclid Flex', 'Apple SD Gothic Neo', Sans-serif;
+  font-size: 14px;
   letter-spacing: -.015em;
   word-spacing: .09em;
   word-break: keep-all;
   color: #222; }
 
 h1 {
-  font-weight: 500;
-  font-size: 40px;
+  font-weight: 700;
+  font-size: 35px;
   letter-spacing: -.03em; }
 
 h2 {
-  font-family: 'font-light';
-  font-size: 40px;
+  font-weight: 700;
+  font-size: 32px;
   letter-spacing: -.03em; }
 
 h3 {
-  font-family: 'font-light';
+  font-weight: 100;
   font-size: 30px;
   letter-spacing: -.02em;
   color: white; }
 
 h4 {
-  font-family: 'font-bold';
+  font-weight: 100;
   font-size: 20px; }
 
 h5 {
-  font-family: 'font-light';
+  font-weight: 100;
   font-size: 10px; }
 
 p {
-  font-family: 'font-regular';
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.65em; }
 
-html, body {
-  width: 100%;
-  height: 100%; }
+/* section default */
+.section {
+  padding: 140px 0; }
 
+/* section default End */
 /* GNB */
 .nav {
   position: fixed;
@@ -189,50 +181,52 @@ html, body {
     .nav .inline-list-item {
       float: left;
       margin-left: 50px;
-      font-weight: 500;
-      color: white;
-      transition: 0.25s all ease; }
-    .nav .inline-list-item:hover {
-      color: #4adaaf; }
+      font-weight: 500; }
+      .nav .inline-list-item a {
+        color: white;
+        text-decoration: none;
+        transition: 0.25s all ease; }
+      .nav .inline-list-item a:hover {
+        color: #4adaaf; }
     .nav .inline-list .active {
       color: #4adaaf;
       border-bottom: 2px solid #4adaaf; }
     .nav .inline-list .active:hover {
-      color: #29b68c; }
+      color: #29b68c;
+      border-bottom: 2px solid #29b68c; }
 
 /* GNB End */
 /* section-intro */
 .section-intro {
   position: relative;
-  height: 800px;
+  height: 200px;
   background-color: rgba(0, 0, 0, 0.4);
   overflow: hidden; }
   .section-intro .content-wrapper {
     position: relative;
-    margin-top: 330px;
+    margin-top: 520px;
     overflow: hidden; }
   .section-intro .content-eng {
-    margin-top: 16px;
+    margin-top: 14px;
+    font-size: 26px;
     color: #4adaaf; }
-    .section-intro .content-eng-wrapper {
-      padding-left: 60px; }
     .section-intro .content-eng:first-child {
       margin-top: 0; }
   .section-intro .content-kor {
-    margin-top: -6px;
+    text-align: right;
     font-weight: 700;
     color: white;
     line-height: 1.5em; }
     .section-intro .content-kor-wrapper {
-      padding-left: 210px; }
+      margin-top: 8px; }
   .section-intro .content-line {
     position: absolute;
-    top: 20px;
-    left: 282px;
-    width: 25%;
+    top: 95px;
+    left: 140px;
+    width: 48%;
     height: 1px;
     background-color: white;
-    opacity: 0.5; }
+    opacity: 0.3; }
   .section-intro-video {
     position: absolute;
     top: -180px;
@@ -241,9 +235,46 @@ html, body {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    background: url("../img/bg-section1.png") no-repeat;
+    background: url("../img/section-intro-bg.png") no-repeat;
     z-index: -100; }
 
 /* section-intro End */
+/* section-about */
+.section-about {
+  padding: 180px 0;
+  position: relative; }
+  .section-about .content-header {
+    line-height: 1.4em; }
+  .section-about .content-description {
+    margin-top: 25px;
+    line-height: 1.6em;
+    color: #999; }
+  .section-about-pattern {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: 240px;
+    background: url("../img/section-app-pattern.png") repeat;
+    z-index: -200; }
+  .section-about .iphone-wrapper {
+    position: relative;
+    padding-left: 80px; }
+  .section-about .iphone-img {
+    position: absolute;
+    top: -150px;
+    width: 333px;
+    height: 511px;
+    background: url("../img/section-app-iphone.png") no-repeat;
+    background-size: cover;
+    z-index: -150; }
+  .section-about .iphone-shadow {
+    position: absolute;
+    top: 620px;
+    width: 385px;
+    height: 20px;
+    background: url("../img/section-app-shadow.png") no-repeat;
+    background-size: cover; }
+
+/* section-about End */
 
 /*# sourceMappingURL=default.css.map */
