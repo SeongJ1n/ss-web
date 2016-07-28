@@ -120,6 +120,21 @@ table {
 .col-1 {
   width: 8.333333333333332%; }
 
+@font-face {
+  font-family: 'Euclid Flex';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/EuclidFlex-Bold.otf"); }
+@font-face {
+  font-family: 'Euclid Flex';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../font/EuclidFlex-Medium.otf"); }
+@font-face {
+  font-family: 'Euclid Flex';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../font/EuclidFlex-Ultralight.otf"); }
 body {
   font-family: 'Euclid Flex', 'Apple SD Gothic Neo', Sans-serif;
   font-size: 14px;
@@ -185,14 +200,18 @@ p {
       .nav .inline-list-item a {
         color: white;
         text-decoration: none;
+        opacity: 0.3;
         transition: 0.25s all ease; }
       .nav .inline-list-item a:hover {
-        color: #4adaaf; }
+        color: white;
+        opacity: 1; }
     .nav .inline-list .active {
       color: #4adaaf;
+      opacity: 1;
       border-bottom: 2px solid #4adaaf; }
     .nav .inline-list .active:hover {
       color: #29b68c;
+      opacity: 1;
       border-bottom: 2px solid #29b68c; }
 
 /* GNB End */
@@ -209,7 +228,8 @@ p {
   .section-intro .content-eng {
     margin-top: 14px;
     font-size: 26px;
-    color: #4adaaf; }
+    color: #4adaaf;
+    opacity: 0.8; }
     .section-intro .content-eng:first-child {
       margin-top: 0; }
   .section-intro .content-kor {
