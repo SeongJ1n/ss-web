@@ -31,14 +31,22 @@ $(window).scroll(function() {
   var $iphoneImg = $('#iphoneImg');
   var $iphoneShadow = $('#iphoneShadow');
   var $nav = $('#nav');
+  var $navLogo = $('.nav-logo');
+  var $inlineListItem = $('.inline-list-item a');
 
   /* nav-scroll */
   if(winWidth >= 768){
     if ( ($nav.offset().top)+100 > winHeight) {
         $nav.addClass("nav-scroll");
+        $navLogo.css("background", "url('../ss-web/img/logo-black.png')");
+        $navLogo.css("background-size", "cover");
+        $inlineListItem.addClass("item-scroll");
     }
     else {
         $nav.removeClass("nav-scroll");
+        $navLogo.css("background", "url('../ss-web/img/logo-white.png')");
+        $navLogo.css("background-size", "cover");
+        $inlineListItem.removeClass("item-scroll");
     }
   }
 

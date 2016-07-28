@@ -51,18 +51,26 @@
       a:hover { color: white; opacity: 1; }
     }
     .active {
-      color: $primary;
+      color: $primary !important;
       opacity: 1;
       border-bottom: 2px solid $primary;
     }
     .active:hover {
-      color: $primary-dark;
+      color: $primary-dark !important;
       opacity: 1;
       border-bottom: 2px solid $primary-dark;
     }
   }
 }
-.nav-scroll { background-color: $black; }
+.nav-scroll {
+  background-color: white;
+  border-bottom: 1px solid $border;
+}
+
+.item-scroll {
+  color: $black !important;
+}
+
 /* GNB End */
 
 /* section-intro */
@@ -116,6 +124,7 @@
 /* section-about */
 .section-about {
   position: relative;
+  padding-top: 150px;
   text-align: left;
   background: url('../img/section-app-bg.png') no-repeat;
   background-position: center bottom;
@@ -182,7 +191,7 @@
     }
     &-shadow {
       position: absolute;
-      top: 475px;
+      top: 480px;
       width: 385px;
       height: 20px;
       background: url('../img/section-app-shadow.png') no-repeat;
@@ -205,6 +214,6 @@
 
 /* section-press */
 .section-press {
-  padding-top: 110px;
+  padding-top: 120px;
 }
 /* section-press End */
