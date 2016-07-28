@@ -1,31 +1,24 @@
-$(document).ready(function () {
+function resizeSection(){
   var winWidth = $(window).width();
   var winHeight = $(window).height();
   var $sectionIntro = $('#sectionIntro');
   var $contentWrapper = $('#contentWrapper');
   $sectionIntro.height(winHeight);
 
-  if(winWidth >= 768){
-  $contentWrapper.css(
-    'margin-top', winHeight-160);
+  if( winHeight >= 900 ){
+    $contentWrapper.css(
+      'margin-top', 640);
   }
   else {
-
+    $contentWrapper.css(
+      'margin-top', winHeight-160);
   }
+};
+
+$(document).ready(function () {
+  resizeSection();
 });
 
 $(window).on('resize', function(){
-  var winWidth = $(window).width();
-  var winHeight = $(window).height();
-  var $sectionIntro = $('#sectionIntro');
-  var $contentWrapper = $('#contentWrapper');
-  $sectionIntro.height(winHeight);
-
-  if(winWidth >= 768){
-  $contentWrapper.css(
-    'margin-top', winHeight-160);
-  }
-  else {
-
-  }
+  resizeSection();
 });

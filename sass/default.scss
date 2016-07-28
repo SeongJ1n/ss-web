@@ -57,7 +57,7 @@
 /* section-intro */
 .section-intro {
   position: relative;
-  height: 200px;
+  max-height: 800px;
   background-color: rgba(0,0,0,0.4);
   overflow: hidden;
   .content {
@@ -70,7 +70,6 @@
       margin-top: 14px;
       font-size: 26px;
       color: $primary;
-      opacity: 0.8;
       &:first-child { margin-top: 0; }
     }
     &-kor {

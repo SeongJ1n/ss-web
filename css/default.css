@@ -218,7 +218,7 @@ p {
 /* section-intro */
 .section-intro {
   position: relative;
-  height: 200px;
+  max-height: 800px;
   background-color: rgba(0, 0, 0, 0.4);
   overflow: hidden; }
   .section-intro .content-wrapper {
@@ -228,8 +228,7 @@ p {
   .section-intro .content-eng {
     margin-top: 14px;
     font-size: 26px;
-    color: #4adaaf;
-    opacity: 0.8; }
+    color: #4adaaf; }
     .section-intro .content-eng:first-child {
       margin-top: 0; }
   .section-intro .content-kor {
