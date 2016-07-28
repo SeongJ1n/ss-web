@@ -22,3 +22,17 @@ $(document).ready(function () {
 $(window).on('resize', function(){
   resizeSection();
 });
+
+$(window).scroll(function() {
+  var winWidth = $(window).width();
+  var winHeight = $(window).height();
+  var $nav = $('#nav');
+    if(winWidth >= 768){
+      if ($nav.offset().top > winHeight) {
+          $nav.addClass("nav-scroll");
+      }
+      else {
+          $nav.removeClass("nav-scroll");
+      }
+    }
+});
