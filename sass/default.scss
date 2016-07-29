@@ -365,3 +365,17 @@
   }
 }
 /* section-blog End */
+
+/* seciton-contact */
+.section-contact {
+  height: 400px;
+  padding: 0;
+  .map-wrapper {
+    background-color: $gray;
+  }
+  .contact-wrapper {
+    color: white;
+    background-color: $black;
+  }
+}
+/* seciton-contact End*/

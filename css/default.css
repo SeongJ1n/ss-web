@@ -522,5 +522,16 @@ p {
       color: #4adaaf; }
 
 /* section-blog End */
+/* seciton-contact */
+.section-contact {
+  height: 400px;
+  padding: 0; }
+  .section-contact .map-wrapper {
+    background-color: #999; }
+  .section-contact .contact-wrapper {
+    color: white;
+    background-color: #222; }
+
+/* seciton-contact End*/
 
 /*# sourceMappingURL=default.css.map */
