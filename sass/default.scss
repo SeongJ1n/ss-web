@@ -299,11 +299,10 @@
     // vogue
     .vogue {
       top: 30px; left: 100px;
-      &-img-wrap { right: 0; }
+      &-img-wrap { right: 0; z-index: 10;}
       &-content-wrap {
         top: 40px; left: -160px;
         width: 610px;
-        z-index: -20;
       }
     }
     // besuccess
@@ -311,27 +310,30 @@
       top: 0; left: 20px;
       &-img-wrap { left: 0; }
       &-content-wrap {
-        top: 170px;
+        top: 165px;
         width: 340px;
         min-height: 240px;
+        z-index: 20;
         .content-summary { max-width: 280px; }
       }
     }
     // platum
     .platum {
       top: 350px;
-      &-img-wrap { top: -30px; left: -10px; }
+      &-img-wrap {
+        top: -30px; left: -10px;
+        z-index: 10;
+      }
       &-content-wrap {
         left: 120px;
         width: 610px;
         padding-left: 360px;
-        z-index: -10;
       }
     }
     // chosunbiz
     .chosunbiz {
-      top: 350px; right: 100px;
-      z-index: -10;
+      top: 335px; right: 100px;
+      z-index: 10;
       &-img-wrap { display: none; }
     }
   }
