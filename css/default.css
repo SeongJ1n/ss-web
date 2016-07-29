@@ -45,6 +45,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+img {
+  vertical-align: bottom; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -185,6 +188,33 @@ p {
   text-decoration: none;
   border-bottom: 1px solid #4adaaf; }
 
+.btn-arrow {
+  width: 35px;
+  height: 35px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 28px;
+  border: 1px solid #4adaaf;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  -webkit-transition: all 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1000ms cubic-bezier(0.075, 0.82, 0.165, 1); }
+  .btn-arrow a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #4adaaf;
+    text-decoration: none; }
+
+.btn-arrow:hover {
+  background-color: #4adaaf; }
+
+.btn-arrow a:hover {
+  color: white; }
+
 /* default End */
 /* GNB */
 .nav {
@@ -236,7 +266,6 @@ p {
 .section-intro {
   position: relative;
   max-height: 800px;
-  background-color: rgba(0, 0, 0, 0.4);
   overflow: hidden;
   z-index: 15; }
   .section-intro .content-wrapper {
@@ -279,7 +308,7 @@ p {
 /* section-about */
 .section-about {
   position: relative;
-  padding-top: 150px;
+  padding: 120px 0 130px;
   text-align: left;
   background: url("../img/section-app-bg.png") no-repeat;
   background-position: center bottom; }
@@ -338,8 +367,8 @@ p {
     height: 657px;
     background: url("../img/section-app-iphone.png") no-repeat;
     background-size: cover;
-    -webkit-transition: all 1800ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: all 1800ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: all 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 10; }
   .section-about .iphone-shadow {
     position: absolute;
@@ -349,22 +378,84 @@ p {
     background: url("../img/section-app-shadow.png") no-repeat;
     background-size: cover;
     opacity: 0;
-    -webkit-transition: all 1800ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: all 1800ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    -webkit-transition: all 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275); }
   .section-about-pattern {
     position: absolute;
     top: -30px;
     width: 100%;
     height: 180px;
-    background: url("../img/section-app-pattern.png") repeat;
-    background-size: cover;
+    background: url("../img/section-app-pattern.png") repeat-x;
+    background-size: auto;
     z-index: -200; }
 
 /* section-about End */
 /* section-press */
-.section-press {
-  padding-top: 120px; }
+.section-press .row {
+  margin-top: 50px; }
+.section-press .row:last-child {
+  margin-top: 40px; }
+.section-press .press-wrapper {
+  border: 1px solid #dedede;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+  box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
+.section-press .img-wrapper {
+  overflow: hidden; }
+.section-press .content-wrapper {
+  min-height: 260px;
+  padding: 45px 40px 20px 35px;
+  text-align: left;
+  background-color: white; }
+.section-press .content-img {
+  margin-left: -25%;
+  max-height: 260px; }
+.section-press .content-logo {
+  height: 22px; }
+.section-press .content-summary {
+  margin-top: 20px;
+  color: #999; }
+.section-press .logo-besuccess {
+  height: 32px;
+  margin-top: -10px; }
+.section-press .logo-platum, .section-press .logo-chosunbiz {
+  height: 27px;
+  margin-top: -5px; }
+.section-press .press-wrapper.col.col-6 {
+  width: 49%; }
+.section-press .press-wrapper.col.col-6:last-child {
+  margin-left: 2%; }
+.section-press .press-wrapper.col.col-9 {
+  width: 73.5%; }
+.section-press .press-wrapper.col.col-3 {
+  width: 24.5%;
+  margin-left: 2%; }
 
 /* section-press End */
+/* section-hiring */
+.section-hiring {
+  background: url("../img/section-hiring-bg.png") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+/* section-hiring End */
+/* section-blog */
+.section-blog {
+  padding: 170px 0 190px;
+  background: url("../img/section-blog-bg.png") no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .section-blog .header {
+    color: white; }
+  .section-blog .header-link {
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 0; }
+    .section-blog .header-link span {
+      color: #4adaaf; }
+
+/* section-blog End */
 
 /*# sourceMappingURL=default.css.map */

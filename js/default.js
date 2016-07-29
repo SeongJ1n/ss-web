@@ -36,7 +36,7 @@ $(window).scroll(function() {
 
   /* nav-scroll */
   if(winWidth >= 768){
-    if ( ($nav.offset().top)+100 > winHeight) {
+    if ( ($nav.offset().top)+150 > winHeight) {
         $nav.addClass("nav-scroll");
         $navLogo.css("background", "url('../ss-web/img/logo-black.png')");
         $navLogo.css("background-size", "cover");
