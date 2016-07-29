@@ -273,8 +273,8 @@
   .press-wrapper.col.col-3 { width: 24.5%; margin-left: 2%; }
 
   @include respond-to('wide') {
-  height: 1100px;
-    .row { position: relative; }
+  height: 1020px;
+    .row { position: relative; margin-top: 45px; }
     .press-wrapper {
       border: 0;
       box-shadow: none;

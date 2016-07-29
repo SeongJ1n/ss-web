@@ -438,9 +438,10 @@ p {
     margin-left: 2%; }
   @media (min-width: 1600px) {
     .section-press {
-      height: 1100px; }
+      height: 1020px; }
       .section-press .row {
-        position: relative; }
+        position: relative;
+        margin-top: 45px; }
       .section-press .press-wrapper {
         border: 0;
         box-shadow: none; }
