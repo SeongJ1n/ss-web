@@ -123,7 +123,7 @@
       position: absolute;
       top: 95px; left: 140px;
       width: 48%;
-      height: 1px;
+      height: 2px;
       background-color: white;
       opacity: 0.3;
     }
@@ -233,6 +233,7 @@
 
 /* section-press */
 .section-press {
+  padding-top: 150px;
   .row { margin-top: 50px; }
   .row:last-child { margin-top: 40px; }
   .press-wrapper {
@@ -255,6 +256,7 @@
     }
     &-logo { height: 22px; }
     &-summary {
+      max-width: 200px;
       margin-top: 20px;
       color: $gray;
     }
@@ -269,6 +271,71 @@
   .press-wrapper.col.col-6:last-child { margin-left: 2%; }
   .press-wrapper.col.col-9 { width: 73.5%; }
   .press-wrapper.col.col-3 { width: 24.5%; margin-left: 2%; }
+
+  @include respond-to('wide') {
+  height: 1100px;
+    .row { position: relative; }
+    .press-wrapper {
+      border: 0;
+      box-shadow: none;
+    }
+    .img-wrapper {
+      position: absolute;
+      width: 500px;
+      height: 320px;
+    }
+    .content {
+      &-wrapper {
+        position: absolute;
+        border: 1px solid $border;
+        @include border-radius(4px);
+      }
+      &-img {
+        margin: 0;
+        @include border-radius(4px);
+      }
+    }
+
+    // vogue
+    .vogue {
+      top: 30px; left: 100px;
+      &-img-wrap { right: 0; }
+      &-content-wrap {
+        top: 40px; left: -160px;
+        width: 610px;
+        z-index: -20;
+      }
+    }
+    // besuccess
+    .besuccess {
+      top: 0; left: 20px;
+      &-img-wrap { left: 0; }
+      &-content-wrap {
+        top: 170px;
+        width: 340px;
+        min-height: 240px;
+        .content-summary { max-width: 280px; }
+      }
+    }
+    // platum
+    .platum {
+      top: 350px;
+      &-img-wrap { top: -30px; left: -10px; }
+      &-content-wrap {
+        left: 120px;
+        width: 610px;
+        padding-left: 360px;
+        z-index: -10;
+      }
+    }
+    // chosunbiz
+    .chosunbiz {
+      top: 350px; right: 100px;
+      z-index: -10;
+      &-img-wrap { display: none; }
+    }
+  }
+
 }
 /* section-press End */
 

@@ -290,7 +290,7 @@ p {
     top: 95px;
     left: 140px;
     width: 48%;
-    height: 1px;
+    height: 2px;
     background-color: white;
     opacity: 0.3; }
   .section-intro-video {
@@ -391,48 +391,111 @@ p {
 
 /* section-about End */
 /* section-press */
-.section-press .row {
-  margin-top: 50px; }
-.section-press .row:last-child {
-  margin-top: 40px; }
-.section-press .press-wrapper {
-  border: 1px solid #dedede;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
-  -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
-  box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
-.section-press .img-wrapper {
-  overflow: hidden; }
-.section-press .content-wrapper {
-  min-height: 260px;
-  padding: 45px 40px 20px 35px;
-  text-align: left;
-  background-color: white; }
-.section-press .content-img {
-  margin-left: -25%;
-  max-height: 260px; }
-.section-press .content-logo {
-  height: 22px; }
-.section-press .content-summary {
-  margin-top: 20px;
-  color: #999; }
-.section-press .logo-besuccess {
-  height: 32px;
-  margin-top: -10px; }
-.section-press .logo-platum, .section-press .logo-chosunbiz {
-  height: 27px;
-  margin-top: -5px; }
-.section-press .press-wrapper.col.col-6 {
-  width: 49%; }
-.section-press .press-wrapper.col.col-6:last-child {
-  margin-left: 2%; }
-.section-press .press-wrapper.col.col-9 {
-  width: 73.5%; }
-.section-press .press-wrapper.col.col-3 {
-  width: 24.5%;
-  margin-left: 2%; }
+.section-press {
+  padding-top: 150px; }
+  .section-press .row {
+    margin-top: 50px; }
+  .section-press .row:last-child {
+    margin-top: 40px; }
+  .section-press .press-wrapper {
+    border: 1px solid #dedede;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+    box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
+  .section-press .img-wrapper {
+    overflow: hidden; }
+  .section-press .content-wrapper {
+    min-height: 260px;
+    padding: 45px 40px 20px 35px;
+    text-align: left;
+    background-color: white; }
+  .section-press .content-img {
+    margin-left: -25%;
+    max-height: 260px; }
+  .section-press .content-logo {
+    height: 22px; }
+  .section-press .content-summary {
+    max-width: 200px;
+    margin-top: 20px;
+    color: #999; }
+  .section-press .logo-besuccess {
+    height: 32px;
+    margin-top: -10px; }
+  .section-press .logo-platum, .section-press .logo-chosunbiz {
+    height: 27px;
+    margin-top: -5px; }
+  .section-press .press-wrapper.col.col-6 {
+    width: 49%; }
+  .section-press .press-wrapper.col.col-6:last-child {
+    margin-left: 2%; }
+  .section-press .press-wrapper.col.col-9 {
+    width: 73.5%; }
+  .section-press .press-wrapper.col.col-3 {
+    width: 24.5%;
+    margin-left: 2%; }
+  @media (min-width: 1600px) {
+    .section-press {
+      height: 1100px; }
+      .section-press .row {
+        position: relative; }
+      .section-press .press-wrapper {
+        border: 0;
+        box-shadow: none; }
+      .section-press .img-wrapper {
+        position: absolute;
+        width: 500px;
+        height: 320px; }
+      .section-press .content-wrapper {
+        position: absolute;
+        border: 1px solid #dedede;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px; }
+      .section-press .content-img {
+        margin: 0;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px; }
+      .section-press .vogue {
+        top: 30px;
+        left: 100px; }
+        .section-press .vogue-img-wrap {
+          right: 0; }
+        .section-press .vogue-content-wrap {
+          top: 40px;
+          left: -160px;
+          width: 610px;
+          z-index: -20; }
+      .section-press .besuccess {
+        top: 0;
+        left: 20px; }
+        .section-press .besuccess-img-wrap {
+          left: 0; }
+        .section-press .besuccess-content-wrap {
+          top: 170px;
+          width: 340px;
+          min-height: 240px; }
+          .section-press .besuccess-content-wrap .content-summary {
+            max-width: 280px; }
+      .section-press .platum {
+        top: 350px; }
+        .section-press .platum-img-wrap {
+          top: -30px;
+          left: -10px; }
+        .section-press .platum-content-wrap {
+          left: 120px;
+          width: 610px;
+          padding-left: 360px;
+          z-index: -10; }
+      .section-press .chosunbiz {
+        top: 350px;
+        right: 100px;
+        z-index: -10; }
+        .section-press .chosunbiz-img-wrap {
+          display: none; } }
 
 /* section-press End */
 /* section-hiring */
