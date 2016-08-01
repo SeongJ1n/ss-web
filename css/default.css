@@ -160,8 +160,8 @@ body {
 
 h1 {
   font-weight: 700;
-  font-size: 35px;
-  letter-spacing: -.03em; }
+  font-size: 55px;
+  letter-spacing: -.01em; }
 
 h2 {
   font-weight: 700;
@@ -205,6 +205,41 @@ p {
   text-decoration: none;
   border-bottom: 1px solid #4adaaf; }
 
+.btn-wrapper {
+  margin-top: 28px;
+  padding-bottom: 4px;
+  overflow: hidden; }
+.btn-appstore {
+  float: left;
+  width: 144px;
+  height: 50px;
+  background: url("../img/btn-appstore.png") no-repeat;
+  background-size: cover;
+  border: 1px solid #dedede;
+  transition: 0.3s all ease;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+  box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
+.btn-googleplay {
+  float: left;
+  width: 149px;
+  height: 50px;
+  margin-left: 20px;
+  background: url("../img/btn-googleplay.png") no-repeat;
+  background-size: cover;
+  border: 1px solid #dedede;
+  transition: 0.3s all ease;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+  box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
+.btn-appstore:hover, .btn-googleplay:hover {
+  border: 1px solid #666; }
 .btn-arrow {
   width: 32px;
   height: 32px;
@@ -225,10 +260,8 @@ p {
     height: 100%;
     color: #4adaaf;
     text-decoration: none; }
-
 .btn-arrow:hover {
   background-color: #4adaaf; }
-
 .btn-arrow a:hover {
   color: white; }
 
@@ -301,38 +334,50 @@ p {
   overflow: hidden;
   z-index: 15; }
   .section-intro .content-wrapper {
-    position: relative;
-    margin-top: 520px;
+    margin-top: 310px;
+    text-align: center;
     overflow: hidden; }
-  .section-intro .content-eng {
-    margin-top: 14px;
-    font-size: 26px;
-    color: #4adaaf; }
-    .section-intro .content-eng:first-child {
-      margin-top: 0; }
   .section-intro .content-kor {
-    text-align: right;
+    position: relative;
+    text-align: center;
     font-weight: 700;
     color: white;
     line-height: 1.5em; }
-    .section-intro .content-kor-wrapper {
-      margin-top: 8px; }
-  .section-intro .content-line {
+  .section-intro .content-kor span:after {
+    content: '';
+    display: block;
     position: absolute;
-    top: 95px;
-    left: 140px;
-    width: 48%;
-    height: 2px;
+    left: 234px;
+    bottom: 8px;
+    width: 254px;
+    height: 4px;
+    background-color: #4adaaf;
+    z-index: -20; }
+  .section-intro .btn-arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    margin-left: -20px;
+    line-height: 29px;
+    color: white;
+    border: 1px solid white;
+    opacity: 0.4; }
+  .section-intro .btn-arrow:hover {
+    color: #999;
     background-color: white;
-    opacity: 0.3; }
+    opacity: 1; }
   .section-intro-video {
     position: absolute;
-    top: -180px;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 50%;
+    left: 50%;
     min-width: 100%;
     min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
     background: url("../img/section-intro-bg.png") no-repeat;
     z-index: -100; }
 
@@ -354,41 +399,6 @@ p {
     margin-top: 20px;
     line-height: 1.6em;
     color: #999; }
-  .section-about .btn-wrapper {
-    margin-top: 28px;
-    padding-bottom: 4px;
-    overflow: hidden; }
-  .section-about .btn-appstore {
-    float: left;
-    width: 144px;
-    height: 50px;
-    background: url("../img/btn-appstore.png") no-repeat;
-    background-size: cover;
-    border: 1px solid #dedede;
-    transition: 0.3s all ease;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
-    -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
-    box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
-  .section-about .btn-googleplay {
-    float: left;
-    width: 149px;
-    height: 50px;
-    margin-left: 20px;
-    background: url("../img/btn-googleplay.png") no-repeat;
-    background-size: cover;
-    border: 1px solid #dedede;
-    transition: 0.3s all ease;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
-    -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
-    box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
-  .section-about .btn-appstore:hover, .section-about .btn-googleplay:hover {
-    border: 1px solid #666; }
   .section-about .iphone-wrapper {
     position: relative;
     padding-left: 1%; }
@@ -577,7 +587,8 @@ p {
 /* section-hiring End */
 /* section-blog */
 .section-blog {
-  padding: 190px 0 200px;
+  margin: 100px 0;
+  padding: 250px 0 260px;
   background: url("../img/section-blog-bg.png") no-repeat;
   background-position: center;
   background-size: cover; }

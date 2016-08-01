@@ -26,11 +26,11 @@ function resizeSection(){
 
   if( winHeight >= 900 ){
     $contentWrapper.css(
-      'margin-top', 640);
+      'margin-top', 310);
   }
   else {
     $contentWrapper.css(
-      'margin-top', winHeight-160);
+      'margin-top', winHeight/2-80);
   }
 };
 
