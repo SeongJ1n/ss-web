@@ -762,8 +762,9 @@ p {
 /* section-service End */
 /* about.html End */
 /* contact.html */
-/* section-service */
-/* section-service End */
+.map-wrapper {
+  height: 800px; }
+
 /* contact.html End */
 
 /*# sourceMappingURL=default.css.map */
