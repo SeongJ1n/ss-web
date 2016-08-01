@@ -19,13 +19,13 @@
   border-bottom: 1px solid $primary;
 }
 .btn-arrow {
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   margin-top: 20px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
-  line-height: 28px;
+  line-height: 27px;
   border: 1px solid $primary;
   @include border-radius(18px);
   @include easeOutCirc(1000ms);
@@ -39,6 +39,19 @@
 }
 .btn-arrow:hover { background-color: $primary; }
 .btn-arrow a:hover { color: white; }
+.alram-new {
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-left: 6px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  color: white;
+  background-color: $primary;
+  @include border-radius(9px);
+}
 /* default End */
 
 
@@ -144,7 +157,7 @@
 /* section-about */
 .section-about {
   position: relative;
-  padding: 120px 0 130px;
+  padding: 190px 0 170px;
   text-align: left;
   background: url('../img/section-app-bg.png') no-repeat;
   background-position: center bottom;
@@ -201,7 +214,7 @@
     }
     &-img {
       position: absolute;
-      top: -285px;
+      top: -280px;
       width: 476px*0.9;
       height: 730px*0.9;
       background: url('../img/section-app-iphone.png') no-repeat;
@@ -211,7 +224,7 @@
     }
     &-shadow {
       position: absolute;
-      top: 480px;
+      top: 490px;
       width: 385px;
       height: 20px;
       background: url('../img/section-app-shadow.png') no-repeat;
@@ -235,14 +248,17 @@
 /* section-press */
 .section-press {
   padding-top: 150px;
-  .row { margin-top: 50px; }
+  .row { margin-top: 45px; }
   .row:last-child { margin-top: 40px; }
   .press-wrapper {
     border: 1px solid $border;
     @include border-radius(4px);
     @include shadow;
   }
-  .img-wrapper { overflow: hidden; }
+  .img-wrapper {
+    overflow: hidden;
+    @include border-radius(4px 0 0 4px);
+  }
 
   .content {
     &-wrapper {
@@ -250,6 +266,8 @@
       padding: 45px 40px 20px 35px;
       text-align: left;
       background-color: white;
+      overflow: hidden;
+      @include border-radius(0 4px 4px 0);
     }
     &-img {
       margin-left: -25%;
@@ -347,12 +365,38 @@
   background: url('../img/section-hiring-bg.png') no-repeat;
   background-position: center;
   background-size: cover;
+  .row { margin-top: 45px; }
+  .hiring {
+    &-card {
+      float: left;
+      width: 18.4%;
+      margin-left: 2%;
+      padding: 50px 0 50px 30px;
+      text-align: left;
+      background-color: white;
+      border: 1px solid $border;
+      @include border-radius(4px);
+      @include shadow;
+      &:first-child { margin-left: 0; }
+    }
+    &-team-wrapper { overflow: hidden; }
+    &-team {
+      float: left;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    &-position {
+      margin-top: 8px;
+      font-size: 18px;
+      & span { color: $gray; }
+    }
+  }
 }
 /* section-hiring End */
 
 /* section-blog */
 .section-blog {
-  padding: 170px 0 190px;
+  padding: 190px 0 200px;
   background: url('../img/section-blog-bg.png') no-repeat;
   background-position: center;
   background-size: cover;
@@ -428,9 +472,13 @@
       width: 20px;
       height: 20px;
       margin-left: 12px;
+      transition: 0.2s all ease;
       &-fb { background: url('../img/icon-fb.png'); background-size: cover; }
       &-insta { background: url('../img/icon-insta.png'); background-size: cover; }
       &-blog { background: url('../img/icon-blog.png'); background-size: cover; }
+      &-fb:hover { background: url('../img/icon-fb-hover.png'); background-size: cover; }
+      &-insta:hover { background: url('../img/icon-insta-hover.png'); background-size: cover; }
+      &-blog:hover { background: url('../img/icon-blog-hover.png'); background-size: cover; }
     }
   }
   &:before {

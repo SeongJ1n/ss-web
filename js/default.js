@@ -1,18 +1,20 @@
-$(document).ready(function () {
-  var oPoint = new nhn.api.map.LatLng(37.5239573, 127.0495906);
-  nhn.api.map.setDefaultPoint('LatLng');
-  oMap = new nhn.api.map.Map('Map' ,{
-    point : oPoint,
-    zoom : 11,
-    enableWheelZoom : true,
-    enableDragPan : true,
-    enableDblClickZoom : false,
-    mapMode : 0,
-    activateTrafficMap : false,
-    activateBicycleMap : false,
-    minMaxLevel : [ 1, 14 ],
+/* Map */
+function initMap() {
+  var myLatLng = {lat: 37.5239573, lng: 127.0495906};
+
+  // Create a map object and specify the DOM element for display.
+  var map = new google.maps.Map(document.getElementById('Map'), {
+    center: myLatLng,
+    scrollwheel: false,
+    zoom: 17
   });
-});
+  var image = 'img/marker.png';
+  var marker = new google.maps.Marker({
+    map: map,
+    position: myLatLng,
+    icon: image
+  });
+};
 
 /* resizeSection */
 function resizeSection(){
@@ -34,6 +36,7 @@ function resizeSection(){
 
 $(document).ready(function () {
   resizeSection();
+  initMap();
 });
 
 $(window).on('resize', function(){
@@ -68,11 +71,11 @@ $(window).scroll(function() {
 
   /* sectionAbout animation */
   if( ($nav.offset().top)+200 > $sectionAbout.offset().top){
-    $iphoneImg.css('top', -180);
+    $iphoneImg.css('top', -170);
     $iphoneShadow.css('opacity', 1);
   }
   else {
-    $iphoneImg.css('top', -285);
+    $iphoneImg.css('top', -280);
     $iphoneShadow.css('opacity', 0);
   }
 });

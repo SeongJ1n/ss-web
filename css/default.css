@@ -206,13 +206,13 @@ p {
   border-bottom: 1px solid #4adaaf; }
 
 .btn-arrow {
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   margin-top: 20px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
-  line-height: 28px;
+  line-height: 27px;
   border: 1px solid #4adaaf;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
@@ -231,6 +231,21 @@ p {
 
 .btn-arrow a:hover {
   color: white; }
+
+.alram-new {
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin-left: 6px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  color: white;
+  background-color: #4adaaf;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px; }
 
 /* default End */
 /* GNB */
@@ -325,7 +340,7 @@ p {
 /* section-about */
 .section-about {
   position: relative;
-  padding: 120px 0 130px;
+  padding: 190px 0 170px;
   text-align: left;
   background: url("../img/section-app-bg.png") no-repeat;
   background-position: center bottom; }
@@ -379,7 +394,7 @@ p {
     padding-left: 1%; }
   .section-about .iphone-img {
     position: absolute;
-    top: -285px;
+    top: -280px;
     width: 428.4px;
     height: 657px;
     background: url("../img/section-app-iphone.png") no-repeat;
@@ -389,7 +404,7 @@ p {
     z-index: 10; }
   .section-about .iphone-shadow {
     position: absolute;
-    top: 480px;
+    top: 490px;
     width: 385px;
     height: 20px;
     background: url("../img/section-app-shadow.png") no-repeat;
@@ -411,7 +426,7 @@ p {
 .section-press {
   padding-top: 150px; }
   .section-press .row {
-    margin-top: 50px; }
+    margin-top: 45px; }
   .section-press .row:last-child {
     margin-top: 40px; }
   .section-press .press-wrapper {
@@ -423,12 +438,19 @@ p {
     -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
     box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
   .section-press .img-wrapper {
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px; }
   .section-press .content-wrapper {
     min-height: 260px;
     padding: 45px 40px 20px 35px;
     text-align: left;
-    background-color: white; }
+    background-color: white;
+    overflow: hidden;
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0; }
   .section-press .content-img {
     margin-left: -25%;
     max-height: 260px; }
@@ -522,11 +544,40 @@ p {
   background: url("../img/section-hiring-bg.png") no-repeat;
   background-position: center;
   background-size: cover; }
+  .section-hiring .row {
+    margin-top: 45px; }
+  .section-hiring .hiring-card {
+    float: left;
+    width: 18.4%;
+    margin-left: 2%;
+    padding: 50px 0 50px 30px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #dedede;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+    box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
+    .section-hiring .hiring-card:first-child {
+      margin-left: 0; }
+  .section-hiring .hiring-team-wrapper {
+    overflow: hidden; }
+  .section-hiring .hiring-team {
+    float: left;
+    font-size: 16px;
+    font-weight: 700; }
+  .section-hiring .hiring-position {
+    margin-top: 8px;
+    font-size: 18px; }
+    .section-hiring .hiring-position span {
+      color: #999; }
 
 /* section-hiring End */
 /* section-blog */
 .section-blog {
-  padding: 170px 0 190px;
+  padding: 190px 0 200px;
   background: url("../img/section-blog-bg.png") no-repeat;
   background-position: center;
   background-size: cover; }
@@ -593,7 +644,8 @@ p {
       display: inline-block;
       width: 20px;
       height: 20px;
-      margin-left: 12px; }
+      margin-left: 12px;
+      transition: 0.2s all ease; }
       .footer-icon-wrapper .icon-fb {
         background: url("../img/icon-fb.png");
         background-size: cover; }
@@ -602,6 +654,15 @@ p {
         background-size: cover; }
       .footer-icon-wrapper .icon-blog {
         background: url("../img/icon-blog.png");
+        background-size: cover; }
+      .footer-icon-wrapper .icon-fb:hover {
+        background: url("../img/icon-fb-hover.png");
+        background-size: cover; }
+      .footer-icon-wrapper .icon-insta:hover {
+        background: url("../img/icon-insta-hover.png");
+        background-size: cover; }
+      .footer-icon-wrapper .icon-blog:hover {
+        background: url("../img/icon-blog-hover.png");
         background-size: cover; }
   .footer:before {
     display: block;
