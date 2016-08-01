@@ -434,16 +434,15 @@
   position: relative;
   height: 500px;
   padding: 0;
+  border-top: 1px solid $border;
   .map-wrapper {
     background-color: $gray;
-    border-top: 1px solid $border;
   }
   .contact-wrapper {
     padding: 70px 50px 0 50px;
     text-align: left;
-    color: white;
-    background-color: $black;
-    .divider { margin-top: 30px; }
+    color: $black;
+    .divider { margin-top: 30px; background-color: $border; }
     .address {
       &-wrapper {
         max-width: 340px;
@@ -452,16 +451,17 @@
       &-eng {
         margin-top: 15px;
         font-weight: 100;
+        color: $gray-dark;
       }
     }
     .info-list {
       margin-top: 35px;
       font-size: 16px;
-      font-weight: 100;
+      color: $gray-dark;
       &-item:nth-child(n+1) { margin-top: 15px; }
       .list-item-bold {
         margin-right: 20px;
-        color: $gray-dark;
+        color: $gray-light;
         font-weight: 300;
       }
       .tel { margin-right: 40px; }
@@ -472,13 +472,11 @@
     left: 0; bottom: 0;
     height: 60px;
     padding: 0 40px;
-    background-color: $black;
     border-top: none;
     &-copyright {
       float: left;
       font-size: 14px;
       line-height: 52px;
-      color: $gray-dark;
     }
     &-icon-wrapper {
       margin-top: 16px;
@@ -488,12 +486,12 @@
         height: 20px;
         margin-left: 12px;
         transition: 0.2s all ease;
-        &-fb-dark { background: url('../img/icon-fb.png'); background-size: cover; }
-        &-insta-dark { background: url('../img/icon-insta.png'); background-size: cover; }
-        &-blog-dark { background: url('../img/icon-blog.png'); background-size: cover; }
-        &-fb-dark:hover { background: url('../img/icon-fb-hover.png'); background-size: cover; }
-        &-insta-dark:hover { background: url('../img/icon-insta-hover.png'); background-size: cover; }
-        &-blog-dark:hover { background: url('../img/icon-blog-hover.png'); background-size: cover; }
+      &-fb { background: url('../img/icon-fb-light.png'); background-size: cover; }
+      &-insta { background: url('../img/icon-insta-light.png'); background-size: cover; }
+      &-blog { background: url('../img/icon-blog-light.png'); background-size: cover; }
+      &-fb:hover { background: url('../img/icon-fb.png'); background-size: cover; }
+      &-insta:hover { background: url('../img/icon-insta.png'); background-size: cover; }
+      &-blog:hover { background: url('../img/icon-blog.png'); background-size: cover; }
       }
     }
     &:before {
@@ -501,7 +499,7 @@
       content: ' ';
       width: 100%;
       height: 1px;
-      background-color: $gray-dark;
+      background-color: $border;
     }
   }
 }
