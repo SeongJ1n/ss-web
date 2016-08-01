@@ -635,54 +635,92 @@ p {
         font-weight: 300; }
       .section-contact .contact-wrapper .info-list .tel {
         margin-right: 40px; }
+  .section-contact .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    padding: 0 40px;
+    background-color: #222;
+    border-top: none; }
+    .section-contact .footer-copyright {
+      float: left;
+      font-size: 14px;
+      line-height: 52px;
+      color: #666; }
+    .section-contact .footer-icon-wrapper {
+      margin-top: 16px; }
+      .section-contact .footer-icon-wrapper .icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-left: 12px;
+        transition: 0.2s all ease; }
+        .section-contact .footer-icon-wrapper .icon-fb-dark {
+          background: url("../img/icon-fb.png");
+          background-size: cover; }
+        .section-contact .footer-icon-wrapper .icon-insta-dark {
+          background: url("../img/icon-insta.png");
+          background-size: cover; }
+        .section-contact .footer-icon-wrapper .icon-blog-dark {
+          background: url("../img/icon-blog.png");
+          background-size: cover; }
+        .section-contact .footer-icon-wrapper .icon-fb-dark:hover {
+          background: url("../img/icon-fb-hover.png");
+          background-size: cover; }
+        .section-contact .footer-icon-wrapper .icon-insta-dark:hover {
+          background: url("../img/icon-insta-hover.png");
+          background-size: cover; }
+        .section-contact .footer-icon-wrapper .icon-blog-dark:hover {
+          background: url("../img/icon-blog-hover.png");
+          background-size: cover; }
+    .section-contact .footer:before {
+      display: block;
+      content: ' ';
+      width: 100%;
+      height: 1px;
+      background-color: #666; }
 
 /* seciton-contact End*/
 /* footer */
 .footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   width: 100%;
-  height: 60px;
-  padding: 0 40px; }
+  height: 70px;
+  border-top: 1px solid #dedede;
+  background-color: white; }
   .footer-copyright {
     float: left;
-    font-size: 14px;
-    line-height: 52px;
-    color: #666; }
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 66px;
+    color: #ccc; }
   .footer-icon-wrapper {
     float: right;
-    margin-top: 16px; }
+    margin-top: 23px; }
     .footer-icon-wrapper .icon {
       display: inline-block;
-      width: 20px;
-      height: 20px;
-      margin-left: 12px;
+      width: 22px;
+      height: 22px;
+      margin-left: 18px;
       transition: 0.2s all ease; }
       .footer-icon-wrapper .icon-fb {
-        background: url("../img/icon-fb.png");
+        background: url("../img/icon-fb-light.png");
         background-size: cover; }
       .footer-icon-wrapper .icon-insta {
-        background: url("../img/icon-insta.png");
+        background: url("../img/icon-insta-light.png");
         background-size: cover; }
       .footer-icon-wrapper .icon-blog {
-        background: url("../img/icon-blog.png");
+        background: url("../img/icon-blog-light.png");
         background-size: cover; }
       .footer-icon-wrapper .icon-fb:hover {
-        background: url("../img/icon-fb-hover.png");
+        background: url("../img/icon-fb.png");
         background-size: cover; }
       .footer-icon-wrapper .icon-insta:hover {
-        background: url("../img/icon-insta-hover.png");
+        background: url("../img/icon-insta.png");
         background-size: cover; }
       .footer-icon-wrapper .icon-blog:hover {
-        background: url("../img/icon-blog-hover.png");
+        background: url("../img/icon-blog.png");
         background-size: cover; }
-  .footer:before {
-    display: block;
-    content: ' ';
-    width: 100%;
-    height: 1px;
-    background-color: #666; }
 
 /* footer End */
 /* about.html */
@@ -699,23 +737,34 @@ p {
     background-color: #222;
     transform: rotate(-5deg); }
 
-.section-service-content .content-wrapper {
-  max-width: 520px;
-  padding: 60px 50px 70px;
-  background-color: white;
-  border: 1px solid #dedede; }
-.section-service-content .content-header {
-  text-align: left;
-  color: #222; }
-.section-service-content .content-paragraph {
-  margin-top: 30px;
-  text-align: left; }
-.section-service-content .divider {
-  width: 30px;
-  margin-top: 30px;
-  background-color: #ccc; }
+.section-service-content {
+  padding: 80px 0; }
+  .section-service-content .row {
+    margin-bottom: -2px; }
+  .section-service-content .content-wrapper {
+    height: 380px;
+    padding: 60px 55px 70px;
+    background-color: white;
+    border: 1px solid #dedede; }
+  .section-service-content .content-header {
+    text-align: left;
+    color: #222; }
+  .section-service-content .content-paragraph {
+    margin-top: 30px;
+    text-align: left; }
+  .section-service-content .divider {
+    width: 30px;
+    margin-top: 30px;
+    background-color: #ccc; }
+  .section-service-content .test1 {
+    height: 380px;
+    background-color: #dedede; }
 
 /* section-service End */
 /* about.html End */
+/* contact.html */
+/* section-service */
+/* section-service End */
+/* contact.html End */
 
 /*# sourceMappingURL=default.css.map */
