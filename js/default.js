@@ -54,21 +54,22 @@ $(window).scroll(function() {
   var $inlineListItem = $('.inline-list-item a');
 
   /* nav-scroll */
-  if(winWidth >= 768){
-    if ( ($nav.offset().top)+(winHeight/2) > winHeight) {
-        $nav.addClass("nav-scroll");
-        $navLogo.css("background", "url('../ss-web/img/logo-black.png')");
-        $navLogo.css("background-size", "cover");
-        $inlineListItem.addClass("item-scroll");
-    }
-    else {
-        $nav.removeClass("nav-scroll");
-        $navLogo.css("background", "url('../ss-web/img/logo-white.png')");
-        $navLogo.css("background-size", "cover");
-        $inlineListItem.removeClass("item-scroll");
+  if (window.location.pathname == '/ss-web/') {
+    if(winWidth >= 768){
+      if ( ($nav.offset().top)+(winHeight/2) > winHeight) {
+          $nav.addClass("nav-scroll");
+          $navLogo.css("background", "url('../ss-web/img/logo-black.png')");
+          $navLogo.css("background-size", "cover");
+          $inlineListItem.addClass("item-scroll");
+      }
+      else {
+          $nav.removeClass("nav-scroll");
+          $navLogo.css("background", "url('../ss-web/img/logo-white.png')");
+          $navLogo.css("background-size", "cover");
+          $inlineListItem.removeClass("item-scroll");
+      }
     }
   }
-
   /* sectionAbout animation */
   if( ($nav.offset().top)+200 > $sectionAbout.offset().top){
     $iphoneImg.css('top', -170);
