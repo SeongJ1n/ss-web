@@ -379,7 +379,7 @@
 
 /* section-hiring */
 .section-hiring {
-  background: url('../img/section-hiring-bg.png') no-repeat;
+  background: url('../img/section-hiring-bg1.png') no-repeat;
   background-position: center;
   background-size: cover;
   .row { margin-top: 45px; }
@@ -413,7 +413,6 @@
 
 /* section-blog */
 .section-blog {
-  margin: 100px 0;
   padding: 250px 0 260px;
   background: url('../img/section-blog-bg.png') no-repeat;
   background-position: center;
@@ -457,6 +456,7 @@
     .info-list {
       margin-top: 35px;
       font-size: 16px;
+      font-weight: 100;
       color: $gray-dark;
       &-item:nth-child(n+1) { margin-top: 15px; }
       .list-item-bold {
@@ -467,43 +467,8 @@
       .tel { margin-right: 40px; }
     }
   }
-  .footer {
-    position: absolute;
-    left: 0; bottom: 0;
-    height: 60px;
-    padding: 0 40px;
-    border-top: none;
-    &-copyright {
-      float: left;
-      font-size: 14px;
-      line-height: 52px;
-    }
-    &-icon-wrapper {
-      margin-top: 16px;
-      .icon {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        margin-left: 12px;
-        transition: 0.2s all ease;
-      &-fb { background: url('../img/icon-fb-light.png'); background-size: cover; }
-      &-insta { background: url('../img/icon-insta-light.png'); background-size: cover; }
-      &-blog { background: url('../img/icon-blog-light.png'); background-size: cover; }
-      &-fb:hover { background: url('../img/icon-fb.png'); background-size: cover; }
-      &-insta:hover { background: url('../img/icon-insta.png'); background-size: cover; }
-      &-blog:hover { background: url('../img/icon-blog.png'); background-size: cover; }
-      }
-    }
-    &:before {
-      display: block;
-      content: ' ';
-      width: 100%;
-      height: 1px;
-      background-color: $border;
-    }
-  }
 }
-/* seciton-contact End*/
+/* seciton-contact End */
 
 /* footer */
 .footer {
@@ -588,7 +553,7 @@
 
 
 /* contact.html */
-
-.map-wrapper { height: 800px; }
-
+.contact {
+  .map-wrapper { height: 800px; }
+}
 /* contact.html End */
