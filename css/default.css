@@ -267,7 +267,7 @@ p {
   color: white; }
 .btn-round {
   display: inline-block;
-  padding: 12px 16px;
+  padding: 12px 18px;
   font-weight: 300;
   color: #4adaaf;
   border: 1px solid #4adaaf;
@@ -752,9 +752,11 @@ p {
 /* contact.html */
 .contact {
   position: relative; }
+  .contact .container {
+    position: relative; }
   .contact-content {
     position: relative;
-    width: 90%;
+    width: 89%;
     margin: 150px auto 0;
     padding: 70px 60px 80px;
     background-color: white;
@@ -777,7 +779,7 @@ p {
         margin-top: 24px;
         font-size: 16px; }
       .contact-content .content-column .address-eng {
-        margin-top: 8px;
+        margin-top: 3px;
         font-weight: 100;
         line-height: 1.5em;
         color: #999; }
@@ -800,10 +802,29 @@ p {
     z-index: 1; }
   .contact-map {
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 0; }
+  .contact .btn-exit {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 48px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #222;
+    z-index: 2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+    box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
 
 /* contact.html End */
 

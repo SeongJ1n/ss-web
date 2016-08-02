@@ -1,3 +1,22 @@
+function mapToggle(){
+  var $btnViewMap = $('#btnViewMap');
+  var $contactContent = $('#contactContent');
+  var $contactFader = $('#contactFader');
+  var $btnExit = $('#btnExit');
+
+  $btnViewMap.click(function(){
+    $contactContent.css('display', 'none');
+    $contactFader.css('display', 'none');
+    $btnExit.css('display', 'inline-block');
+  });
+
+  $btnExit.click(function(){
+    $contactContent.css('display', 'block');
+    $contactFader.css('display', 'block');
+    $btnExit.css('display', 'none');
+  });
+}
+
 /* Map */
 function initMap() {
   var myLatLng = {lat: 37.5239573, lng: 127.0495906};
@@ -26,9 +45,11 @@ function resizeSection(){
   var $sectionIntro = $('#sectionIntro');
   var $contentWrapper = $('#contentWrapper');
   var $contactMap = $('.contact-map');
-  var $contactFader = $('.contact-fader');
+  var $contactContent = $('#contactContent');
+  var $contactFader = $('#contactFader');
   $sectionIntro.height(winHeight);
   $contactMap.height(winHeight-60);
+  $contactContent.css('margin-top', winHeight/2-250);
   $contactFader.height(winHeight-60);
 
   if( winHeight >= 900 ){
@@ -42,6 +63,7 @@ function resizeSection(){
 };
 
 $(document).ready(function () {
+  mapToggle();
   resizeSection();
   initMap();
 });

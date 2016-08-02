@@ -76,7 +76,7 @@
 
   &-round {
     display: inline-block;
-    padding: 12px 16px;
+    padding: 12px 18px;
     font-weight: 300;
     color: $primary;
     border: 1px solid $primary;
@@ -236,8 +236,7 @@
   }
   &-video {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; left: 50%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -595,9 +594,10 @@
 /* contact.html */
 .contact {
   position: relative;
+  .container { position: relative; }
   &-content {
     position: relative;
-    width: 90%;
+    width: 89%;
     margin: 150px auto 0;
     padding: 70px 60px 80px;
     background-color: white;
@@ -619,7 +619,7 @@
           font-size: 16px;
         }
         .address-eng {
-          margin-top: 8px;
+          margin-top: 3px;
           font-weight: 100;
           line-height: 1.5em;
           color: $gray;
@@ -636,16 +636,29 @@
     top: 0; left: 0;
     width: 100%;
     height: 100%;
-    // background-color: rgba(74,218,175,0.4);
     background-color: rgba(0,0,0,0.7);
     z-index: 1;
   }
   &-map {
     position: absolute;
-    left: 0;
-    top: 0;
+    top: 0; left: 0;
     width: 100%;
     z-index: 0;
+  }
+  .btn-exit {
+    display: none;
+    position: absolute;
+    top: 30px; right: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 48px;
+    background-color: rgba(255,255,255,0.5);
+    border: 1px solid $black;
+    z-index: 2;
+    @include border-radius(4px);
+    @include shadow();
   }
 }
 /* contact.html End */
