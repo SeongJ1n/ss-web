@@ -73,6 +73,20 @@
   }
   &-arrow:hover { background-color: $primary; }
   &-arrow a:hover { color: white; }
+
+  &-round {
+    display: inline-block;
+    padding: 12px 16px;
+    font-weight: 300;
+    color: $primary;
+    border: 1px solid $primary;
+    transition: 0.2s all ease;
+    @include border-radius(4px);
+  }
+  &-round:hover {
+    color: white;
+    background-color: $primary;
+  }
 }
 .alram-new {
   float: left;
@@ -414,13 +428,10 @@
 
 /* section-hiring */
 .section-hiring {
-  padding: 130px 0;
   background: url('../img/section-hiring-bg1.png') no-repeat;
   background-position: center;
   background-size: cover;
   .header-wrapper {
-    max-width: 280px;
-    margin-left: 20px;
     text-align: left;
     .divider {
       margin: 25px 0 20px;
@@ -428,18 +439,18 @@
     }
     .header-description {
       font-size: 18px;
-      line-height: 1.8em;
+      line-height: 1.6em;
       color: $gray-dark;
     }
   }
-  .row-wrapper { margin-top: 50px; }
+  .row-wrapper { margin-top: -30px; }
   .row {
     margin-top: 30px;
   }
   .hiring {
     &-card {
       float: right;
-      width: 21%;
+      width: 29%;
       margin-left: 2.5%;
       padding: 50px 0 50px 30px;
       text-align: left;
@@ -470,8 +481,8 @@
 
 /* section-blog */
 .section-blog {
-  padding: 265px 0 275px;
-  background: url('../img/section-blog-bg1.png') no-repeat;
+  padding: 245px 0 255px;
+  background: url('../img/section-blog-bg.png') no-repeat;
   background-position: center;
   background-size: cover;
   .header {
@@ -507,8 +518,10 @@
         max-width: 400px;
         margin-top: 35px;
       }
+      &-kor { font-size: 16px; }
       &-eng {
         margin-top: 15px;
+        font-size: 16px;
         font-weight: 100;
         color: $gray-dark;
       }
@@ -581,6 +594,58 @@
 
 /* contact.html */
 .contact {
-  .map-wrapper { height: 800px; }
+  position: relative;
+  &-content {
+    position: relative;
+    width: 90%;
+    margin: 150px auto 0;
+    padding: 70px 60px 80px;
+    background-color: white;
+    z-index: 2;
+    @include border-radius(4px);
+    .content {
+      &-wrapper { margin-top: 55px; overflow: hidden;}
+      &-column {
+        float: left;
+        width: 30.666%;
+        margin-left: 4%;
+        & h4 {
+          font-size: 16px;
+          font-weight: 300;
+          color: $gray;
+        }
+        & p {
+          margin-top: 24px;
+          font-size: 16px;
+        }
+        .address-eng {
+          margin-top: 8px;
+          font-weight: 100;
+          line-height: 1.5em;
+          color: $gray;
+        }
+        .btn-wrapper { margin-top: 24px; padding: 0; }
+        .btn-round { margin-left: 12px; }
+        .btn-round:first-child { margin-left: 0; }
+      }
+      &-column:first-child { margin: 0; }
+    }
+  }
+  &-fader {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: rgba(74,218,175,0.4);
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+  }
+  &-map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
 }
 /* contact.html End */

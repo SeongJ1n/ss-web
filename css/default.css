@@ -265,6 +265,19 @@ p {
   background-color: #4adaaf; }
 .btn-arrow a:hover {
   color: white; }
+.btn-round {
+  display: inline-block;
+  padding: 12px 16px;
+  font-weight: 300;
+  color: #4adaaf;
+  border: 1px solid #4adaaf;
+  transition: 0.2s all ease;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+.btn-round:hover {
+  color: white;
+  background-color: #4adaaf; }
 
 .alram-new {
   float: left;
@@ -595,28 +608,25 @@ p {
 /* section-press End */
 /* section-hiring */
 .section-hiring {
-  padding: 130px 0;
   background: url("../img/section-hiring-bg1.png") no-repeat;
   background-position: center;
   background-size: cover; }
   .section-hiring .header-wrapper {
-    max-width: 280px;
-    margin-left: 20px;
     text-align: left; }
     .section-hiring .header-wrapper .divider {
       margin: 25px 0 20px;
       background-color: #dedede; }
     .section-hiring .header-wrapper .header-description {
       font-size: 18px;
-      line-height: 1.8em;
+      line-height: 1.6em;
       color: #666; }
   .section-hiring .row-wrapper {
-    margin-top: 50px; }
+    margin-top: -30px; }
   .section-hiring .row {
     margin-top: 30px; }
   .section-hiring .hiring-card {
     float: right;
-    width: 21%;
+    width: 29%;
     margin-left: 2.5%;
     padding: 50px 0 50px 30px;
     text-align: left;
@@ -647,8 +657,8 @@ p {
 /* section-hiring End */
 /* section-blog */
 .section-blog {
-  padding: 265px 0 275px;
-  background: url("../img/section-blog-bg1.png") no-repeat;
+  padding: 245px 0 255px;
+  background: url("../img/section-blog-bg.png") no-repeat;
   background-position: center;
   background-size: cover; }
   .section-blog .header {
@@ -678,8 +688,11 @@ p {
     .section-contact .contact-wrapper .address-wrapper {
       max-width: 400px;
       margin-top: 35px; }
+    .section-contact .contact-wrapper .address-kor {
+      font-size: 16px; }
     .section-contact .contact-wrapper .address-eng {
       margin-top: 15px;
+      font-size: 16px;
       font-weight: 100;
       color: #666; }
     .section-contact .contact-wrapper .info-list {
@@ -737,8 +750,60 @@ p {
 /* section-service End */
 /* about.html End */
 /* contact.html */
-.contact .map-wrapper {
-  height: 800px; }
+.contact {
+  position: relative; }
+  .contact-content {
+    position: relative;
+    width: 90%;
+    margin: 150px auto 0;
+    padding: 70px 60px 80px;
+    background-color: white;
+    z-index: 2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+    .contact-content .content-wrapper {
+      margin-top: 55px;
+      overflow: hidden; }
+    .contact-content .content-column {
+      float: left;
+      width: 30.666%;
+      margin-left: 4%; }
+      .contact-content .content-column h4 {
+        font-size: 16px;
+        font-weight: 300;
+        color: #999; }
+      .contact-content .content-column p {
+        margin-top: 24px;
+        font-size: 16px; }
+      .contact-content .content-column .address-eng {
+        margin-top: 8px;
+        font-weight: 100;
+        line-height: 1.5em;
+        color: #999; }
+      .contact-content .content-column .btn-wrapper {
+        margin-top: 24px;
+        padding: 0; }
+      .contact-content .content-column .btn-round {
+        margin-left: 12px; }
+      .contact-content .content-column .btn-round:first-child {
+        margin-left: 0; }
+    .contact-content .content-column:first-child {
+      margin: 0; }
+  .contact-fader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1; }
+  .contact-map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0; }
 
 /* contact.html End */
 

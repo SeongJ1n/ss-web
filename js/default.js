@@ -5,6 +5,9 @@ function initMap() {
   // Create a map object and specify the DOM element for display.
   var map = new google.maps.Map(document.getElementById('Map'), {
     center: myLatLng,
+    mapTypeControl: false,
+    streetViewControl: false,
+    zoomControl: false,
     scrollwheel: false,
     zoom: 17
   });
@@ -22,7 +25,11 @@ function resizeSection(){
   var winHeight = $(window).height();
   var $sectionIntro = $('#sectionIntro');
   var $contentWrapper = $('#contentWrapper');
+  var $contactMap = $('.contact-map');
+  var $contactFader = $('.contact-fader');
   $sectionIntro.height(winHeight);
+  $contactMap.height(winHeight-60);
+  $contactFader.height(winHeight-60);
 
   if( winHeight >= 900 ){
     $contentWrapper.css(
