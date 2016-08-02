@@ -379,22 +379,39 @@
 
 /* section-hiring */
 .section-hiring {
+  padding: 130px 0;
   background: url('../img/section-hiring-bg1.png') no-repeat;
   background-position: center;
   background-size: cover;
-  .row { margin-top: 45px; }
+  .header-wrapper {
+    max-width: 280px;
+    margin-left: 20px;
+    text-align: left;
+    .divider {
+      margin: 25px 0 20px;
+      background-color: $border;
+    }
+    .header-description {
+      font-size: 18px;
+      line-height: 1.8em;
+      color: $gray-dark;
+    }
+  }
+  .row-wrapper { margin-top: 50px; }
+  .row {
+    margin-top: 30px;
+  }
   .hiring {
     &-card {
-      float: left;
-      width: 18.4%;
-      margin-left: 2%;
+      float: right;
+      width: 21%;
+      margin-left: 2.5%;
       padding: 50px 0 50px 30px;
       text-align: left;
       background-color: white;
       border: 1px solid $border;
       @include border-radius(4px);
       @include shadow;
-      &:first-child { margin-left: 0; }
     }
     &-team-wrapper { overflow: hidden; }
     &-team {
@@ -408,13 +425,18 @@
       & span { color: $gray; }
     }
   }
+  .empty {
+    border: none;
+    background: none;
+    box-shadow: none;
+  }
 }
 /* section-hiring End */
 
 /* section-blog */
 .section-blog {
   padding: 250px 0 260px;
-  background: url('../img/section-blog-bg.png') no-repeat;
+  background: url('../img/section-blog-bg1.png') no-repeat;
   background-position: center;
   background-size: cover;
   .header {

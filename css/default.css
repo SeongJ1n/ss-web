@@ -552,15 +552,29 @@ p {
 /* section-press End */
 /* section-hiring */
 .section-hiring {
+  padding: 130px 0;
   background: url("../img/section-hiring-bg1.png") no-repeat;
   background-position: center;
   background-size: cover; }
+  .section-hiring .header-wrapper {
+    max-width: 280px;
+    margin-left: 20px;
+    text-align: left; }
+    .section-hiring .header-wrapper .divider {
+      margin: 25px 0 20px;
+      background-color: #dedede; }
+    .section-hiring .header-wrapper .header-description {
+      font-size: 18px;
+      line-height: 1.8em;
+      color: #666; }
+  .section-hiring .row-wrapper {
+    margin-top: 50px; }
   .section-hiring .row {
-    margin-top: 45px; }
+    margin-top: 30px; }
   .section-hiring .hiring-card {
-    float: left;
-    width: 18.4%;
-    margin-left: 2%;
+    float: right;
+    width: 21%;
+    margin-left: 2.5%;
     padding: 50px 0 50px 30px;
     text-align: left;
     background-color: white;
@@ -571,8 +585,6 @@ p {
     -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
     -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
     box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
-    .section-hiring .hiring-card:first-child {
-      margin-left: 0; }
   .section-hiring .hiring-team-wrapper {
     overflow: hidden; }
   .section-hiring .hiring-team {
@@ -584,12 +596,16 @@ p {
     font-size: 18px; }
     .section-hiring .hiring-position span {
       color: #999; }
+  .section-hiring .empty {
+    border: none;
+    background: none;
+    box-shadow: none; }
 
 /* section-hiring End */
 /* section-blog */
 .section-blog {
   padding: 250px 0 260px;
-  background: url("../img/section-blog-bg.png") no-repeat;
+  background: url("../img/section-blog-bg1.png") no-repeat;
   background-position: center;
   background-size: cover; }
   .section-blog .header {
