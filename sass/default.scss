@@ -13,6 +13,7 @@
 .header-link {
   display: inline-block;
   margin-top: 10px;
+  font-size: 16px;
   font-weight: 300;
   color: $primary;
   text-decoration: none;
@@ -141,6 +142,39 @@
 }
 
 /* GNB End */
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 70px;
+  border-top: 1px solid $border;
+  background-color: white;
+  &-copyright {
+    float: left;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 66px;
+    color: $gray-light;
+  }
+  &-icon-wrapper {
+    float: right;
+    margin-top: 23px;
+    .icon {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      margin-left: 18px;
+      transition: 0.2s all ease;
+      &-fb { background: url('../img/icon-fb-light.png'); background-size: cover; }
+      &-insta { background: url('../img/icon-insta-light.png'); background-size: cover; }
+      &-blog { background: url('../img/icon-blog-light.png'); background-size: cover; }
+      &-fb:hover { background: url('../img/icon-fb.png'); background-size: cover; }
+      &-insta:hover { background: url('../img/icon-insta.png'); background-size: cover; }
+      &-blog:hover { background: url('../img/icon-blog.png'); background-size: cover; }
+    }
+  }
+}
+/* footer End */
 
 /* section-intro */
 .section-intro {
@@ -294,6 +328,7 @@
     &-summary {
       max-width: 200px;
       margin-top: 20px;
+      font-size: 16px;
       color: $gray;
     }
   }
@@ -435,7 +470,7 @@
 
 /* section-blog */
 .section-blog {
-  padding: 300px 0 310px;
+  padding: 265px 0 275px;
   background: url('../img/section-blog-bg1.png') no-repeat;
   background-position: center;
   background-size: cover;
@@ -455,19 +490,22 @@
   position: relative;
   height: 500px;
   padding: 0;
-  border-top: 1px solid $border;
   .map-wrapper {
     background-color: $gray;
   }
   .contact-wrapper {
-    padding: 70px 50px 0 50px;
+    padding: 90px 0 0 70px;
     text-align: left;
     color: $black;
-    .divider { margin-top: 30px; background-color: $border; }
+    .divider {
+      margin-top: 35px;
+      background-color: $border;
+      opacity: 0.5;
+    }
     .address {
       &-wrapper {
-        max-width: 340px;
-        margin-top: 50px;
+        max-width: 400px;
+        margin-top: 35px;
       }
       &-eng {
         margin-top: 15px;
@@ -491,39 +529,6 @@
   }
 }
 /* seciton-contact End */
-
-/* footer */
-.footer {
-  width: 100%;
-  height: 70px;
-  border-top: 1px solid $border;
-  background-color: white;
-  &-copyright {
-    float: left;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 66px;
-    color: $gray-light;
-  }
-  &-icon-wrapper {
-    float: right;
-    margin-top: 23px;
-    .icon {
-      display: inline-block;
-      width: 22px;
-      height: 22px;
-      margin-left: 18px;
-      transition: 0.2s all ease;
-      &-fb { background: url('../img/icon-fb-light.png'); background-size: cover; }
-      &-insta { background: url('../img/icon-insta-light.png'); background-size: cover; }
-      &-blog { background: url('../img/icon-blog-light.png'); background-size: cover; }
-      &-fb:hover { background: url('../img/icon-fb.png'); background-size: cover; }
-      &-insta:hover { background: url('../img/icon-insta.png'); background-size: cover; }
-      &-blog:hover { background: url('../img/icon-blog.png'); background-size: cover; }
-    }
-  }
-}
-/* footer End */
 
 
 /* about.html */

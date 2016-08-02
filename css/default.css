@@ -184,7 +184,7 @@ h5 {
 
 p {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.65em; }
 
 /* default */
@@ -200,6 +200,7 @@ p {
 .header-link {
   display: inline-block;
   margin-top: 10px;
+  font-size: 16px;
   font-weight: 300;
   color: #4adaaf;
   text-decoration: none;
@@ -328,6 +329,47 @@ p {
   color: #222 !important; }
 
 /* GNB End */
+/* footer */
+.footer {
+  width: 100%;
+  height: 70px;
+  border-top: 1px solid #dedede;
+  background-color: white; }
+  .footer-copyright {
+    float: left;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 66px;
+    color: #ccc; }
+  .footer-icon-wrapper {
+    float: right;
+    margin-top: 23px; }
+    .footer-icon-wrapper .icon {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      margin-left: 18px;
+      transition: 0.2s all ease; }
+      .footer-icon-wrapper .icon-fb {
+        background: url("../img/icon-fb-light.png");
+        background-size: cover; }
+      .footer-icon-wrapper .icon-insta {
+        background: url("../img/icon-insta-light.png");
+        background-size: cover; }
+      .footer-icon-wrapper .icon-blog {
+        background: url("../img/icon-blog-light.png");
+        background-size: cover; }
+      .footer-icon-wrapper .icon-fb:hover {
+        background: url("../img/icon-fb.png");
+        background-size: cover; }
+      .footer-icon-wrapper .icon-insta:hover {
+        background: url("../img/icon-insta.png");
+        background-size: cover; }
+      .footer-icon-wrapper .icon-blog:hover {
+        background: url("../img/icon-blog.png");
+        background-size: cover; }
+
+/* footer End */
 /* section-intro */
 .section-intro {
   position: relative;
@@ -470,6 +512,7 @@ p {
   .section-press .content-summary {
     max-width: 200px;
     margin-top: 20px;
+    font-size: 16px;
     color: #999; }
   .section-press .logo-besuccess {
     height: 32px;
@@ -604,7 +647,7 @@ p {
 /* section-hiring End */
 /* section-blog */
 .section-blog {
-  padding: 300px 0 310px;
+  padding: 265px 0 275px;
   background: url("../img/section-blog-bg1.png") no-repeat;
   background-position: center;
   background-size: cover; }
@@ -621,20 +664,20 @@ p {
 .section-contact {
   position: relative;
   height: 500px;
-  padding: 0;
-  border-top: 1px solid #dedede; }
+  padding: 0; }
   .section-contact .map-wrapper {
     background-color: #999; }
   .section-contact .contact-wrapper {
-    padding: 70px 50px 0 50px;
+    padding: 90px 0 0 70px;
     text-align: left;
     color: #222; }
     .section-contact .contact-wrapper .divider {
-      margin-top: 30px;
-      background-color: #dedede; }
+      margin-top: 35px;
+      background-color: #dedede;
+      opacity: 0.5; }
     .section-contact .contact-wrapper .address-wrapper {
-      max-width: 340px;
-      margin-top: 50px; }
+      max-width: 400px;
+      margin-top: 35px; }
     .section-contact .contact-wrapper .address-eng {
       margin-top: 15px;
       font-weight: 100;
@@ -654,47 +697,6 @@ p {
         margin-right: 40px; }
 
 /* seciton-contact End */
-/* footer */
-.footer {
-  width: 100%;
-  height: 70px;
-  border-top: 1px solid #dedede;
-  background-color: white; }
-  .footer-copyright {
-    float: left;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 66px;
-    color: #ccc; }
-  .footer-icon-wrapper {
-    float: right;
-    margin-top: 23px; }
-    .footer-icon-wrapper .icon {
-      display: inline-block;
-      width: 22px;
-      height: 22px;
-      margin-left: 18px;
-      transition: 0.2s all ease; }
-      .footer-icon-wrapper .icon-fb {
-        background: url("../img/icon-fb-light.png");
-        background-size: cover; }
-      .footer-icon-wrapper .icon-insta {
-        background: url("../img/icon-insta-light.png");
-        background-size: cover; }
-      .footer-icon-wrapper .icon-blog {
-        background: url("../img/icon-blog-light.png");
-        background-size: cover; }
-      .footer-icon-wrapper .icon-fb:hover {
-        background: url("../img/icon-fb.png");
-        background-size: cover; }
-      .footer-icon-wrapper .icon-insta:hover {
-        background: url("../img/icon-insta.png");
-        background-size: cover; }
-      .footer-icon-wrapper .icon-blog:hover {
-        background: url("../img/icon-blog.png");
-        background-size: cover; }
-
-/* footer End */
 /* about.html */
 /* section-service */
 .section-service {
