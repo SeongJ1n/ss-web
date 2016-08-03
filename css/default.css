@@ -197,6 +197,9 @@ p {
   height: 3px;
   background-color: #666; }
 
+.header {
+  font-weight: 300; }
+
 .header-link {
   display: inline-block;
   margin-top: 10px;
@@ -613,13 +616,16 @@ p {
   background-size: cover; }
   .section-hiring .header-wrapper {
     text-align: left; }
+    .section-hiring .header-wrapper .header {
+      color: white; }
     .section-hiring .header-wrapper .divider {
       margin: 25px 0 20px;
-      background-color: #dedede; }
+      background-color: white; }
     .section-hiring .header-wrapper .header-description {
       font-size: 18px;
+      letter-spacing: 0;
       line-height: 1.6em;
-      color: #666; }
+      color: white; }
   .section-hiring .row-wrapper {
     margin-top: -30px; }
   .section-hiring .row {
@@ -657,14 +663,14 @@ p {
 /* section-hiring End */
 /* section-blog */
 .section-blog {
-  padding: 255px 0 265px;
+  padding: 235px 0 245px;
   background: url("../img/section-blog-bg.png") no-repeat;
   background-position: center;
   background-size: cover; }
   .section-blog .header {
     color: white; }
   .section-blog .header-link {
-    color: rgba(255, 255, 255, 0.5);
+    color: white;
     border-bottom: 0; }
     .section-blog .header-link span {
       color: #4adaaf; }
@@ -765,6 +771,7 @@ p {
     border-radius: 4px; }
   .section-hiring-process .header {
     display: inline-block;
+    font-size: 25px;
     font-weight: 700;
     color: #222;
     border-bottom: 3px solid #4adaaf; }
@@ -778,7 +785,9 @@ p {
     font-weight: 300;
     color: #4adaaf; }
   .section-hiring-process .process-header {
-    padding: 0 6px; }
+    padding: 0 6px;
+    font-size: 18px;
+    font-weight: 300; }
   .section-hiring-process .process-description {
     padding: 0 6px;
     font-size: 16px;
@@ -800,7 +809,7 @@ p {
   padding: 0 0 80px; }
   .seciton-job-table .job-table {
     width: 100%;
-    font-size: 18px; }
+    font-size: 16px; }
     .seciton-job-table .job-table thead tr {
       height: 60px;
       border-top: 1px solid #dedede;
@@ -842,6 +851,7 @@ p {
       overflow: hidden; }
     .contact-content .content-header {
       display: inline-block;
+      font-size: 30px;
       border-bottom: 3px solid #4adaaf; }
     .contact-content .content-column {
       float: left;

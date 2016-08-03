@@ -9,7 +9,7 @@
 /* default */
 .section { text-align: center; padding: 140px 0; }
 .divider { width: 50px; height: 3px; background-color: $gray-dark;  }
-.header { }
+.header { font-weight: 300; }
 .header-link {
   display: inline-block;
   margin-top: 10px;
@@ -432,14 +432,16 @@
   background-size: cover;
   .header-wrapper {
     text-align: left;
+    .header { color: white; }
     .divider {
       margin: 25px 0 20px;
-      background-color: $border;
+      background-color: white;
     }
     .header-description {
       font-size: 18px;
+      letter-spacing: 0;
       line-height: 1.6em;
-      color: $gray-dark;
+      color: white;
     }
   }
   .row-wrapper { margin-top: -30px; }
@@ -480,7 +482,7 @@
 
 /* section-blog */
 .section-blog {
-  padding: 255px 0 265px;
+  padding: 235px 0 245px;
   background: url('../img/section-blog-bg.png') no-repeat;
   background-position: center;
   background-size: cover;
@@ -488,7 +490,7 @@
     color: white;
   }
   .header-link {
-    color: rgba(255,255,255,0.5);
+    color: white;
     border-bottom: 0;
     & span { color: $primary; }
   }
@@ -610,6 +612,7 @@
   }
   .header {
     display: inline-block;
+    font-size: 25px;
     font-weight: 700;
     color: $black;
     border-bottom: 3px solid $primary;
@@ -629,6 +632,8 @@
     }
     &-header {
       padding: 0 6px;
+      font-size: 18px;
+      font-weight: 300;
     }
     &-description {
       padding: 0 6px;
@@ -656,7 +661,7 @@
   padding: 0 0 80px;
   .job-table {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     thead {
       tr {
         height: 60px;
@@ -709,6 +714,7 @@
       &-wrapper { margin-top: 55px; overflow: hidden;}
       &-header {
         display: inline-block;
+        font-size: 30px;
         border-bottom: 3px solid $primary;
       }
       &-column {
