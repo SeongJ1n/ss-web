@@ -49,7 +49,7 @@ function resizeSection(){
   var $contactFader = $('#contactFader');
   $sectionIntro.height(winHeight);
   $contactMap.height(winHeight-60);
-  $contactContent.css('margin-top', winHeight/2-250);
+  $contactContent.css('margin-top', winHeight/2-260);
   $contactFader.height(winHeight-60);
 
   if( winHeight >= 900 ){

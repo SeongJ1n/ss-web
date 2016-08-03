@@ -711,18 +711,19 @@ p {
 
 /* seciton-contact End */
 /* about.html */
+/* section-sub */
+.section-sub {
+  padding: 100px 0; }
+  .section-sub .header {
+    font-weight: 700;
+    color: #222; }
+
+/* section-sub End */
 /* section-service */
-.section-service {
-  padding: 100px 0;
+.sub-about {
   background: url("../img/section-service-bg.png");
   background-position: center;
   background-size: cover; }
-  .section-service .header {
-    display: inline-block;
-    padding: 16px 40px;
-    color: white;
-    background-color: #222;
-    transform: rotate(-5deg); }
 
 .section-service-content {
   padding: 80px 0; }
@@ -743,12 +744,84 @@ p {
     width: 30px;
     margin-top: 30px;
     background-color: #ccc; }
-  .section-service-content .test1 {
-    height: 380px;
-    background-color: #dedede; }
 
 /* section-service End */
 /* about.html End */
+/* job.html */
+.sub-job {
+  background: url("../img/section-job-bg.png");
+  background-position: center;
+  background-size: cover; }
+
+.section-hiring-process {
+  padding: 70px 0;
+  text-align: left; }
+  .section-hiring-process .hiring-process-wrapper {
+    padding: 55px 40px 50px;
+    border: 1px solid #4adaaf;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+  .section-hiring-process .header {
+    display: inline-block;
+    font-weight: 700;
+    color: #222;
+    border-bottom: 3px solid #4adaaf; }
+    .section-hiring-process .header-wrapper {
+      padding-left: 25px; }
+  .section-hiring-process .process-wrapper {
+    margin-top: 30px;
+    padding: 25px; }
+  .section-hiring-process .process-num {
+    margin-right: 10px;
+    font-weight: 300;
+    color: #4adaaf; }
+  .section-hiring-process .process-header {
+    padding: 0 6px; }
+  .section-hiring-process .process-description {
+    padding: 0 6px;
+    font-size: 16px;
+    color: #222;
+    word-break: normal; }
+  .section-hiring-process .process-footnote {
+    display: inline-block;
+    margin-top: 30px;
+    padding-left: 25px;
+    font-size: 14px;
+    color: #999; }
+  .section-hiring-process .divider {
+    width: 100%;
+    height: 1px;
+    margin: 10px auto;
+    background-color: #dedede; }
+
+.seciton-job-table {
+  padding: 0 0 80px; }
+  .seciton-job-table .job-table {
+    width: 100%;
+    font-size: 18px; }
+    .seciton-job-table .job-table thead tr {
+      height: 60px;
+      border-top: 1px solid #dedede;
+      border-bottom: 1px solid #dedede; }
+      .seciton-job-table .job-table thead tr th {
+        padding: 0 30px;
+        text-align: left;
+        vertical-align: middle; }
+    .seciton-job-table .job-table tbody tr {
+      height: 60px;
+      border-bottom: 1px solid #dedede;
+      transition: 0.2s all ease; }
+      .seciton-job-table .job-table tbody tr td {
+        padding: 0 30px;
+        font-weight: 100;
+        text-align: left;
+        vertical-align: middle; }
+    .seciton-job-table .job-table tbody tr:hover {
+      background-color: #f9fefc; }
+
+/* job.html End */
 /* contact.html */
 .contact {
   position: relative; }
@@ -767,6 +840,9 @@ p {
     .contact-content .content-wrapper {
       margin-top: 55px;
       overflow: hidden; }
+    .contact-content .content-header {
+      display: inline-block;
+      border-bottom: 3px solid #4adaaf; }
     .contact-content .content-column {
       float: left;
       width: 30.666%;
@@ -776,7 +852,7 @@ p {
         font-weight: 300;
         color: #999; }
       .contact-content .content-column p {
-        margin-top: 24px;
+        margin-top: 20px;
         font-size: 16px; }
       .contact-content .content-column .address-eng {
         margin-top: 3px;
@@ -784,7 +860,7 @@ p {
         line-height: 1.5em;
         color: #999; }
       .contact-content .content-column .btn-wrapper {
-        margin-top: 24px;
+        margin-top: 30px;
         padding: 0; }
       .contact-content .content-column .btn-round {
         margin-left: 12px; }
