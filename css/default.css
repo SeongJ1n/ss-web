@@ -721,13 +721,15 @@ p {
 .section-sub {
   padding: 100px; }
   .section-sub .header {
-    font-weight: 300;
-    color: white; }
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #222;
+    text-shadow: 0px 0px 50px white; }
     .section-sub .header-description {
       margin-top: 8px;
-      font-weight: 100;
-      color: white;
-      opacity: 0.7; }
+      font-weight: 300;
+      color: #222;
+      text-shadow: 0px 0px 50px white; }
   .section-sub .divider {
     margin: 20px 0;
     background-color: white; }
@@ -763,7 +765,7 @@ p {
 /* about.html End */
 /* job.html */
 .sub-job {
-  background: url("../img/section-job-bg1.png");
+  background: url("../img/section-job-bg.png");
   background-position: center;
   background-size: cover; }
 
@@ -799,8 +801,7 @@ p {
   .section-hiring-process .process-description {
     padding: 0 6px;
     font-size: 16px;
-    color: #222;
-    word-break: normal; }
+    color: #222; }
   .section-hiring-process .process-footnote {
     display: inline-block;
     margin-top: 30px;
@@ -818,6 +819,28 @@ p {
   .seciton-job-table .job-table {
     width: 100%;
     font-size: 16px; }
+    .seciton-job-table .job-table-content {
+      background-color: #f7f7f7; }
+    .seciton-job-table .job-table .table-content-wrapper {
+      padding: 20px 30px 70px; }
+    .seciton-job-table .job-table .content-wrapper {
+      margin-top: 50px; }
+    .seciton-job-table .job-table .content-header {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 700;
+      border-bottom: 2px solid #dedede; }
+    .seciton-job-table .job-table .content-description {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 100; }
+    .seciton-job-table .job-table .content-list {
+      margin-top: 25px;
+      padding-left: 30px; }
+      .seciton-job-table .job-table .content-list-item {
+        margin-top: 12px;
+        font-size: 16px;
+        list-style-type: initial; }
     .seciton-job-table .job-table thead tr {
       height: 60px;
       border-top: 1px solid #dedede;

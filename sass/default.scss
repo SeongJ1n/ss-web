@@ -551,13 +551,15 @@
 .section-sub {
   padding: 100px;
   .header {
-    font-weight: 300;
-    color: white;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: $black;
+    text-shadow: 0px 0px 50px rgba(255, 255, 255, 1);
     &-description {
       margin-top: 8px;
-      font-weight: 100;
-      color: white;
-      opacity: 0.7;
+      font-weight: 300;
+      color: $black;
+      text-shadow: 0px 0px 50px rgba(255, 255, 255, 1);
     }
   }
   .divider { margin: 20px 0; background-color: white; }
@@ -604,7 +606,7 @@
 
 /* job.html */
 .sub-job {
-  background: url('../img/section-job-bg1.png');
+  background: url('../img/section-job-bg.png');
   background-position: center;
   background-size: cover;
 }
@@ -646,7 +648,6 @@
       padding: 0 6px;
       font-size: 16px;
       color: $black;
-      word-break: normal;
     }
     &-footnote {
       display: inline-block;
@@ -669,6 +670,31 @@
   .job-table {
     width: 100%;
     font-size: 16px;
+    &-content { background-color: $background; }
+    .table-content-wrapper { padding: 20px 30px 70px; }
+    .content {
+      &-wrapper { margin-top: 50px; }
+      &-header {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 700;
+        border-bottom: 2px solid $border;
+      }
+      &-description {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 100;
+      }
+      &-list {
+        margin-top: 25px;
+        padding-left: 30px;
+        &-item {
+          margin-top: 12px;
+          font-size: 16px;
+          list-style-type: initial;
+        }
+      }
+    }
     thead {
       tr {
         height: 60px;

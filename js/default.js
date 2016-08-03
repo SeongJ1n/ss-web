@@ -1,3 +1,14 @@
+$(document).ready(function () {
+  mapToggle();
+  resizeSection();
+  initMap();
+});
+
+$(window).on('resize', function(){
+  resizeSection();
+});
+
+
 function mapToggle(){
   var $btnViewMap = $('#btnViewMap');
   var $contactContent = $('#contactContent');
@@ -15,7 +26,7 @@ function mapToggle(){
     $contactFader.css('display', 'block');
     $btnExit.css('display', 'none');
   });
-}
+};
 
 /* Map */
 function initMap() {
@@ -61,16 +72,6 @@ function resizeSection(){
       'margin-top', winHeight/2-80);
   }
 };
-
-$(document).ready(function () {
-  mapToggle();
-  resizeSection();
-  initMap();
-});
-
-$(window).on('resize', function(){
-  resizeSection();
-});
 
 $(window).scroll(function() {
   var winWidth = $(window).width();
