@@ -719,10 +719,18 @@ p {
 /* about.html */
 /* section-sub */
 .section-sub {
-  padding: 100px 0; }
+  padding: 100px; }
   .section-sub .header {
-    font-weight: 700;
-    color: #222; }
+    font-weight: 300;
+    color: white; }
+    .section-sub .header-description {
+      margin-top: 8px;
+      font-weight: 100;
+      color: white;
+      opacity: 0.7; }
+  .section-sub .divider {
+    margin: 20px 0;
+    background-color: white; }
 
 /* section-sub End */
 /* section-service */
@@ -755,7 +763,7 @@ p {
 /* about.html End */
 /* job.html */
 .sub-job {
-  background: url("../img/section-job-bg.png");
+  background: url("../img/section-job-bg1.png");
   background-position: center;
   background-size: cover; }
 
