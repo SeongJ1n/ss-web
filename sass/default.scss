@@ -554,12 +554,10 @@
     font-weight: 700;
     letter-spacing: 0;
     color: $black;
-    text-shadow: 0px 0px 50px rgba(255, 255, 255, 1);
     &-description {
       margin-top: 8px;
       font-weight: 300;
       color: $black;
-      text-shadow: 0px 0px 50px rgba(255, 255, 255, 1);
     }
   }
   .divider { margin: 20px 0; background-color: white; }
@@ -728,6 +726,80 @@
 
 
 
+/* press.html */
+.sub-press {
+  background: url('../img/section-press-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.section-sub-press {
+  padding: 0 0 70px;
+  .press {
+    &-wrapper {
+      padding: 50px 40px;
+      text-align: left;
+      border-bottom: 1px solid $border;
+    }
+    &-company {
+      font-size: 18px;
+      font-weight: 300;
+    }
+    &-date {
+      margin-top: 10px;
+      font-size: 18px;
+      color: $gray;
+    }
+    &-header {
+      font-weight: 300;
+    }
+    &-content {
+      margin-top: 16px;
+      color: $gray;
+    }
+  }
+  .btn-wrapper { margin-top: 20px; }
+  .pagenation-wrapper {
+    padding: 20px 40px;
+    font-size: 16px;
+    text-align: center;
+    overflow: hidden;
+    .page {
+      &-prev {
+        float: left;
+        padding: 14px 20px;
+      }
+      &-next {
+        float: right;
+        padding: 14px 20px;
+      }
+      &-list {
+        margin: 0 auto;
+        clear: both;
+        overflow: hidden;
+        &-item {
+          float: left;
+          padding: 14px 20px;
+          color: $gray;
+        }
+        &-item:hover, .page-prev:hover, .page-next:hover {
+          background-color: $background;
+        }
+        .active {
+          color: $primary;
+          text-decoration: underline;
+          background-color: #f9fefc;
+        }
+      }
+    }
+    .inline-list {
+      display: inline-block;
+    }
+  }
+}
+
+
+/* press.html End */
 
 
 /* contact.html */
