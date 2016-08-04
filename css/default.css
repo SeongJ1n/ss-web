@@ -298,6 +298,25 @@ p {
   border-radius: 9px; }
 
 /* default End */
+/* section-sub */
+.section-sub {
+  padding: 100px 0 90px; }
+  .section-sub .header {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0;
+    color: #222; }
+    .section-sub .header-description {
+      margin-top: 8px;
+      text-align: center;
+      font-weight: 300;
+      color: #666; }
+  .section-sub .divider {
+    margin: 20px 0;
+    background-color: white; }
+
+/* section-sub End */
 /* GNB */
 .nav {
   position: fixed;
@@ -718,25 +737,6 @@ p {
 
 /* seciton-contact End */
 /* about.html */
-/* section-sub */
-.section-sub {
-  padding: 100px 0 90px; }
-  .section-sub .header {
-    font-size: 32px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 0;
-    color: white; }
-    .section-sub .header-description {
-      margin-top: 8px;
-      text-align: center;
-      font-weight: 300;
-      color: white; }
-  .section-sub .divider {
-    margin: 20px 0;
-    background-color: white; }
-
-/* section-sub End */
 /* section-about */
 .sub-about {
   background: url("../img/section-about-bg.png");
@@ -744,13 +744,79 @@ p {
   background-size: cover; }
 
 .section-sub-about {
-  padding: 80px 0;
+  padding: 20px 0 70px;
   text-align: left; }
   .section-sub-about .about-header {
+    display: inline-block;
     font-size: 25px;
-    font-weight: 700; }
-  .section-sub-about .about-description {
-    margin-top: 15px; }
+    font-weight: 700;
+    border-bottom: 2px solid #4adaaf; }
+  .section-sub-about .about-content-wrapper .about-header {
+    margin-top: 80px; }
+  .section-sub-about .about-content-wrapper .about-description {
+    max-width: 860px;
+    margin-top: 30px;
+    padding: 0 20px; }
+  .section-sub-about .about-content-wrapper .about-description:nth-child(n+2) {
+    margin-top: 20px; }
+  .section-sub-about .about-content-wrapper .mission-list {
+    font-size: 16px; }
+    .section-sub-about .about-content-wrapper .mission-list-item {
+      max-width: 600px;
+      margin-top: 20px;
+      margin-left: 50px;
+      line-height: 1.6em;
+      list-style-type: initial; }
+  .section-sub-about .about-history-wrapper {
+    padding: 80px 0; }
+  .section-sub-about .history-wrapper {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 60px; }
+  .section-sub-about .history-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 103px;
+    bottom: 0;
+    width: 1px;
+    background-color: #dedede; }
+  .section-sub-about .history-list {
+    position: relative;
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: 300; }
+    .section-sub-about .history-list-item {
+      position: relative;
+      margin-top: 40px;
+      margin-left: 110px; }
+    .section-sub-about .history-list-item:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: -31px;
+      width: 10px;
+      height: 10px;
+      background-color: #ccc;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px; }
+  .section-sub-about .history-list:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 77px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #4adaaf;
+    background-color: white;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px; }
+  .section-sub-about .history-list:first-child {
+    margin-top: 70px; }
+  .section-sub-about .history-body {
+    color: #666; }
 
 /* section-about End */
 /* about.html End */
@@ -826,7 +892,7 @@ p {
     font-size: 25px;
     font-weight: 700;
     color: #222;
-    border-bottom: 3px solid #4adaaf; }
+    border-bottom: 2px solid #4adaaf; }
     .section-hiring-process .header-wrapper {
       padding-left: 25px; }
   .section-hiring-process .process-wrapper {
@@ -982,7 +1048,7 @@ p {
     .contact-content .content-header {
       display: inline-block;
       font-size: 30px;
-      border-bottom: 3px solid #4adaaf; }
+      border-bottom: 2px solid #4adaaf; }
     .contact-content .content-column {
       float: left;
       width: 30.666%;
