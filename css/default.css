@@ -397,17 +397,18 @@ p {
     text-align: center;
     overflow: hidden; }
   .section-intro .content-kor {
-    position: relative;
     text-align: center;
     font-weight: 700;
     color: white;
     line-height: 1.5em; }
+  .section-intro .content-kor span {
+    position: relative; }
   .section-intro .content-kor span:after {
     content: '';
     display: block;
     position: absolute;
-    left: 234px;
-    bottom: 8px;
+    left: -4px;
+    bottom: 1px;
     width: 254px;
     height: 4px;
     background-color: #4adaaf;
@@ -736,33 +737,22 @@ p {
     background-color: white; }
 
 /* section-sub End */
-/* section-service */
+/* section-about */
 .sub-about {
-  background: url("../img/section-service-bg.png");
+  background: url("../img/section-about-bg.png");
   background-position: center;
   background-size: cover; }
 
-.section-service-content {
-  padding: 80px 0; }
-  .section-service-content .row {
-    margin-bottom: -2px; }
-  .section-service-content .content-wrapper {
-    height: 380px;
-    padding: 60px 55px 70px;
-    background-color: white;
-    border: 1px solid #dedede; }
-  .section-service-content .content-header {
-    text-align: left;
-    color: #222; }
-  .section-service-content .content-paragraph {
-    margin-top: 30px;
-    text-align: left; }
-  .section-service-content .divider {
-    width: 30px;
-    margin-top: 30px;
-    background-color: #ccc; }
+.section-sub-about {
+  padding: 80px 0;
+  text-align: left; }
+  .section-sub-about .about-header {
+    font-size: 25px;
+    font-weight: 700; }
+  .section-sub-about .about-description {
+    margin-top: 15px; }
 
-/* section-service End */
+/* section-about End */
 /* about.html End */
 /* team.html */
 .sub-team {
