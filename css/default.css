@@ -663,7 +663,7 @@ p {
 /* section-hiring End */
 /* section-blog */
 .section-blog {
-  padding: 235px 0 245px;
+  padding: 215px 0 225px;
   background: url("../img/section-blog-bg1.png") no-repeat;
   background-position: center;
   background-size: cover; }
@@ -719,15 +719,18 @@ p {
 /* about.html */
 /* section-sub */
 .section-sub {
-  padding: 100px; }
+  padding: 100px 0 90px; }
   .section-sub .header {
+    font-size: 32px;
     font-weight: 700;
+    text-align: center;
     letter-spacing: 0;
-    color: #222; }
+    color: white; }
     .section-sub .header-description {
       margin-top: 8px;
+      text-align: center;
       font-weight: 300;
-      color: #222; }
+      color: white; }
   .section-sub .divider {
     margin: 20px 0;
     background-color: white; }
@@ -904,13 +907,15 @@ p {
       .section-sub-press .pagenation-wrapper .page-list-item {
         float: left;
         padding: 14px 20px;
+        font-weight: 100;
         color: #999; }
       .section-sub-press .pagenation-wrapper .page-list-item:hover, .section-sub-press .pagenation-wrapper .page-list .page-prev:hover, .section-sub-press .pagenation-wrapper .page-list .page-next:hover {
         background-color: #f7f7f7; }
       .section-sub-press .pagenation-wrapper .page-list .active {
         color: #4adaaf;
-        text-decoration: underline;
         background-color: #f9fefc; }
+      .section-sub-press .pagenation-wrapper .page-list .active:hover {
+        background-color: #f7f7f7; }
     .section-sub-press .pagenation-wrapper .inline-list {
       display: inline-block; }
 

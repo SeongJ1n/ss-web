@@ -482,7 +482,7 @@
 
 /* section-blog */
 .section-blog {
-  padding: 235px 0 245px;
+  padding: 215px 0 225px;
   background: url('../img/section-blog-bg1.png') no-repeat;
   background-position: center;
   background-size: cover;
@@ -549,15 +549,18 @@
 
 /* section-sub */
 .section-sub {
-  padding: 100px;
+  padding: 100px 0 90px;
   .header {
+    font-size: 32px;
     font-weight: 700;
+    text-align: center;
     letter-spacing: 0;
-    color: $black;
+    color: white;
     &-description {
       margin-top: 8px;
+      text-align: center;
       font-weight: 300;
-      color: $black;
+      color: white;
     }
   }
   .divider { margin: 20px 0; background-color: white; }
@@ -780,6 +783,7 @@
         &-item {
           float: left;
           padding: 14px 20px;
+          font-weight: 100;
           color: $gray;
         }
         &-item:hover, .page-prev:hover, .page-next:hover {
@@ -787,9 +791,9 @@
         }
         .active {
           color: $primary;
-          text-decoration: underline;
           background-color: #f9fefc;
         }
+        .active:hover { background-color: $background; }
       }
     }
     .inline-list {
