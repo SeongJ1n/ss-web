@@ -306,12 +306,12 @@ p {
     font-weight: 700;
     text-align: center;
     letter-spacing: 0;
-    color: #222; }
+    color: white; }
     .section-sub .header-description {
       margin-top: 8px;
       text-align: center;
       font-weight: 300;
-      color: #666; }
+      color: white; }
   .section-sub .divider {
     margin: 20px 0;
     background-color: white; }
