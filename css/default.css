@@ -751,23 +751,27 @@ p {
     font-size: 25px;
     font-weight: 700;
     border-bottom: 2px solid #4adaaf; }
-  .section-sub-about .about-content-wrapper .about-header {
-    margin-top: 80px; }
-  .section-sub-about .about-content-wrapper .about-description {
+  .section-sub-about .about-content-wrapper {
     max-width: 860px;
-    margin-top: 30px;
-    padding: 0 20px; }
-  .section-sub-about .about-content-wrapper .about-description:nth-child(n+2) {
-    margin-top: 20px; }
-  .section-sub-about .about-content-wrapper .mission-list {
-    font-size: 16px; }
-    .section-sub-about .about-content-wrapper .mission-list-item {
-      max-width: 600px;
-      margin-top: 20px;
-      margin-left: 50px;
-      line-height: 1.6em;
-      list-style-type: initial; }
+    margin: 0 auto; }
+    .section-sub-about .about-content-wrapper .about-header {
+      margin-top: 80px; }
+    .section-sub-about .about-content-wrapper .about-description {
+      margin-top: 30px;
+      padding: 0 20px; }
+    .section-sub-about .about-content-wrapper .about-description:nth-child(n+2) {
+      margin-top: 20px; }
+    .section-sub-about .about-content-wrapper .mission-list {
+      font-size: 16px; }
+      .section-sub-about .about-content-wrapper .mission-list-item {
+        max-width: 600px;
+        margin-top: 20px;
+        margin-left: 50px;
+        line-height: 1.6em;
+        list-style-type: initial; }
   .section-sub-about .about-history-wrapper {
+    max-width: 860px;
+    margin: 0 auto;
     padding: 80px 0; }
   .section-sub-about .history-wrapper {
     position: relative;
