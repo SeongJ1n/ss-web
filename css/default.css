@@ -372,8 +372,8 @@ p {
   background-color: white; }
   .footer-copyright {
     float: left;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 100;
     line-height: 66px;
     color: #ccc; }
   .footer-icon-wrapper {
@@ -381,8 +381,8 @@ p {
     margin-top: 23px; }
     .footer-icon-wrapper .icon {
       display: inline-block;
-      width: 22px;
-      height: 22px;
+      width: 20px;
+      height: 20px;
       margin-left: 18px;
       transition: 0.2s all ease; }
       .footer-icon-wrapper .icon-fb {
@@ -1028,85 +1028,72 @@ p {
 
 /* press.html End */
 /* contact.html */
-.contact {
-  position: relative; }
-  .contact .container {
-    position: relative; }
-  .contact-content {
-    position: relative;
-    width: 89%;
-    margin: 150px auto 0;
-    padding: 70px 60px 80px;
-    background-color: white;
-    z-index: 2;
+.section-sub-contact .header, .section-sub-address .header {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 700;
+  color: #222;
+  border-bottom: 2px solid #4adaaf; }
+
+.section-sub-contact {
+  padding: 50px 0; }
+  .section-sub-contact .cowork-wrapper {
+    padding: 55px 40px 50px;
+    text-align: left;
+    border: 1px solid #4adaaf;
+    overflow: hidden;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px; }
-    .contact-content .content-wrapper {
-      margin-top: 55px;
+    .section-sub-contact .cowork-wrapper .cowork-content-wrapper {
+      padding: 0 25px; }
+    .section-sub-contact .cowork-wrapper .cowork-content-body {
+      font-size: 16px; }
+    .section-sub-contact .cowork-wrapper .content-body-wrapper {
+      margin-top: 35px; }
+    .section-sub-contact .cowork-wrapper .btn-round:nth-child(n+2) {
+      margin-left: 12px; }
+
+.section-sub-address {
+  position: relative;
+  padding: 20px 25px 70px;
+  text-align: left; }
+  .section-sub-address .email-container {
+    position: relative;
+    padding: 0 25px 0 65px; }
+  .section-sub-address .address-container {
+    padding: 0 25px; }
+  .section-sub-address .email-wrapper {
+    margin-top: 25px; }
+  .section-sub-address .email-description {
+    max-width: 350px; }
+  .section-sub-address .email-list {
+    margin-top: 20px;
+    padding-left: 20px; }
+    .section-sub-address .email-list-item {
+      margin-top: 6px;
       overflow: hidden; }
-    .contact-content .content-header {
-      display: inline-block;
-      font-size: 30px;
-      border-bottom: 2px solid #4adaaf; }
-    .contact-content .content-column {
-      float: left;
-      width: 30.666%;
-      margin-left: 4%; }
-      .contact-content .content-column h4 {
-        font-size: 16px;
-        font-weight: 300;
-        color: #999; }
-      .contact-content .content-column p {
-        margin-top: 20px;
-        font-size: 16px; }
-      .contact-content .content-column .address-eng {
-        margin-top: 3px;
-        font-weight: 100;
-        line-height: 1.5em;
-        color: #999; }
-      .contact-content .content-column .btn-wrapper {
-        margin-top: 30px;
-        padding: 0; }
-      .contact-content .content-column .btn-round {
-        margin-left: 12px; }
-      .contact-content .content-column .btn-round:first-child {
-        margin-left: 0; }
-    .contact-content .content-column:first-child {
-      margin: 0; }
-  .contact-fader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1; }
-  .contact-map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 0; }
-  .contact .btn-exit {
-    display: none;
-    position: absolute;
-    top: 30px;
-    right: 15px;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 43px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 1px solid #222;
-    z-index: 2;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
-    -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
-    box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
+  .section-sub-address .email-team {
+    float: left;
+    width: 100px;
+    font-size: 16px; }
+  .section-sub-address .email-body {
+    float: left;
+    font-size: 16px; }
+  .section-sub-address .address-wrapper {
+    max-width: 350px;
+    margin-top: 25px; }
+  .section-sub-address .address-body-kor {
+    font-size: 16px; }
+  .section-sub-address .address-body-eng {
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #666; }
+  .section-sub-address .map-wrapper {
+    position: relative;
+    height: 600px;
+    margin-top: 70px; }
 
 /* contact.html End */
 

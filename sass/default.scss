@@ -184,8 +184,8 @@
   background-color: white;
   &-copyright {
     float: left;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 100;
     line-height: 66px;
     color: $gray-light;
   }
@@ -194,8 +194,8 @@
     margin-top: 23px;
     .icon {
       display: inline-block;
-      width: 22px;
-      height: 22px;
+      width: 20px;
+      height: 20px;
       margin-left: 18px;
       transition: 0.2s all ease;
       &-fb { background: url('../img/icon-fb-light.png'); background-size: cover; }
@@ -920,78 +920,85 @@
 
 
 /* contact.html */
-.contact {
-  position: relative;
-  .container { position: relative; }
-  &-content {
-    position: relative;
-    width: 89%;
-    margin: 150px auto 0;
-    padding: 70px 60px 80px;
-    background-color: white;
-    z-index: 2;
+
+.section-sub-contact, .section-sub-address {
+  .header {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 700;
+    color: $black;
+    border-bottom: 2px solid $primary;
+  }
+}
+
+.section-sub-contact {
+  padding: 50px 0;
+  .cowork-wrapper {
+    padding: 55px 40px 50px;
+    text-align: left;
+    border: 1px solid $primary;
+    overflow: hidden;
     @include border-radius(4px);
-    .content {
-      &-wrapper { margin-top: 55px; overflow: hidden;}
-      &-header {
-        display: inline-block;
-        font-size: 30px;
-        border-bottom: 2px solid $primary;
+    .cowork-content {
+      &-wrapper { padding: 0 25px; }
+      &-body { font-size: 16px; }
+    }
+    .content-body-wrapper {
+      margin-top: 35px;
+    }
+    .btn-round:nth-child(n+2) { margin-left: 12px; }
+  }
+}
+
+.section-sub-address {
+  position: relative;
+  padding: 20px 25px 70px;
+  text-align: left;
+  .email-container {
+    position: relative;
+    padding: 0 25px 0 65px;
+  }
+  .address-container {
+    padding: 0 25px;
+  }
+  .email {
+    &-wrapper { margin-top: 25px; }
+    &-description { max-width: 350px; }
+    &-list {
+      margin-top: 20px;
+      padding-left: 20px;
+      &-item {
+        margin-top: 6px;
+        overflow: hidden;
       }
-      &-column {
-        float: left;
-        width: 30.666%;
-        margin-left: 4%;
-        & h4 {
-          font-size: 16px;
-          font-weight: 300;
-          color: $gray;
-        }
-        & p {
-          margin-top: 20px;
-          font-size: 16px;
-        }
-        .address-eng {
-          margin-top: 3px;
-          font-weight: 100;
-          line-height: 1.5em;
-          color: $gray;
-        }
-        .btn-wrapper { margin-top: 30px; padding: 0; }
-        .btn-round { margin-left: 12px; }
-        .btn-round:first-child { margin-left: 0; }
-      }
-      &-column:first-child { margin: 0; }
+    }
+    &-team {
+      float: left;
+      width: 100px;
+      font-size: 16px;
+    }
+    &-body {
+      float: left;
+      font-size: 16px;
     }
   }
-  &-fader {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.7);
-    z-index: 1;
+  .address {
+    &-wrapper {
+      max-width: 350px;
+      margin-top: 25px;
+    }
+    &-body-kor { font-size: 16px; }
+    &-body-eng {
+      margin-top: 14px;
+      font-size: 16px;
+      font-weight: 100;
+      color: $gray-dark;
+    }
   }
-  &-map {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    z-index: 0;
-  }
-  .btn-exit {
-    display: none;
-    position: absolute;
-    top: 30px; right: 15px;
-    width: 44px;
-    height: 44px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 43px;
-    background-color: rgba(255,255,255,0.5);
-    border: 1px solid $black;
-    z-index: 2;
-    @include border-radius(4px);
-    @include shadow();
+  .map-wrapper {
+    position: relative;
+    height: 600px;
+    margin-top: 70px;
   }
 }
 /* contact.html End */
