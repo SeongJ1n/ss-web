@@ -139,19 +139,22 @@ img {
   font-weight: 100;
   src: url("../font/EuclidFlex-Light.otf"); }
 @font-face {
-  font-family: 'SpoqahanSans';
-  font-weight: 700;
-  src: local("SpoqaHanSans-Bold"), local("SpoqaHanSans-Bold"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Bold/SpoqaHanSans-Bold.eot) format("eot"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Bold/SpoqaHanSans-Bold.svg) format("svg"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Bold/SpoqaHanSans-Bold.ttf) format("truetype"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Bold/SpoqaHanSans-Bold.woff) format("woff"); }
-@font-face {
-  font-family: 'SpoqahanSans';
-  font-weight: 300;
-  src: local("SpoqaHanSans-Regular"), local("SpoqaHanSans-Regular"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Regular/SpoqaHanSans-Regular.eot) format("eot"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Regular/SpoqaHanSans-Regular.svg) format("svg"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Regular/SpoqaHanSans-Regular.ttf) format("truetype"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Regular/SpoqaHanSans-Regular.woff) format("woff"); }
-@font-face {
-  font-family: 'SpoqahanSans';
+  font-family: 'NanumBarunGothic';
   font-weight: 100;
-  src: local("SpoqaHanSans-Thin"), local("SpoqaHanSans-Thin"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Thin/SpoqaHanSans-Thin.eot) format("eot"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Thin/SpoqaHanSans-Thin.svg) format("svg"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Thin/SpoqaHanSans-Thin.ttf) format("truetype"), url(https://cdn.rawgit.com/spoqa/spoqa-han-sans/master/Subset/SpoqaHanSans/Spoqa%20Han%20sans_subset%28webfont%20inclued%29/SpoqaHanSans-Thin/SpoqaHanSans-Thin.woff) format("woff"); }
+  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/nanumbarungothicultralight.eot");
+  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/nanumbarungothicultralight.eot?#iefix") format("embedded-opentype"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/nanumbarungothicultralight.woff2") format("woff2"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/nanumbarungothicultralight.woff") format("woff"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/anumbarungothicultralight.svg#nanum-barun-gothic-ultralight") format("svg"); }
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-weight: 300;
+  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.eot");
+  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.eot?#iefix") format("embedded-opentype"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.woff") format("woff"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.woff2") format("woff2"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.svg#false") format("svg"); }
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-weight: 700;
+  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.eot");
+  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.eot?#iefix") format("embedded-opentype"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.woff2") format("woff2"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.woff") format("woff"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.svg#false") format("svg"); }
 body {
-  font-family: 'Euclid Flex', 'Apple SD Gothic Neo', 'SpoqahanSans', Sans-serif;
+  font-family: 'Euclid Flex', 'Apple SD Gothic Neo', 'NanumBarunGothic', Sans-serif;
   font-size: 14px;
   letter-spacing: -.015em;
   word-spacing: .09em;
@@ -442,9 +445,7 @@ p {
     border: 1px solid white;
     opacity: 0.4; }
   .section-intro .btn-arrow:hover {
-    color: #999;
-    background-color: white;
-    opacity: 1; }
+    background-color: transparent; }
   .section-intro-video {
     position: absolute;
     top: 50%;
@@ -983,24 +984,31 @@ p {
 .section-sub-press {
   padding: 0 0 70px; }
   .section-sub-press .press-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 50px 40px;
     text-align: left;
-    border-bottom: 1px solid #dedede; }
+    border-bottom: 1px solid #dedede;
+    overflow: hidden; }
   .section-sub-press .press-company {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300; }
   .section-sub-press .press-date {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 14px;
+    font-size: 16px;
     color: #999; }
   .section-sub-press .press-header {
+    font-size: 16px;
     font-weight: 300; }
   .section-sub-press .press-content {
-    margin-top: 16px;
-    color: #999; }
+    margin-top: 12px;
+    font-size: 16px;
+    color: #666; }
   .section-sub-press .btn-wrapper {
     margin-top: 20px; }
   .section-sub-press .pagenation-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px 40px;
     font-size: 16px;
     text-align: center;
