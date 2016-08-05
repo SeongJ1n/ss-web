@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  mapToggle();
   resizeSection();
   initMap();
 });
@@ -7,26 +6,6 @@ $(document).ready(function () {
 $(window).on('resize', function(){
   resizeSection();
 });
-
-
-function mapToggle(){
-  var $btnViewMap = $('#btnViewMap');
-  var $contactContent = $('#contactContent');
-  var $contactFader = $('#contactFader');
-  var $btnExit = $('#btnExit');
-
-  $btnViewMap.click(function(){
-    $contactContent.css('display', 'none');
-    $contactFader.css('display', 'none');
-    $btnExit.css('display', 'inline-block');
-  });
-
-  $btnExit.click(function(){
-    $contactContent.css('display', 'block');
-    $contactFader.css('display', 'block');
-    $btnExit.css('display', 'none');
-  });
-};
 
 /* Map */
 function initMap() {
@@ -110,3 +89,26 @@ $(window).scroll(function() {
     $iphoneShadow.css('opacity', 0);
   }
 });
+
+// http://james.padolsey.com/javascript/shuffling-the-dom/
+(function($){
+    $.fn.shuffle = function() {
+
+        var allElems = this.get(),
+            getRandom = function(max) {
+                return Math.floor(Math.random() * max);
+            },
+            shuffled = $.map(allElems, function(){
+                var random = getRandom(allElems.length),
+                    randEl = $(allElems[random]).clone(true)[0];
+                allElems.splice(random, 1);
+                return randEl;
+           });
+
+        this.each(function(i){
+            $(this).replaceWith($(shuffled[i]));
+        });
+
+        return $(shuffled);
+    };
+})(jQuery);
