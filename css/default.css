@@ -330,7 +330,7 @@ p {
   z-index: 1000; }
   .nav-logo {
     display: inline-block;
-    width: 114px;
+    width: 116px;
     height: 34px;
     background: url("../img/logo-white.png");
     background-size: cover;
@@ -786,6 +786,8 @@ p {
     bottom: 0;
     width: 1px;
     background-color: #dedede; }
+  .section-sub-about .history-date {
+    font-size: 16px; }
   .section-sub-about .history-list {
     position: relative;
     margin-top: 60px;
@@ -798,7 +800,7 @@ p {
     .section-sub-about .history-list-item:before {
       content: '';
       position: absolute;
-      top: 10px;
+      top: 8px;
       left: -31px;
       width: 10px;
       height: 10px;

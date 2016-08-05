@@ -133,7 +133,7 @@
   z-index: 1000;
   &-logo {
     display: inline-block;
-    width: 114px;
+    width: 116px;
     height: 34px;
     background: url('../img/logo-white.png');
     background-size: cover;
@@ -625,6 +625,7 @@
       width: 1px;
       background-color: $border;
     }
+    &-date { font-size: 16px; }
     &-list {
       position: relative;
       margin-top: 60px;
@@ -638,7 +639,7 @@
       &-item:before {
         content: '';
         position: absolute;
-        top: 10px; left: -31px;
+        top: 8px; left: -31px;
         width: 10px;
         height: 10px;
         background-color: $gray-light;
