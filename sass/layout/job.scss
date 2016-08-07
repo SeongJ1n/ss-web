@@ -1,0 +1,120 @@
+/* job.html */
+.sub-job {
+  background: url('../img/section-job-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-hiring-process {
+  padding: 50px 0 70px;
+  text-align: left;
+  .hiring-process-wrapper {
+    padding: 55px 40px 50px;
+    border: 1px solid $primary;
+    overflow: hidden;
+    @include border-radius(4px);
+  }
+  .header {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 700;
+    color: $black;
+    border-bottom: 2px solid $primary;
+    &-wrapper {
+      padding-left: 25px;
+    }
+  }
+  .process {
+    &-wrapper {
+      margin-top: 30px;
+      padding: 25px;
+    }
+    &-num {
+      margin-right: 10px;
+      font-weight: 300;
+      color: $primary;
+    }
+    &-header {
+      padding: 0 6px;
+      font-size: 18px;
+      font-weight: 300;
+    }
+    &-description {
+      padding: 0 6px;
+      font-size: 16px;
+      color: $black;
+    }
+    &-footnote {
+      display: inline-block;
+      margin-top: 30px;
+      padding-left: 25px;
+      font-size: 14px;
+      color: $gray;
+    }
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    margin: 10px auto;
+    background-color: $border;
+  }
+}
+
+.seciton-job-table {
+  padding: 0 0 80px;
+  .job-table {
+    width: 100%;
+    font-size: 16px;
+    &-content { background-color: $background; }
+    .table-content-wrapper { padding: 20px 30px 70px; }
+    .content {
+      &-wrapper { margin-top: 50px; }
+      &-header {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 700;
+        border-bottom: 2px solid $border;
+      }
+      &-description {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 100;
+      }
+      &-list {
+        margin-top: 25px;
+        padding-left: 30px;
+        &-item {
+          margin-top: 12px;
+          font-size: 16px;
+          list-style-type: initial;
+        }
+      }
+    }
+    thead {
+      tr {
+        height: 60px;
+        border-top: 1px solid $border;
+        border-bottom: 1px solid $border;
+        th {
+          padding: 0 30px;
+          text-align: left;
+          vertical-align: middle;
+        }
+      }
+    }
+    tbody {
+      tr {
+        height: 60px;
+        border-bottom: 1px solid $border;
+        transition: 0.2s all ease;
+        td {
+          padding: 0 30px;
+          font-weight: 100;
+          text-align: left;
+          vertical-align: middle;
+        }
+      }
+      tr:hover { background-color: #f9fefc; }
+    }
+  }
+}
+/* job.html End */

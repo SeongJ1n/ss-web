@@ -1,0 +1,83 @@
+/* contact.html */
+
+.section-sub-contact, .section-sub-address {
+  .header {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 700;
+    color: $black;
+    border-bottom: 2px solid $primary;
+  }
+}
+
+.section-sub-contact {
+  padding: 50px 0;
+  .cowork-wrapper {
+    padding: 55px 40px 50px;
+    text-align: left;
+    border: 1px solid $primary;
+    overflow: hidden;
+    @include border-radius(4px);
+    .cowork-content {
+      &-wrapper { padding: 0 25px; }
+      &-body { font-size: 16px; }
+    }
+    .content-body-wrapper {
+      margin-top: 35px;
+    }
+    .btn-round:nth-child(n+2) { margin-left: 12px; }
+  }
+}
+
+.section-sub-address {
+  position: relative;
+  padding: 20px 25px 70px;
+  text-align: left;
+  .email-container {
+    position: relative;
+    padding: 0 25px 0 65px;
+  }
+  .address-container {
+    padding: 0 25px;
+  }
+  .email {
+    &-wrapper { margin-top: 25px; }
+    &-description { max-width: 350px; }
+    &-list {
+      margin-top: 20px;
+      padding-left: 20px;
+      &-item {
+        margin-top: 6px;
+        overflow: hidden;
+      }
+    }
+    &-team {
+      float: left;
+      width: 100px;
+      font-size: 16px;
+    }
+    &-body {
+      float: left;
+      font-size: 16px;
+    }
+  }
+  .address {
+    &-wrapper {
+      max-width: 350px;
+      margin-top: 25px;
+    }
+    &-body-kor { font-size: 16px; }
+    &-body-eng {
+      margin-top: 14px;
+      font-size: 16px;
+      font-weight: 100;
+      color: $gray-dark;
+    }
+  }
+  .map-wrapper {
+    position: relative;
+    height: 600px;
+    margin-top: 70px;
+  }
+}
+/* contact.html End */

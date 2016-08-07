@@ -1,0 +1,62 @@
+/* team.html */
+.sub-team {
+  background: url('../img/section-team-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-member {
+  padding: 60px 0 70px;
+  .member {
+    &-column {
+      float: left;
+      padding: 10px 15px;
+    }
+    &-wrapper {
+      text-align: left;
+      border: 1px solid $border;
+      @include border-radius(4px);
+      @include shadow;
+    }
+    &-img { width : 100%; }
+    &-content-wrapper {
+      padding: 30px;
+    }
+    // &-team {
+    //   margin-top: 10px;
+    //   font-size: 16px;
+    //   font-weight: 700;
+    // }
+    &-name-wrapper { overflow: hidden; }
+    &-name {
+      float: left;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    &-position {
+      float: left;
+      margin-top: 2px;
+      margin-left: 6px;
+      font-size: 14px;
+      font-weight: 100;
+      color: $gray;
+    }
+    &-introduce {
+      // display: -webkit-box;
+      // height: 8.25em;
+      font-size: 16px;
+      // -webkit-line-clamp: 5;
+      // -webkit-box-orient: vertical;
+      // word-wrap: break-word;
+      // text-overflow: ellipsis;
+      // word-break: normal;
+      // overflow: hidden;
+    }
+  }
+  .divider {
+    margin: 20px 0px 18px;
+    width: 100%;
+    height: 1px;
+    background-color: $border;
+  }
+}
+/* team.html End */

@@ -1,0 +1,80 @@
+/* press.html */
+.sub-press {
+  background: url('../img/section-press-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.section-sub-press {
+  padding: 0 0 70px;
+  .press {
+    &-wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 40px;
+      text-align: left;
+      border-bottom: 1px solid $border;
+      overflow: hidden;
+    }
+    &-company {
+      font-size: 16px;
+      font-weight: 300;
+    }
+    &-date {
+      margin-top: 14px;
+      font-size: 16px;
+      color: $gray;
+    }
+    &-header {
+      font-size: 16px;
+      font-weight: 300;
+    }
+    &-content {
+      margin-top: 12px;
+      font-size: 16px;
+      color: $gray-dark;
+    }
+  }
+  .btn-wrapper { margin-top: 20px; }
+  .pagenation-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    font-size: 16px;
+    text-align: center;
+    overflow: hidden;
+    .page {
+      &-prev {
+        float: left;
+        padding: 14px 20px;
+      }
+      &-next {
+        float: right;
+        padding: 14px 20px;
+      }
+      &-list {
+        margin: 0 auto;
+        clear: both;
+        overflow: hidden;
+        &-item {
+          float: left;
+          padding: 14px 20px;
+          font-weight: 100;
+          color: $gray;
+        }
+        &-item:hover, .page-prev:hover, .page-next:hover {
+          background-color: $background;
+        }
+        .active {
+          color: $primary;
+          background-color: #f9fefc;
+        }
+        .active:hover { background-color: $background; }
+      }
+    }
+    .inline-list {
+      display: inline-block;
+    }
+  }
+}
+/* press.html End */

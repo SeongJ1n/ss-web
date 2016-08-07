@@ -48,6 +48,73 @@ table {
 img {
   vertical-align: bottom; }
 
+@font-face {
+  font-family: 'Euclid Flex';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/EuclidFlex-Bold.otf"); }
+@font-face {
+  font-family: 'Euclid Flex';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../font/EuclidFlex-Medium.otf"); }
+@font-face {
+  font-family: 'Euclid Flex';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../font/EuclidFlex-Light.otf"); }
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-weight: 100;
+  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/nanumbarungothicultralight.eot");
+  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/nanumbarungothicultralight.eot?#iefix") format("embedded-opentype"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/nanumbarungothicultralight.woff2") format("woff2"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/nanumbarungothicultralight.woff") format("woff"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/anumbarungothicultralight.svg#nanum-barun-gothic-ultralight") format("svg"); }
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-weight: 300;
+  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.eot");
+  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.eot?#iefix") format("embedded-opentype"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.woff") format("woff"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.woff2") format("woff2"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.svg#false") format("svg"); }
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-weight: 700;
+  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.eot");
+  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.eot?#iefix") format("embedded-opentype"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.woff2") format("woff2"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.woff") format("woff"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.svg#false") format("svg"); }
+body {
+  font-family: 'Euclid Flex', 'Apple SD Gothic Neo', 'NanumBarunGothic', Sans-serif;
+  font-size: 14px;
+  letter-spacing: -.015em;
+  word-spacing: .09em;
+  word-break: keep-all;
+  color: #222; }
+
+h1 {
+  font-weight: 700;
+  font-size: 55px;
+  letter-spacing: -.01em; }
+
+h2 {
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: -.03em; }
+
+h3 {
+  font-weight: 100;
+  font-size: 30px;
+  letter-spacing: -.02em;
+  color: white; }
+
+h4 {
+  font-weight: 100;
+  font-size: 20px; }
+
+h5 {
+  font-weight: 100;
+  font-size: 10px; }
+
+p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.65em; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -122,73 +189,6 @@ img {
 
 .col-1 {
   width: 8.333333333333332%; }
-
-@font-face {
-  font-family: 'Euclid Flex';
-  font-style: normal;
-  font-weight: 700;
-  src: url("../font/EuclidFlex-Bold.otf"); }
-@font-face {
-  font-family: 'Euclid Flex';
-  font-style: normal;
-  font-weight: 300;
-  src: url("../font/EuclidFlex-Medium.otf"); }
-@font-face {
-  font-family: 'Euclid Flex';
-  font-style: normal;
-  font-weight: 100;
-  src: url("../font/EuclidFlex-Light.otf"); }
-@font-face {
-  font-family: 'NanumBarunGothic';
-  font-weight: 100;
-  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/nanumbarungothicultralight.eot");
-  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/nanumbarungothicultralight.eot?#iefix") format("embedded-opentype"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/nanumbarungothicultralight.woff2") format("woff2"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/nanumbarungothicultralight.woff") format("woff"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/anumbarungothicultralight.svg#nanum-barun-gothic-ultralight") format("svg"); }
-@font-face {
-  font-family: "NanumBarunGothic";
-  font-weight: 300;
-  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.eot");
-  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.eot?#iefix") format("embedded-opentype"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.woff") format("woff"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.woff2") format("woff2"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothic.svg#false") format("svg"); }
-@font-face {
-  font-family: "NanumBarunGothic";
-  font-weight: 700;
-  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.eot");
-  src: url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.eot?#iefix") format("embedded-opentype"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.woff2") format("woff2"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.woff") format("woff"), url("https://ssl.pstatic.net/spacecloud/static/web/20160428/font/NanumBarunGothicBold.svg#false") format("svg"); }
-body {
-  font-family: 'Euclid Flex', 'Apple SD Gothic Neo', 'NanumBarunGothic', Sans-serif;
-  font-size: 14px;
-  letter-spacing: -.015em;
-  word-spacing: .09em;
-  word-break: keep-all;
-  color: #222; }
-
-h1 {
-  font-weight: 700;
-  font-size: 55px;
-  letter-spacing: -.01em; }
-
-h2 {
-  font-weight: 700;
-  font-size: 35px;
-  letter-spacing: -.03em; }
-
-h3 {
-  font-weight: 100;
-  font-size: 30px;
-  letter-spacing: -.02em;
-  color: white; }
-
-h4 {
-  font-weight: 100;
-  font-size: 20px; }
-
-h5 {
-  font-weight: 100;
-  font-size: 10px; }
-
-p {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 1.65em; }
 
 /* default */
 .section {
@@ -330,11 +330,11 @@ p {
   z-index: 1000; }
   .nav-logo {
     display: inline-block;
-    width: 116px;
-    height: 34px;
+    width: 126px;
+    height: 28px;
     background: url("../img/logo-white.png");
     background-size: cover;
-    margin-top: 12px; }
+    margin-top: 16px; }
   .nav .inline-list {
     float: right;
     margin-top: 21px; }
@@ -372,7 +372,7 @@ p {
   width: 100%;
   height: 70px;
   border-top: 1px solid #dedede;
-  background-color: white; }
+  background-color: #222; }
   .footer-copyright {
     float: left;
     font-size: 14px;
@@ -836,6 +836,7 @@ p {
 .section-member {
   padding: 60px 0 70px; }
   .section-member .member-column {
+    float: left;
     padding: 10px 15px; }
   .section-member .member-wrapper {
     text-align: left;
@@ -864,15 +865,7 @@ p {
     font-weight: 100;
     color: #999; }
   .section-member .member-introduce {
-    display: -webkit-box;
-    height: 8.25em;
-    font-size: 16px;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    word-wrap: break-word;
-    text-overflow: ellipsis;
-    word-break: normal;
-    overflow: hidden; }
+    font-size: 16px; }
   .section-member .divider {
     margin: 20px 0px 18px;
     width: 100%;
@@ -1113,4 +1106,4 @@ p {
 
 /* contact.html End */
 
-/*# sourceMappingURL=default.css.map */
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,101 @@
+/* about.html */
+
+
+/* section-about */
+.sub-about {
+  background: url('../img/section-about-bg.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-sub-about {
+  padding: 20px 0 70px;
+  text-align: left;
+  .about-header {
+      display: inline-block;
+      font-size: 25px;
+      font-weight: 700;
+      border-bottom: 2px solid $primary;
+    }
+  .about-content-wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    .about {
+      &-header { margin-top: 80px; }
+      &-description {
+
+        margin-top: 30px;
+        padding: 0 20px;
+      }
+      &-description:nth-child(n+2){
+        margin-top: 20px;
+      }
+    }
+    .mission {
+      &-list {
+        font-size: 16px;
+        &-item {
+          max-width: 600px;
+          margin-top: 20px;
+          margin-left: 50px;
+          line-height: 1.6em;
+          list-style-type: initial;
+        }
+      }
+    }
+  }
+  .about-history-wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 80px 0;
+    }
+  .history {
+    &-wrapper {
+      position: relative;
+      padding-left: 20px;
+      padding-bottom: 60px;
+    }
+    &-wrapper:before {
+      content: '';
+      position: absolute;
+      top: 0; left: 103px; bottom: 0;
+      width: 1px;
+      background-color: $border;
+    }
+    &-date { font-size: 16px; }
+    &-list {
+      position: relative;
+      margin-top: 60px;
+      font-size: 25px;
+      font-weight: 300;
+      &-item {
+        position: relative;
+        margin-top: 40px;
+        margin-left: 110px;
+      }
+      &-item:before {
+        content: '';
+        position: absolute;
+        top: 8px; left: -31px;
+        width: 10px;
+        height: 10px;
+        background-color: $gray-light;
+        @include border-radius(5px);
+      }
+    }
+    &-list:before {
+      content: '';
+      position: absolute;
+      top: 5px; left: 77px;
+      width: 14px;
+      height: 14px;
+      border: 1px solid $primary;
+      background-color: white;
+      @include border-radius(7px);
+    }
+    &-list:first-child { margin-top: 70px; }
+    &-body { color: $gray-dark; }
+  }
+}
+/* section-about End */
+
+/* about.html End */
