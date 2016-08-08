@@ -1,6 +1,7 @@
 $(document).ready(function () {
   resizeSection();
   initMap();
+
 });
 
 $(window).on('resize', function(){
@@ -10,7 +11,7 @@ $(window).on('resize', function(){
 
 /* Map */
 function initMap() {
-  var myLatLng = {lat: 37.5239573, lng: 127.0495906};
+  var myLatLng = {lat: 37.52428, lng: 127.0495799};
 
   // Create a map object and specify the DOM element for display.
   var map = new google.maps.Map(document.getElementById('Map'), {
@@ -24,7 +25,7 @@ function initMap() {
   var image = 'img/marker.png';
   var marker = new google.maps.Marker({
     map: map,
-    position: myLatLng,
+    position: {lat: 37.5239573, lng: 127.0495906},
     icon: image
   });
 };

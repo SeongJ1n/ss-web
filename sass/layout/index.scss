@@ -251,15 +251,12 @@
     text-align: left;
     color: $black;
     .divider {
-      margin-top: 35px;
+      margin: 35px 0;
       background-color: $border;
       opacity: 0.5;
     }
     .address {
-      &-wrapper {
-        max-width: 400px;
-        margin-top: 35px;
-      }
+      &-wrapper { max-width: 400px; }
       &-kor { font-size: 16px; }
       &-eng {
         margin-top: 15px;
@@ -380,6 +377,33 @@
     &-pattern {
       height: 120px;
       background-size: cover;
+    }
+  }
+  .section-press {}
+  .section-hiring {
+    .header-wrapper {
+      text-align: center;
+      .divider { margin: 15px auto; }
+      .header-description {
+        display: inline-block;
+        max-width: 340px;
+        // margin: 0 auto;
+      }
+    }
+  }
+  .section-blog {
+    padding: 130px 0;
+    .header-link {
+      max-width: 300px;
+      line-height: 1.65em;
+    }
+  }
+  .section-contact {
+    height: auto;
+    .map-wrapper { height: 350px; }
+    .contact-wrapper {
+      padding: 50px 40px 70px;
+      .divider { margin: 20px 0; }
     }
   }
 }

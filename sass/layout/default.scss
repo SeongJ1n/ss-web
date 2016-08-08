@@ -176,6 +176,7 @@
   height: 70px;
   border-top: 1px solid $border;
   background-color: $black;
+  overflow: hidden;
   &-copyright {
     float: left;
     font-size: 14px;
@@ -205,7 +206,7 @@
 
 /* narrow */
 @include respond-to('narrow') {
-  .section { padding: 60px 0; }
+  .section { padding: 75px 0; }
   .mobile-none { display: none; }
 
   .btn {
