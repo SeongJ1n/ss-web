@@ -22,7 +22,7 @@
       display: block;
       position: absolute;
       left: -4px; bottom: 1px;
-      width: 254px;
+      width: 102%;
       height: 4px;
       background-color: $primary;
       z-index: -20;
@@ -31,7 +31,7 @@
   .btn-arrow {
     position: absolute;
     left: 50%; bottom: 30px;
-    margin-left: -20px;
+    margin-left: -16px;
     line-height: 29px;
     color: white;
     border: 1px solid white;
@@ -356,6 +356,10 @@
 
 /* narrow */
 @include respond-to('narrow') {
+  .section-intro {
+    .content {
 
+    }
+  }
 }
 /* narrow End */

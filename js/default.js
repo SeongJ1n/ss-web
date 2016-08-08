@@ -7,6 +7,7 @@ $(window).on('resize', function(){
   resizeSection();
 });
 
+
 /* Map */
 function initMap() {
   var myLatLng = {lat: 37.5239573, lng: 127.0495906};
@@ -51,6 +52,8 @@ function resizeSection(){
       'margin-top', winHeight/2-80);
   }
 };
+
+
 
 $(window).scroll(function() {
   var winWidth = $(window).width();

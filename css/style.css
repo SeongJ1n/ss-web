@@ -115,6 +115,33 @@ p {
   font-size: 18px;
   line-height: 1.65em; }
 
+@media (max-width: 850px) {
+  body {
+    font-size: 14px; }
+
+  h1 {
+    font-family: 'font-bold';
+    font-size: 40px;
+    line-height: 1.2em; }
+
+  h2, h3 {
+    font-size: 26px;
+    line-height: 1.4em; }
+
+  h4 {
+    font-size: 16px;
+    line-height: 1.2em; }
+
+  p {
+    font-size: 14px; }
+
+  .footer-content,
+  .footer-content-bold,
+  .footer-list-title {
+    font-size: 10px; }
+
+  .footer-list .list-item {
+    font-size: 10px; } }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -470,7 +497,7 @@ p {
     position: absolute;
     left: -4px;
     bottom: 1px;
-    width: 254px;
+    width: 102%;
     height: 4px;
     background-color: #4adaaf;
     z-index: -20; }
@@ -478,7 +505,7 @@ p {
     position: absolute;
     left: 50%;
     bottom: 30px;
-    margin-left: -20px;
+    margin-left: -16px;
     line-height: 29px;
     color: white;
     border: 1px solid white;

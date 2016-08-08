@@ -111,3 +111,35 @@ p {
   font-size: 18px;
   line-height: 1.65em;
 }
+
+@include respond-to('narrow') {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-family: 'font-bold';
+    font-size: 40px;
+    line-height: 1.2em;
+  }
+  h2, h3 {
+    font-size: 26px;
+    line-height: 1.4em;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 1.2em;
+  }
+  p {
+    font-size: 14px;
+  }
+  .footer-content,
+  .footer-content-bold,
+  .footer-list-title {
+    font-size: 10px;
+  }
+  .footer-list {
+    .list-item {
+      font-size: 10px;
+    }
+  }
+}
