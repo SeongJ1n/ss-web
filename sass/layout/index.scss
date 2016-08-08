@@ -117,6 +117,7 @@
 
 /* section-press */
 .section-press {
+  background-color: #f7f7f7;
   padding: 150px 0 130px;
   .row { margin-top: 45px; }
   .row:last-child { margin-top: 40px; }
@@ -360,13 +361,14 @@
     .content {
       &-wrapper {
         max-width: 240px;
-        margin: 215px auto 0;
+        margin: 205px auto 0;
       }
     }
   }
   .section-about {
-    padding: 70px 0;
+    padding: 75px 0 70px;
     text-align: center;
+    background: none;
     .content {
       &-wrapper { padding: 0; }
       &-header, &-description {
