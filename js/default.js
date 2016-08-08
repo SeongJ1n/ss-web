@@ -1,7 +1,6 @@
 $(document).ready(function () {
   resizeSection();
   initMap();
-
 });
 
 $(window).on('resize', function(){
@@ -20,6 +19,7 @@ function initMap() {
     streetViewControl: false,
     zoomControl: false,
     scrollwheel: false,
+    draggable: false,
     zoom: 17
   });
   var image = 'img/marker.png';
