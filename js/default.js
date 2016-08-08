@@ -34,22 +34,13 @@ function resizeSection(){
   var winWidth = $(window).width();
   var winHeight = $(window).height();
   var $sectionIntro = $('#sectionIntro');
-  var $contentWrapper = $('#contentWrapper');
-  var $contactMap = $('.contact-map');
-  var $contactContent = $('#contactContent');
-  var $contactFader = $('#contactFader');
   $sectionIntro.height(winHeight);
-  $contactMap.height(winHeight-60);
-  $contactContent.css('margin-top', winHeight/2-260);
-  $contactFader.height(winHeight-60);
 
-  if( winHeight >= 900 ){
-    $contentWrapper.css(
-      'margin-top', 310);
+  if( winWidth >= 850 ){
+    $sectionIntro.height(winHeight);
   }
   else {
-    $contentWrapper.css(
-      'margin-top', winHeight/2-80);
+    $sectionIntro.height(530);
   }
 };
 
@@ -67,7 +58,7 @@ $(window).scroll(function() {
 
   /* nav-scroll */
   if (window.location.pathname == '/ss-web/') {
-    if(winWidth >= 768){
+    if(winWidth >= 850){
       if ( ($nav.offset().top)+(winHeight/2) > winHeight) {
           $nav.addClass("nav-scroll");
           $navLogo.css("background", "url('../ss-web/img/logo-black.png')");

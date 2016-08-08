@@ -358,7 +358,10 @@
 @include respond-to('narrow') {
   .section-intro {
     .content {
-
+      &-wrapper {
+        max-width: 240px;
+        margin: 215px auto 0;
+      }
     }
   }
 }
