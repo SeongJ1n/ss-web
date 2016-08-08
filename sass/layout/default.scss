@@ -94,7 +94,7 @@
   background-color: $primary;
   @include border-radius(9px);
 }
-.mobile-none { display: none; }
+
 /* default End */
 
 /* section-sub */
@@ -206,6 +206,25 @@
 /* narrow */
 @include respond-to('narrow') {
   .section { padding: 60px 0; }
+  .mobile-none { display: none; }
+
+  .btn {
+    &-wrapper {
+      display: inline-block;
+      margin: 25px auto 0;
+    }
+    &-appstore {
+      width: 127px;
+      height: 44px;
+    }
+    &-googleplay {
+      width: 131px;
+      height: 44px;
+      margin-left: 10px;
+    }
+  }
+
+
   .nav {
     height: 110px;
     text-align: center;

@@ -330,9 +330,6 @@ p {
   -moz-border-radius: 9px;
   border-radius: 9px; }
 
-.mobile-none {
-  display: none; }
-
 /* default End */
 /* section-sub */
 .section-sub {
@@ -445,6 +442,20 @@ p {
 @media (max-width: 850px) {
   .section {
     padding: 60px 0; }
+
+  .mobile-none {
+    display: none; }
+
+  .btn-wrapper {
+    display: inline-block;
+    margin: 25px auto 0; }
+  .btn-appstore {
+    width: 127px;
+    height: 44px; }
+  .btn-googleplay {
+    width: 131px;
+    height: 44px;
+    margin-left: 10px; }
 
   .nav {
     height: 110px;
@@ -812,7 +823,21 @@ p {
 @media (max-width: 850px) {
   .section-intro .content-wrapper {
     max-width: 240px;
-    margin: 215px auto 0; } }
+    margin: 215px auto 0; }
+
+  .section-about {
+    padding: 65px 0;
+    text-align: center; }
+    .section-about .content-wrapper {
+      padding: 0; }
+    .section-about .content-header, .section-about .content-description {
+      max-width: 300px;
+      margin: 0 auto; }
+    .section-about .content-description {
+      margin-top: 15px; }
+    .section-about-pattern {
+      height: 120px;
+      background-size: cover; } }
 /* narrow End */
 /* about.html */
 /* section-about */

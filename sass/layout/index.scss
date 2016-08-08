@@ -364,5 +364,21 @@
       }
     }
   }
+  .section-about {
+    padding: 70px 0;
+    text-align: center;
+    .content {
+      &-wrapper { padding: 0; }
+      &-header, &-description {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      &-description { margin-top: 15px; }
+    }
+    &-pattern {
+      height: 120px;
+      background-size: cover;
+    }
+  }
 }
 /* narrow End */
