@@ -22,7 +22,7 @@
 
 
 // 웹 브레이크 포인트
-$breakpoints: ( 'narrow': (min-width: 700px), 'middle': (min-width: 1170px), 'wide': (min-width: 1600px), );
+$breakpoints: ( 'narrow': (max-width: 850px), 'middle': (max-width: 1170px), 'wide': (min-width: 1500px), );
 // 브레이크 포인트 매니저
 @mixin respond-to($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {

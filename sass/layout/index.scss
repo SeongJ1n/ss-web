@@ -162,72 +162,6 @@
   .press-wrapper.col.col-9 { width: 73.5%; }
   .press-wrapper.col.col-3 { width: 24.5%; margin-left: 2%; }
 
-  @include respond-to('wide') {
-  height: 1020px;
-    .row { position: relative; margin-top: 45px; }
-    .press-wrapper {
-      border: 0;
-      box-shadow: none;
-    }
-    .img-wrapper {
-      position: absolute;
-      width: 500px;
-      height: 320px;
-    }
-    .content {
-      &-wrapper {
-        position: absolute;
-        border: 1px solid $border;
-        @include border-radius(4px);
-      }
-      &-img {
-        margin: 0;
-        @include border-radius(4px);
-      }
-    }
-
-    // vogue
-    .vogue {
-      top: 30px; left: 100px;
-      &-img-wrap { right: 0; z-index: 10;}
-      &-content-wrap {
-        top: 40px; left: -160px;
-        width: 610px;
-      }
-    }
-    // besuccess
-    .besuccess {
-      top: 0; left: 20px;
-      &-img-wrap { left: 0; }
-      &-content-wrap {
-        top: 165px;
-        width: 340px;
-        min-height: 240px;
-        z-index: 20;
-        .content-summary { max-width: 280px; }
-      }
-    }
-    // platum
-    .platum {
-      top: 350px;
-      &-img-wrap {
-        top: -30px; left: -10px;
-        z-index: 10;
-      }
-      &-content-wrap {
-        left: 120px;
-        width: 610px;
-        padding-left: 360px;
-      }
-    }
-    // chosunbiz
-    .chosunbiz {
-      top: 335px; right: 100px;
-      z-index: 10;
-      &-img-wrap { display: none; }
-    }
-  }
-
 }
 /* section-press End */
 
@@ -349,3 +283,79 @@
   }
 }
 /* seciton-contact End */
+
+/* wide */
+@include respond-to('wide') {
+  .section-press {
+  height: 1020px;
+    .row { position: relative; margin-top: 45px; }
+    .press-wrapper {
+      border: 0;
+      box-shadow: none;
+    }
+    .img-wrapper {
+      position: absolute;
+      width: 500px;
+      height: 320px;
+    }
+    .content {
+      &-wrapper {
+        position: absolute;
+        border: 1px solid $border;
+        @include border-radius(4px);
+      }
+      &-img {
+        margin: 0;
+        @include border-radius(4px);
+      }
+    }
+
+    // vogue
+    .vogue {
+      top: 30px; left: 100px;
+      &-img-wrap { right: 0; z-index: 10;}
+      &-content-wrap {
+        top: 40px; left: -160px;
+        width: 610px;
+      }
+    }
+    // besuccess
+    .besuccess {
+      top: 0; left: 20px;
+      &-img-wrap { left: 0; }
+      &-content-wrap {
+        top: 165px;
+        width: 340px;
+        min-height: 240px;
+        z-index: 20;
+        .content-summary { max-width: 280px; }
+      }
+    }
+    // platum
+    .platum {
+      top: 350px;
+      &-img-wrap {
+        top: -30px; left: -10px;
+        z-index: 10;
+      }
+      &-content-wrap {
+        left: 120px;
+        width: 610px;
+        padding-left: 360px;
+      }
+    }
+    // chosunbiz
+    .chosunbiz {
+      top: 335px; right: 100px;
+      z-index: 10;
+      &-img-wrap { display: none; }
+    }
+  }
+}
+/* wide End */
+
+/* narrow */
+@include respond-to('narrow') {
+
+}
+/* narrow End */
