@@ -13,7 +13,12 @@
   text-decoration: none;
   border-bottom: 1px solid $primary;
 }
-
+.header-description {
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 1.6em;
+  color: white;
+}
 .btn {
   &-wrapper {
     margin-top: 28px;
@@ -210,7 +215,7 @@
   .section { padding: 75px 0; }
   .mobile-show { display: block; }
   .mobile-none { display: none; }
-
+  .header-link, .header-description { font-size: 14px; }
   .btn {
     &-wrapper {
       display: inline-block;
@@ -259,6 +264,19 @@
   }
 }
 
+.footer {
+
+  &-copyright {
+    font-size: 12px;
+  }
+  &-icon-wrapper {
+    .icon {
+      width: 16px;
+      height: 16px;
+      margin-left: 8px;
+    }
+  }
+}
 /* narrow End */
 
 

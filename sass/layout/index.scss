@@ -172,17 +172,12 @@
   background-position: center;
   background-size: cover;
   .header-wrapper {
+    float: none;
     text-align: left;
     .header { color: white; }
     .divider {
       margin: 25px 0 20px;
       background-color: white;
-    }
-    .header-description {
-      font-size: 18px;
-      letter-spacing: 0;
-      line-height: 1.6em;
-      color: white;
     }
   }
   .row-wrapper { margin-top: -30px; }
@@ -381,25 +376,10 @@
   }
 
   .section-press-slider {
-    padding: 70px 0 60px;
+    padding: 50px 0 60px;
     background-color: #f7f7f7;
     text-align: center;
     .container { padding: 0; }
-    .owl-stage { padding-bottom: 4px; }
-    .owl-item { width: 270px !important; }
-    .owl-dots {
-      display: inline-block;
-      margin-top: 25px;
-      .owl-dot {
-        float: left;
-        width: 8px;
-        height: 8px;
-        background-color: $border;
-        margin: 0 5px;
-        @include border-radius(4px);
-      }
-      .active { background-color: $primary; }
-    }
     .press {
       &-container { margin-top: 35px; }
       &-wrapper {
@@ -446,20 +426,27 @@
   }
 
   .section-hiring {
+    .container { padding: 0; }
     .header-wrapper {
       text-align: center;
       .divider { margin: 15px auto; }
       .header-description {
         display: inline-block;
-        max-width: 340px;
-        // margin: 0 auto;
+        max-width: 240px;
+        margin-top: 10px;
       }
+    }
+    .hiring-container { margin-top: 25px; }
+    .hiring-card {
+        float: none;
+        width: 100%;
+        margin: 0;
     }
   }
   .section-blog {
     padding: 130px 0;
     .header-link {
-      max-width: 300px;
+      max-width: 240px;
       line-height: 1.65em;
     }
   }
