@@ -384,17 +384,19 @@
     padding: 70px 0 60px;
     background-color: #f7f7f7;
     text-align: center;
+    .container { padding: 0; }
+    .owl-stage { padding-bottom: 4px; }
     .owl-item { width: 270px !important; }
     .owl-dots {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 25px;
       .owl-dot {
         float: left;
-        width: 10px;
-        height: 10px;
+        width: 8px;
+        height: 8px;
         background-color: $border;
         margin: 0 5px;
-        @include border-radius(5px);
+        @include border-radius(4px);
       }
       .active { background-color: $primary; }
     }
@@ -417,7 +419,7 @@
     }
     .content {
       &-wrapper {
-        min-height: 200px;
+        height: 220px;
         padding: 30px;
       }
       &-img {
