@@ -60,10 +60,10 @@
 /* section-about */
 .section-about {
   position: relative;
-  padding: 190px 0 170px;
+  padding: 170px 0 160px;
   text-align: left;
-  background: url('../img/section-app-bg.png') no-repeat;
-  background-position: center bottom;
+  // background: url('../img/section-app-bg.png') no-repeat;
+  // background-position: center bottom;
   .content {
     &-wrapper { padding-left: 10%; }
     &-header {
@@ -379,7 +379,11 @@
       background-size: cover;
     }
   }
-  .section-press {}
+  .section-press-slider {
+    background-color: #f7f7f7;
+    #wrapper { height: 600px; }
+  }
+
   .section-hiring {
     .header-wrapper {
       text-align: center;

@@ -1,5 +1,6 @@
 
 /* default */
+.mobile-show { display: none; }
 .section { text-align: center; padding: 140px 0; }
 .divider { width: 50px; height: 3px; background-color: $gray-dark;  }
 .header { font-weight: 300; }
@@ -207,6 +208,7 @@
 /* narrow */
 @include respond-to('narrow') {
   .section { padding: 75px 0; }
+  .mobile-show { display: block; }
   .mobile-none { display: none; }
 
   .btn {

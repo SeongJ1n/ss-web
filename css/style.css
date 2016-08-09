@@ -221,6 +221,9 @@ p {
   .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
     width: 100%; } }
 /* default */
+.mobile-show {
+  display: none; }
+
 .section {
   text-align: center;
   padding: 140px 0; }
@@ -444,6 +447,9 @@ p {
   .section {
     padding: 75px 0; }
 
+  .mobile-show {
+    display: block; }
+
   .mobile-none {
     display: none; }
 
@@ -546,10 +552,8 @@ p {
 /* section-about */
 .section-about {
   position: relative;
-  padding: 190px 0 170px;
-  text-align: left;
-  background: url("../img/section-app-bg.png") no-repeat;
-  background-position: center bottom; }
+  padding: 170px 0 160px;
+  text-align: left; }
   .section-about .content-wrapper {
     padding-left: 10%; }
   .section-about .content-header {
@@ -841,6 +845,11 @@ p {
       height: 120px;
       background-size: cover; }
 
+  .section-press-slider {
+    background-color: #f7f7f7; }
+    .section-press-slider #wrapper {
+      height: 600px; }
+
   .section-hiring .header-wrapper {
     text-align: center; }
     .section-hiring .header-wrapper .divider {
@@ -960,8 +969,50 @@ p {
   background-position: center;
   background-size: cover; }
 
+.section-talent {
+  padding: 50px 0;
+  text-align: left; }
+  .section-talent .row {
+    margin-top: 30px; }
+  .section-talent .row:last-child {
+    margin-top: 20px; }
+  .section-talent .talent-container {
+    padding: 55px 40px 50px;
+    border: 1px solid #4adaaf;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+  .section-talent .header {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 700;
+    color: #222;
+    border-bottom: 2px solid #4adaaf; }
+    .section-talent .header-wrapper {
+      padding-left: 25px; }
+  .section-talent .talent-wrapper {
+    padding: 25px; }
+  .section-talent .talent-num {
+    margin-right: 10px;
+    font-weight: 300;
+    color: #4adaaf; }
+  .section-talent .talent-header {
+    padding: 0 6px;
+    font-size: 18px;
+    font-weight: 300; }
+  .section-talent .talent-description {
+    padding: 0 6px;
+    font-size: 16px;
+    color: #999; }
+  .section-talent .divider {
+    width: 100%;
+    height: 1px;
+    margin: 10px auto;
+    background-color: #dedede; }
+
 .section-member {
-  padding: 60px 0 70px; }
+  padding: 0 0 70px; }
   .section-member .member-wrapper {
     width: 31.9%;
     min-width: 361px;
@@ -1025,10 +1076,10 @@ p {
   .section-member .member-wrapper {
     width: 100%; }
   .section-member .member-img {
-    height: 360px; }
+    height: 300px; }
   .section-member .member-img img {
     width: auto;
-    min-height: 360px; } }
+    min-height: 330px; } }
 /* team.html End */
 /* job.html */
 .sub-job {
