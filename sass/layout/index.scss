@@ -387,9 +387,11 @@
         height: 500px;
         margin-top: 30px;
       }
-      &-item-wrap { padding: 0 15px; }
-      &-wrapper {
+      &-item-wrap {
         max-width: 400px;
+        padding: 0 10px;
+      }
+      &-wrapper {
         margin: 0 auto;
         text-align: left;
         border: 1px solid $border;
@@ -423,7 +425,7 @@
       &-summary {
         max-width: 300px;
         margin: 15px auto 0;
-        font-size: 16px;
+        font-size: 14px;
         color: $gray;
       }
     }
