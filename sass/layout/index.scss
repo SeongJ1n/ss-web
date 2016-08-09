@@ -118,7 +118,7 @@
 /* section-press */
 .section-press {
   background-color: #f7f7f7;
-  padding: 150px 0 130px;
+  padding: 140px 0 120px;
   .row { margin-top: 45px; }
   .row:last-child { margin-top: 40px; }
   .press-wrapper {
@@ -380,8 +380,43 @@
     }
   }
   .section-press-slider {
+    padding: 70px 0 60px;
     background-color: #f7f7f7;
-    #wrapper { height: 600px; }
+    .press {
+      &-container {
+        height: 500px;
+        margin-top: 30px;
+      }
+      &-item-wrap { padding: 0 15px; }
+      &-wrapper {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: left;
+        border: 1px solid $border;
+        background-color: white;
+        overflow: hidden;
+        @include border-radius(4px);
+        @include shadow;
+      }
+    }
+    .img-wrapper {
+      height: 255px;
+      overflow: hidden;
+    }
+    .content {
+      &-wrapper {
+        min-height: 200px;
+        padding: 30px;
+      }
+      &-img { width: auto; height: 100%; }
+      &-logo { height: 22px; }
+      &-summary {
+        max-width: 300px;
+        margin: 15px auto 0;
+        font-size: 16px;
+        color: $gray;
+      }
+    }
   }
 
   .section-hiring {
