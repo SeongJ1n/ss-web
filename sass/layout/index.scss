@@ -172,7 +172,7 @@
   background-position: center;
   background-size: cover;
   .header-wrapper {
-    float: none;
+    float: left;
     text-align: left;
     .header { color: white; }
     .divider {
@@ -428,6 +428,7 @@
   .section-hiring {
     .container { padding: 0; }
     .header-wrapper {
+      float: none;
       text-align: center;
       .divider { margin: 15px auto; }
       .header-description {

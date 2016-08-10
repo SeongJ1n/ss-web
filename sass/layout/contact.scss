@@ -61,10 +61,7 @@
     }
   }
   .address {
-    &-wrapper {
-      max-width: 350px;
-      margin-top: 25px;
-    }
+    &-wrapper { margin-top: 25px; }
     &-body-kor { font-size: 16px; }
     &-body-eng {
       margin-top: 14px;
@@ -98,7 +95,7 @@
     .email {
       &-container { padding: 0; }
       &-wrapper { margin-top: 20px; }
-      &-description { font-size: 14px; }
+      &-description { max-width: 100%; font-size: 14px; }
       &-list { margin-top: 10px; }
       &-team { font-size: 14px; }
       &-body { font-size: 14px; }

@@ -344,9 +344,25 @@
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK4A89UfqdgNZmuQLc1kZpgX5RwcLXTdI&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK4A89UfqdgNZmuQLc1kZpgX5RwcLXTdI"></script>
 <script src="js/default.js"></script>
 <script type="text/javascript">
+  $(window).scroll(function() {
+    var $nav = $('#nav');
+    var $sectionAbout = $('#sectionAbout');
+    var $iphoneImg = $('#iphoneImg');
+    var $iphoneShadow = $('#iphoneShadow');
+    /* sectionAbout animation */
+    if( ($nav.offset().top)+200 > $sectionAbout.offset().top){
+      $iphoneImg.css('top', -170);
+      $iphoneShadow.css('opacity', 1);
+    }
+    else {
+      $iphoneImg.css('top', -280);
+      $iphoneShadow.css('opacity', 0);
+    }
+  });
+
   $('#hiringContainer').owlCarousel({
     loop: true,
     autoWidth: true,

@@ -243,7 +243,7 @@ p {
     width: 100%; } }
 /* default */
 .mobile-show {
-  display: none; }
+  display: none !important; }
 
 .section {
   text-align: center;
@@ -478,7 +478,7 @@ p {
     padding: 75px 0; }
 
   .mobile-show {
-    display: block; }
+    display: block !important; }
 
   .mobile-none {
     display: none; }
@@ -707,7 +707,7 @@ p {
   background-position: center;
   background-size: cover; }
   .section-hiring .header-wrapper {
-    float: none;
+    float: left;
     text-align: left; }
     .section-hiring .header-wrapper .header {
       color: white; }
@@ -941,6 +941,7 @@ p {
   .section-hiring .container {
     padding: 0; }
   .section-hiring .header-wrapper {
+    float: none;
     text-align: center; }
     .section-hiring .header-wrapper .divider {
       margin: 15px auto; }
@@ -1457,7 +1458,6 @@ p {
     display: inline-block;
     font-size: 16px; }
   .section-sub-address .address-wrapper {
-    max-width: 350px;
     margin-top: 25px; }
   .section-sub-address .address-body-kor {
     font-size: 16px; }
@@ -1496,6 +1496,7 @@ p {
   .section-sub-address .email-wrapper {
     margin-top: 20px; }
   .section-sub-address .email-description {
+    max-width: 100%;
     font-size: 14px; }
   .section-sub-address .email-list {
     margin-top: 10px; }

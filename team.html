@@ -456,9 +456,31 @@
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://npmcdn.com/masonry-layout@4.1.0/dist/masonry.pkgd.min.js"></script>
-<script src="js/default.js"></script>
 <script type="text/javascript">
+  // http://james.padolsey.com/javascript/shuffling-the-dom/
+  (function($){
+      $.fn.shuffle = function() {
+
+          var allElems = this.get(),
+              getRandom = function(max) {
+                  return Math.floor(Math.random() * max);
+              },
+              shuffled = $.map(allElems, function(){
+                  var random = getRandom(allElems.length),
+                      randEl = $(allElems[random]).clone(true)[0];
+                  allElems.splice(random, 1);
+                  return randEl;
+             });
+
+          this.each(function(i){
+              $(this).replaceWith($(shuffled[i]));
+          });
+
+          return $(shuffled);
+      };
+  })(jQuery);
   $('.member-wrapper').shuffle();
+
   var $container = $('#memberContainer');
   $container.masonry({
     gutter: 25

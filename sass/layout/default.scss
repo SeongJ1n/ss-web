@@ -1,6 +1,6 @@
 
 /* default */
-.mobile-show { display: none; }
+.mobile-show { display: none !important; }
 .section { text-align: center; padding: 140px 0; }
 .divider { width: 50px; height: 3px; background-color: $gray-dark;  }
 .header { font-weight: 300; }
@@ -214,7 +214,7 @@
 @include respond-to('narrow') {
   body { margin-top: 110px !important; }
   .section { padding: 75px 0; }
-  .mobile-show { display: block; }
+  .mobile-show { display: block !important; }
   .mobile-none { display: none; }
   .header-link, .header-description { font-size: 14px; }
   .btn {
