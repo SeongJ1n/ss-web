@@ -1403,7 +1403,6 @@ p {
       display: inline-block; }
 
 /* press.html End */
-/* contact.html */
 .section-sub-contact .header, .section-sub-address .header {
   display: inline-block;
   font-size: 25px;
@@ -1413,22 +1412,22 @@ p {
 
 .section-sub-contact {
   padding: 50px 0; }
-  .section-sub-contact .cowork-wrapper {
-    padding: 55px 40px 50px;
+  .section-sub-contact .cowork-container {
+    padding: 35px 40px 30px;
     text-align: left;
     border: 1px solid #4adaaf;
     overflow: hidden;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px; }
-    .section-sub-contact .cowork-wrapper .cowork-content-wrapper {
-      padding: 0 25px; }
-    .section-sub-contact .cowork-wrapper .cowork-content-body {
-      font-size: 16px; }
-    .section-sub-contact .cowork-wrapper .content-body-wrapper {
-      margin-top: 35px; }
-    .section-sub-contact .cowork-wrapper .btn-round:nth-child(n+2) {
-      margin-left: 12px; }
+  .section-sub-contact .cowork-wrapper {
+    padding: 25px; }
+  .section-sub-contact .cowork-body-wrapper {
+    margin-top: 25px; }
+  .section-sub-contact .cowork-body {
+    font-size: 16px; }
+  .section-sub-contact .btn-round:nth-child(n+2) {
+    margin-left: 12px; }
 
 .section-sub-address {
   position: relative;
@@ -1442,19 +1441,20 @@ p {
   .section-sub-address .email-wrapper {
     margin-top: 25px; }
   .section-sub-address .email-description {
-    max-width: 350px; }
+    max-width: 350px;
+    font-size: 16px; }
   .section-sub-address .email-list {
-    margin-top: 20px;
-    padding-left: 20px; }
+    margin-top: 15px;
+    padding-left: 30px; }
     .section-sub-address .email-list-item {
       margin-top: 6px;
-      overflow: hidden; }
+      list-style-type: initial; }
   .section-sub-address .email-team {
-    float: left;
-    width: 100px;
+    display: inline-block;
+    width: 80px;
     font-size: 16px; }
   .section-sub-address .email-body {
-    float: left;
+    display: inline-block;
     font-size: 16px; }
   .section-sub-address .address-wrapper {
     max-width: 350px;
@@ -1471,6 +1471,50 @@ p {
     height: 600px;
     margin-top: 70px; }
 
-/* contact.html End */
+@media (max-width: 850px) {
+  .section-sub-contact {
+    padding: 20px 0; }
+    .section-sub-contact .header {
+      font-size: 18px; }
+    .section-sub-contact .cowork-container {
+      padding: 30px 0 25px; }
+    .section-sub-contact .cowork-wrapper {
+      padding: 10px 25px; }
+    .section-sub-contact .cowork-wrapper:last-child {
+      padding-top: 25px; }
+    .section-sub-contact .cowork-header {
+      font-size: 16px; }
+    .section-sub-contact .cowork-body-wrapper {
+      margin-top: 20px; }
+    .section-sub-contact .cowork-body {
+      font-size: 14px; }
+
+  .section-sub-address .header {
+    font-size: 18px; }
+  .section-sub-address .email-container {
+    padding: 0; }
+  .section-sub-address .email-wrapper {
+    margin-top: 20px; }
+  .section-sub-address .email-description {
+    font-size: 14px; }
+  .section-sub-address .email-list {
+    margin-top: 10px; }
+  .section-sub-address .email-team {
+    font-size: 14px; }
+  .section-sub-address .email-body {
+    font-size: 14px; }
+  .section-sub-address .address-container {
+    margin-top: 35px;
+    padding: 0; }
+  .section-sub-address .address-wrapper {
+    margin-top: 20px; }
+  .section-sub-address .address-body-kor {
+    font-size: 14px; }
+  .section-sub-address .address-body-eng {
+    margin-top: 10px;
+    font-size: 14px; }
+  .section-sub-address .map-wrapper {
+    height: 300px;
+    margin-top: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

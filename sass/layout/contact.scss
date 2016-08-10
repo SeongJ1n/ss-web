@@ -1,5 +1,3 @@
-/* contact.html */
-
 .section-sub-contact, .section-sub-address {
   .header {
     display: inline-block;
@@ -12,21 +10,19 @@
 
 .section-sub-contact {
   padding: 50px 0;
-  .cowork-wrapper {
-    padding: 55px 40px 50px;
+  .cowork {
+    &-container {
+    padding: 35px 40px 30px;
     text-align: left;
     border: 1px solid $primary;
     overflow: hidden;
     @include border-radius(4px);
-    .cowork-content {
-      &-wrapper { padding: 0 25px; }
-      &-body { font-size: 16px; }
     }
-    .content-body-wrapper {
-      margin-top: 35px;
-    }
-    .btn-round:nth-child(n+2) { margin-left: 12px; }
+    &-wrapper { padding: 25px; }
+    &-body-wrapper { margin-top: 25px; }
+    &-body { font-size: 16px; }
   }
+    .btn-round:nth-child(n+2) { margin-left: 12px; }
 }
 
 .section-sub-address {
@@ -42,22 +38,25 @@
   }
   .email {
     &-wrapper { margin-top: 25px; }
-    &-description { max-width: 350px; }
+    &-description {
+      max-width: 350px;
+      font-size: 16px;
+    }
     &-list {
-      margin-top: 20px;
-      padding-left: 20px;
+      margin-top: 15px;
+      padding-left: 30px;
       &-item {
         margin-top: 6px;
-        overflow: hidden;
+        list-style-type: initial;
       }
     }
     &-team {
-      float: left;
-      width: 100px;
+      display: inline-block;
+      width: 80px;
       font-size: 16px;
     }
     &-body {
-      float: left;
+      display: inline-block;
       font-size: 16px;
     }
   }
@@ -80,4 +79,39 @@
     margin-top: 70px;
   }
 }
-/* contact.html End */
+
+@include respond-to('narrow') {
+  .section-sub-contact {
+    padding: 20px 0;
+    .header { font-size: 18px; }
+    .cowork {
+      &-container { padding: 30px 0 25px; }
+      &-wrapper { padding: 10px 25px; }
+      &-wrapper:last-child { padding-top: 25px; }
+      &-header { font-size: 16px; }
+      &-body-wrapper { margin-top: 20px; }
+      &-body { font-size: 14px; }
+    }
+  }
+  .section-sub-address {
+    .header { font-size: 18px; }
+    .email {
+      &-container { padding: 0; }
+      &-wrapper { margin-top: 20px; }
+      &-description { font-size: 14px; }
+      &-list { margin-top: 10px; }
+      &-team { font-size: 14px; }
+      &-body { font-size: 14px; }
+    }
+    .address {
+      &-container { margin-top: 35px; padding: 0; }
+      &-wrapper { margin-top: 20px; }
+      &-body-kor { font-size: 14px; }
+      &-body-eng { margin-top: 10px; font-size: 14px; }
+    }
+    .map-wrapper {
+      height: 300px;
+      margin-top: 50px;
+    }
+  }
+}
