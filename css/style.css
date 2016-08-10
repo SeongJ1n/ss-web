@@ -1334,9 +1334,9 @@ p {
       .section-job-table .job-table .content-list-item {
         font-size: 14px; }
     .section-job-table .job-table thead tr th {
-      padding: 0 12px; }
+      padding: 0 6px; }
     .section-job-table .job-table tbody tr td {
-      padding: 15px 12px; } }
+      padding: 15px 6px; } }
 /* press.html */
 .sub-press {
   background: url("../img/section-press-bg.png");
