@@ -1,45 +1,39 @@
-/* about.html */
-
-
-/* section-about */
 .sub-about {
   background: url('../img/section-about-bg.png');
   background-position: center;
   background-size: cover;
 }
+.about-header {
+  display: inline-block;
+  margin-top: 80px;
+  font-size: 25px;
+  font-weight: 700;
+  border-bottom: 2px solid $primary;
+}
 .section-sub-about {
   padding: 20px 0 70px;
   text-align: left;
-  .about-header {
-      display: inline-block;
-      font-size: 25px;
-      font-weight: 700;
-      border-bottom: 2px solid $primary;
-    }
   .about-content-wrapper {
     max-width: 860px;
     margin: 0 auto;
     .about {
-      &-header { margin-top: 80px; }
       &-description {
-
         margin-top: 30px;
         padding: 0 20px;
       }
-      &-description:nth-child(n+2){
-        margin-top: 20px;
-      }
+      &-description:nth-child(n+2){ margin-top: 20px; }
     }
     .mission {
       &-list {
         font-size: 16px;
+        margin-left: 50px;
         &-item {
           max-width: 600px;
           margin-top: 20px;
-          margin-left: 50px;
           line-height: 1.6em;
           list-style-type: initial;
         }
+        &-item:first-child { margin-top: 15px; }
       }
     }
   }
@@ -96,6 +90,45 @@
     &-body { color: $gray-dark; }
   }
 }
-/* section-about End */
 
-/* about.html End */
+// narrow
+@include respond-to('narrow') {
+  .about-header {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .section-sub-about {
+    .about-content-wrapper {
+      padding: 0 20px;
+      .about {
+        &-description {
+          margin-top: 20px;
+          padding: 0;
+        }
+        &-description:nth-child(n+2){ margin-top: 15px; }
+      }
+      .mission {
+        &-list {
+          margin-left: 30px;
+          font-size: 14px;
+          &-item { margin-top: 15px; }
+        }
+      }
+    }
+    .about-history-wrapper {
+      margin-top: 40px;
+      padding: 0 20px;
+      .history {
+        &-wrapper { padding: 0; }
+        &-wrapper:before { left: 73px; }
+        &-list {
+          font-size: 18px;
+          &-item { margin-left: 100px; }
+          &-item:before { }
+        }
+        &-list:before { left: 67px; }
+        &-list:first-child { margin-top: 50px; }
+      }
+    }
+  }
+}

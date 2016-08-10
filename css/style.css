@@ -971,39 +971,39 @@ p {
       .section-contact .contact-wrapper .divider {
         margin: 20px 0; } }
 /* narrow End */
-/* about.html */
-/* section-about */
 .sub-about {
   background: url("../img/section-about-bg.png");
   background-position: center;
   background-size: cover; }
 
+.about-header {
+  display: inline-block;
+  margin-top: 80px;
+  font-size: 25px;
+  font-weight: 700;
+  border-bottom: 2px solid #4adaaf; }
+
 .section-sub-about {
   padding: 20px 0 70px;
   text-align: left; }
-  .section-sub-about .about-header {
-    display: inline-block;
-    font-size: 25px;
-    font-weight: 700;
-    border-bottom: 2px solid #4adaaf; }
   .section-sub-about .about-content-wrapper {
     max-width: 860px;
     margin: 0 auto; }
-    .section-sub-about .about-content-wrapper .about-header {
-      margin-top: 80px; }
     .section-sub-about .about-content-wrapper .about-description {
       margin-top: 30px;
       padding: 0 20px; }
     .section-sub-about .about-content-wrapper .about-description:nth-child(n+2) {
       margin-top: 20px; }
     .section-sub-about .about-content-wrapper .mission-list {
-      font-size: 16px; }
+      font-size: 16px;
+      margin-left: 50px; }
       .section-sub-about .about-content-wrapper .mission-list-item {
         max-width: 600px;
         margin-top: 20px;
-        margin-left: 50px;
         line-height: 1.6em;
         list-style-type: initial; }
+      .section-sub-about .about-content-wrapper .mission-list-item:first-child {
+        margin-top: 15px; }
   .section-sub-about .about-history-wrapper {
     max-width: 860px;
     margin: 0 auto;
@@ -1059,8 +1059,38 @@ p {
   .section-sub-about .history-body {
     color: #666; }
 
-/* section-about End */
-/* about.html End */
+@media (max-width: 850px) {
+  .about-header {
+    margin-top: 30px;
+    font-size: 18px; }
+
+  .section-sub-about .about-content-wrapper {
+    padding: 0 20px; }
+    .section-sub-about .about-content-wrapper .about-description {
+      margin-top: 20px;
+      padding: 0; }
+    .section-sub-about .about-content-wrapper .about-description:nth-child(n+2) {
+      margin-top: 15px; }
+    .section-sub-about .about-content-wrapper .mission-list {
+      margin-left: 30px;
+      font-size: 14px; }
+      .section-sub-about .about-content-wrapper .mission-list-item {
+        margin-top: 15px; }
+  .section-sub-about .about-history-wrapper {
+    margin-top: 40px;
+    padding: 0 20px; }
+    .section-sub-about .about-history-wrapper .history-wrapper {
+      padding: 0; }
+    .section-sub-about .about-history-wrapper .history-wrapper:before {
+      left: 73px; }
+    .section-sub-about .about-history-wrapper .history-list {
+      font-size: 18px; }
+      .section-sub-about .about-history-wrapper .history-list-item {
+        margin-left: 100px; }
+    .section-sub-about .about-history-wrapper .history-list:before {
+      left: 67px; }
+    .section-sub-about .about-history-wrapper .history-list:first-child {
+      margin-top: 50px; } }
 .sub-team {
   background: url("../img/section-team-bg.png");
   background-position: center;
