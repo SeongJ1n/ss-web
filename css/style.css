@@ -1378,27 +1378,37 @@ p {
 
 .section-sub-press {
   padding: 0 0 70px; }
+  .section-sub-press .press-container {
+    padding: 15px; }
   .section-sub-press .press-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
     padding: 50px 40px;
     text-align: left;
-    border-bottom: 1px solid #dedede;
+    border: 1px solid #dedede;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+    box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
+  .section-sub-press .press-date-wrapper {
     overflow: hidden; }
   .section-sub-press .press-company {
+    float: left;
     font-size: 16px;
     font-weight: 300; }
   .section-sub-press .press-date {
+    float: left;
     margin-top: 14px;
     font-size: 16px;
     color: #999; }
   .section-sub-press .press-header {
-    font-size: 16px;
-    font-weight: 300; }
+    font-size: 18px;
+    font-weight: 700; }
   .section-sub-press .press-content {
     margin-top: 12px;
     font-size: 16px;
-    color: #666; }
+    color: #666;
+    word-break: normal; }
   .section-sub-press .btn-wrapper {
     margin-top: 20px; }
   .section-sub-press .pagenation-wrapper {
