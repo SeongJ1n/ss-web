@@ -129,7 +129,7 @@
     .header { font-size: 18px; }
     .talent {
       &-container { padding: 30px 0 25px; }
-      &-wrapper { padding: 15px 25px; }
+      &-wrapper { padding: 25px; }
       &-header { font-size: 16px; }
       &-description { font-size: 14px; }
     }
@@ -141,6 +141,7 @@
         img { width: auto; height: 240px; }
       }
       &-name { font-size: 16px; }
+      &-content { font-size: 14px; }
     }
   }
 }

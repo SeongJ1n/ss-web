@@ -1179,7 +1179,7 @@ p {
     .section-talent .talent-container {
       padding: 30px 0 25px; }
     .section-talent .talent-wrapper {
-      padding: 15px 25px; }
+      padding: 25px; }
     .section-talent .talent-header {
       font-size: 16px; }
     .section-talent .talent-description {
@@ -1193,7 +1193,9 @@ p {
       width: auto;
       height: 240px; }
   .section-member .member-name {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .section-member .member-content {
+    font-size: 14px; } }
 .sub-job {
   background: url("../img/section-job-bg.png");
   background-position: center;
@@ -1306,7 +1308,7 @@ p {
     .section-hiring-process .process-container {
       padding: 30px 0 25px; }
     .section-hiring-process .process-wrapper {
-      padding: 15px 25px; }
+      padding: 25px; }
     .section-hiring-process .process-header {
       font-size: 16px; }
     .section-hiring-process .process-description {
