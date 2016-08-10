@@ -1318,10 +1318,25 @@ p {
   .section-job-table .job-table {
     font-size: 14px;
     line-height: 1.4em; }
+    .section-job-table .job-table .table-content-wrapper {
+      padding: 0 10px 30px; }
+    .section-job-table .job-table .content-wrapper {
+      margin-top: 40px; }
+    .section-job-table .job-table .content-wrapper:first-child {
+      margin-top: 30px; }
+    .section-job-table .job-table .content-header {
+      font-size: 16px; }
+    .section-job-table .job-table .content-description {
+      margin-top: 15px;
+      font-size: 14px; }
+    .section-job-table .job-table .content-list {
+      margin-top: 15px; }
+      .section-job-table .job-table .content-list-item {
+        font-size: 14px; }
     .section-job-table .job-table thead tr th {
-      padding: 0 15px; }
+      padding: 0 12px; }
     .section-job-table .job-table tbody tr td {
-      padding: 15px; } }
+      padding: 15px 12px; } }
 /* press.html */
 .sub-press {
   background: url("../img/section-press-bg.png");

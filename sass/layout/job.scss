@@ -117,7 +117,6 @@
 
 
 // narrow
-
 @include respond-to('narrow') {
   .section-hiring-process {
     padding: 20px 0;
@@ -139,8 +138,22 @@
     .job-table {
       font-size: 14px;
       line-height: 1.4em;
-      thead { tr { th { padding: 0 15px; } } }
-      tbody { tr { td { padding: 15px; } } }
+      .table-content-wrapper { padding: 0 10px 30px; }
+      .content {
+        &-wrapper { margin-top: 40px; }
+        &-wrapper:first-child { margin-top: 30px; }
+        &-header { font-size: 16px; }
+        &-description {
+          margin-top: 15px;
+          font-size: 14px;
+        }
+        &-list {
+          margin-top: 15px;
+          &-item { font-size: 14px; }
+        }
+      }
+      thead { tr { th { padding: 0 12px; } } }
+      tbody { tr { td { padding: 15px 12px; } } }
     }
   }
 }
