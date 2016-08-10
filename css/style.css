@@ -1171,7 +1171,7 @@ p {
   .section-talent {
     padding: 20px 0; }
     .section-talent .row {
-      margin-top: 20px; }
+      margin-top: 15px; }
     .section-talent .row:last-child {
       margin-top: 0; }
     .section-talent .header {
@@ -1194,7 +1194,6 @@ p {
       height: 240px; }
   .section-member .member-name {
     font-size: 16px; } }
-/* job.html */
 .sub-job {
   background: url("../img/section-job-bg.png");
   background-position: center;
@@ -1203,13 +1202,6 @@ p {
 .section-hiring-process {
   padding: 50px 0 70px;
   text-align: left; }
-  .section-hiring-process .hiring-process-wrapper {
-    padding: 55px 40px 50px;
-    border: 1px solid #4adaaf;
-    overflow: hidden;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px; }
   .section-hiring-process .header {
     display: inline-block;
     font-size: 25px;
@@ -1218,8 +1210,16 @@ p {
     border-bottom: 2px solid #4adaaf; }
     .section-hiring-process .header-wrapper {
       padding-left: 25px; }
+  .section-hiring-process .row {
+    margin-top: 30px; }
+  .section-hiring-process .process-container {
+    padding: 55px 40px 50px;
+    border: 1px solid #4adaaf;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
   .section-hiring-process .process-wrapper {
-    margin-top: 30px;
     padding: 25px; }
   .section-hiring-process .process-num {
     margin-right: 10px;
@@ -1236,7 +1236,7 @@ p {
   .section-hiring-process .process-footnote {
     display: inline-block;
     margin-top: 30px;
-    padding-left: 25px;
+    padding: 0 25px;
     font-size: 14px;
     color: #999; }
   .section-hiring-process .divider {
@@ -1245,54 +1245,83 @@ p {
     margin: 10px auto;
     background-color: #dedede; }
 
-.seciton-job-table {
+.section-job-table {
   padding: 0 0 80px; }
-  .seciton-job-table .job-table {
+  .section-job-table .job-table {
     width: 100%;
     font-size: 16px; }
-    .seciton-job-table .job-table-content {
+    .section-job-table .job-table-content {
       background-color: #f7f7f7; }
-    .seciton-job-table .job-table .table-content-wrapper {
+    .section-job-table .job-table .table-content-wrapper {
       padding: 20px 30px 70px; }
-    .seciton-job-table .job-table .content-wrapper {
+    .section-job-table .job-table .content-wrapper {
       margin-top: 50px; }
-    .seciton-job-table .job-table .content-header {
+    .section-job-table .job-table .content-header {
       display: inline-block;
       font-size: 18px;
       font-weight: 700;
       border-bottom: 2px solid #dedede; }
-    .seciton-job-table .job-table .content-description {
+    .section-job-table .job-table .content-description {
       margin-top: 20px;
       font-size: 16px;
       font-weight: 100; }
-    .seciton-job-table .job-table .content-list {
+    .section-job-table .job-table .content-list {
       margin-top: 25px;
       padding-left: 30px; }
-      .seciton-job-table .job-table .content-list-item {
+      .section-job-table .job-table .content-list-item {
         margin-top: 12px;
         font-size: 16px;
         list-style-type: initial; }
-    .seciton-job-table .job-table thead tr {
+    .section-job-table .job-table thead tr {
       height: 60px;
+      min-height: 60px;
       border-top: 1px solid #dedede;
       border-bottom: 1px solid #dedede; }
-      .seciton-job-table .job-table thead tr th {
+      .section-job-table .job-table thead tr th {
         padding: 0 30px;
         text-align: left;
         vertical-align: middle; }
-    .seciton-job-table .job-table tbody tr {
+    .section-job-table .job-table tbody tr {
       height: 60px;
+      min-height: 60px;
       border-bottom: 1px solid #dedede;
       transition: 0.2s all ease; }
-      .seciton-job-table .job-table tbody tr td {
+      .section-job-table .job-table tbody tr td {
         padding: 0 30px;
         font-weight: 100;
         text-align: left;
         vertical-align: middle; }
-    .seciton-job-table .job-table tbody tr:hover {
+    .section-job-table .job-table tbody tr:hover {
       background-color: #f9fefc; }
 
-/* job.html End */
+@media (max-width: 850px) {
+  .section-hiring-process {
+    padding: 20px 0; }
+    .section-hiring-process .row {
+      margin-top: 15px; }
+    .section-hiring-process .row:last-child {
+      margin-top: 0; }
+    .section-hiring-process .header {
+      font-size: 18px; }
+    .section-hiring-process .process-container {
+      padding: 30px 0 25px; }
+    .section-hiring-process .process-wrapper {
+      padding: 15px 25px; }
+    .section-hiring-process .process-header {
+      font-size: 16px; }
+    .section-hiring-process .process-description {
+      font-size: 14px; }
+    .section-hiring-process .process-footnote {
+      margin-top: 10px;
+      font-size: 12px; }
+
+  .section-job-table .job-table {
+    font-size: 14px;
+    line-height: 1.4em; }
+    .section-job-table .job-table thead tr th {
+      padding: 0 15px; }
+    .section-job-table .job-table tbody tr td {
+      padding: 15px; } }
 /* press.html */
 .sub-press {
   background: url("../img/section-press-bg.png");
