@@ -253,6 +253,9 @@ p {
   height: 3px;
   background-color: #666; }
 
+.item-bold {
+  font-weight: 700; }
+
 .header {
   font-weight: 300; }
 
@@ -1311,13 +1314,26 @@ p {
       margin-top: 20px;
       font-size: 16px;
       font-weight: 100; }
+    .section-job-table .job-table .content-description:last-child {
+      margin-top: 8px; }
     .section-job-table .job-table .content-list {
       margin-top: 25px;
-      padding-left: 30px; }
+      padding-left: 20px; }
       .section-job-table .job-table .content-list-item {
-        margin-top: 12px;
+        max-width: 600px;
+        margin-top: 16px;
         font-size: 16px;
+        line-height: 1.6em;
         list-style-type: initial; }
+        .section-job-table .job-table .content-list-item .item-sub-body {
+          margin-top: 6px;
+          font-size: 16px;
+          font-weight: 100; }
+    .section-job-table .job-table .content-sub-list {
+      padding-left: 20px; }
+      .section-job-table .job-table .content-sub-list-item {
+        margin-top: 12px;
+        list-style-type: circle; }
     .section-job-table .job-table thead tr {
       height: 60px;
       min-height: 60px;
@@ -1339,6 +1355,8 @@ p {
         vertical-align: middle; }
     .section-job-table .job-table tbody tr:hover {
       background-color: #f9fefc; }
+    .section-job-table .job-table .table-list-view {
+      display: none; }
 
 @media (max-width: 850px) {
   .section-hiring-process {
@@ -1379,6 +1397,8 @@ p {
       margin-top: 15px; }
       .section-job-table .job-table .content-list-item {
         font-size: 14px; }
+        .section-job-table .job-table .content-list-item .item-sub-body {
+          font-size: 14px; }
     .section-job-table .job-table thead tr th {
       padding: 0 6px; }
     .section-job-table .job-table tbody tr td {
