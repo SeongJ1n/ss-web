@@ -89,7 +89,15 @@
     .press {
       &-container { padding: 15px 0; }
       &-wrapper { padding: 45px 35px 40px; }
-      &-header { line-height: 1.5em; }
+      &-header {
+        margin-top: 12px;
+        line-height: 1.5em;
+        font-size: 16px;
+      }
+      &-content {
+        margin-top: 10px;
+        font-size: 14px;
+      }
     }
     .pagenation-wrapper { padding-top: 0px; }
   }
