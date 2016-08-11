@@ -1,6 +1,7 @@
 $(document).ready(function () {
   resizeSection();
   initMap();
+  headroom();
 });
 
 $(window).on('resize', function(){
@@ -10,6 +11,14 @@ $(window).on('resize', function(){
 $(window).scroll(function() {
   navScroll();
 });
+
+function headroom() {
+  var winWidth = $(window).width();
+  var $nav = $('#nav');
+  if (winWidth <= 850) {
+    $nav.headroom();
+  }
+};
 
 function navScroll() {
   var winWidth = $(window).width();
@@ -76,7 +85,7 @@ function resizeSection(){
     $contentWrapper.css('margin-top', ($sectionIntro.height()/2)-80);
   }
   else {
-    $sectionIntro.height(400);
-    $contentWrapper.css('margin-top', 87);
+    $sectionIntro.height(460);
+    $contentWrapper.css('margin-top', 147);
   }
 };

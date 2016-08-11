@@ -470,7 +470,10 @@
   </footer>
 
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://npmcdn.com/headroom.js@0.9.3/dist/headroom.min.js"></script>
+<script src="https://npmcdn.com/headroom.js@0.9.3/dist/jQuery.headroom.min.js"></script>
 <script type="text/javascript">
+(function() {
   var $tableList1 = $('#tableList1');
   var $tableList2 = $('#tableList2');
   var $tableList3 = $('#tableList3');
@@ -492,6 +495,18 @@
   $tableList5.click(function(){
     $tableList5.next().toggle();
   });
+})();
+
+  $(document).ready(function () {
+    headroom();
+  });
+    function headroom() {
+    var winWidth = $(window).width();
+    var $nav = $('#nav');
+    if (winWidth <= 850) {
+      $nav.headroom();
+    }
+  };
 </script>
 
 </body>

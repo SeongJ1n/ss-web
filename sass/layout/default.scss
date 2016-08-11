@@ -1,5 +1,10 @@
 
 /* default */
+// headroom
+.headroom--unpinned {
+    top: -60px !important;
+}
+
 .mobile-show { display: none !important; }
 .section { text-align: center; padding: 140px 0; }
 .divider { width: 50px; height: 3px; background-color: $gray-dark;  }
@@ -213,7 +218,7 @@
 
 /* narrow */
 @include respond-to('narrow') {
-  body { margin-top: 110px !important; }
+  body { margin-top: 50px !important; }
   .section { padding: 75px 0; }
   .mobile-show { display: block !important; }
   .mobile-none { display: none !important; }
@@ -234,7 +239,7 @@
     }
   }
   .section-sub {
-    padding: 50px 0;
+    padding: 110px 0 50px;
     .header {
       font-size: 24px;
       &-description { margin-top: 5px; }
