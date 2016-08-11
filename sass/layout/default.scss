@@ -270,21 +270,20 @@
     background-color: $border;
     top: 60px;
   }
-}
-
-.footer {
-
-  &-copyright {
-    font-size: 12px;
-  }
-  &-icon-wrapper {
-    .icon {
-      width: 16px;
-      height: 16px;
-      margin-left: 8px;
+  .footer {
+    &-copyright {
+      font-size: 12px;
+    }
+    &-icon-wrapper {
+      .icon {
+        width: 16px;
+        height: 16px;
+        margin-left: 8px;
+      }
     }
   }
 }
+
 /* narrow End */
 
 

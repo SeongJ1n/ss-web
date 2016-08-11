@@ -532,14 +532,14 @@ p {
     width: 100%;
     height: 1px;
     background-color: #dedede;
-    top: 60px; } }
-.footer-copyright {
-  font-size: 12px; }
-.footer-icon-wrapper .icon {
-  width: 16px;
-  height: 16px;
-  margin-left: 8px; }
+    top: 60px; }
 
+  .footer-copyright {
+    font-size: 12px; }
+  .footer-icon-wrapper .icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px; } }
 /* narrow End */
 /* section-intro */
 .section-intro {
@@ -974,7 +974,15 @@ p {
     .section-contact .contact-wrapper {
       padding: 50px 40px 70px; }
       .section-contact .contact-wrapper .divider {
-        margin: 20px 0; } }
+        margin: 20px 0; }
+      .section-contact .contact-wrapper .address-kor {
+        font-size: 14px; }
+      .section-contact .contact-wrapper .address-eng {
+        font-size: 14px; }
+      .section-contact .contact-wrapper .info-list {
+        margin-top: 20px; }
+        .section-contact .contact-wrapper .info-list-item {
+          font-size: 14px; } }
 /* narrow End */
 .sub-about {
   background: url("../img/section-about-bg.png");
@@ -1266,7 +1274,7 @@ p {
   .section-hiring-process .process-header {
     padding: 0 6px;
     font-size: 18px;
-    font-weight: 300; }
+    font-weight: 700; }
   .section-hiring-process .process-description {
     padding: 0 6px;
     font-size: 16px;

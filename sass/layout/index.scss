@@ -464,6 +464,14 @@
     .contact-wrapper {
       padding: 50px 40px 70px;
       .divider { margin: 20px 0; }
+      .address {
+        &-kor { font-size: 14px; }
+        &-eng { font-size: 14px; }
+      }
+      .info-list {
+        margin-top: 20px;
+        &-item { font-size: 14px; }
+      }
     }
   }
 }
