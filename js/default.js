@@ -40,6 +40,11 @@ function navScroll() {
 /* Map */
 function initMap() {
   var myLatLng = {lat: 37.52428, lng: 127.0495799};
+  var winWidth = $(window).width();
+  var dragflag = false;
+  if( winWidth >= 850 ){
+    dragflag = true;
+  }
 
   var map = new google.maps.Map(document.getElementById('Map'), {
     center: myLatLng,
@@ -47,9 +52,10 @@ function initMap() {
     streetViewControl: false,
     zoomControl: false,
     scrollwheel: false,
-    draggable: false,
-    zoom: 17
+    draggable: dragflag,
+    zoom: 17,
   });
+
   var image = 'img/marker.png';
   var marker = new google.maps.Marker({
     map: map,
