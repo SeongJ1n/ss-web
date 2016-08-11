@@ -71,6 +71,6 @@ function resizeSection(){
   }
   else {
     $sectionIntro.height(400);
-    $contentWrapper.css('margin-top', 90);
+    $contentWrapper.css('margin-top', 87);
   }
 };
