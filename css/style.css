@@ -481,7 +481,7 @@ p {
     display: block !important; }
 
   .mobile-none {
-    display: none; }
+    display: none !important; }
 
   .header-link, .header-description {
     font-size: 14px; }
@@ -1370,14 +1370,13 @@ p {
       padding: 0 6px; }
     .section-job-table .job-table tbody tr td {
       padding: 15px 6px; } }
-/* press.html */
 .sub-press {
   background: url("../img/section-press-bg.png");
   background-position: center;
   background-size: cover; }
 
 .section-sub-press {
-  padding: 0 0 70px; }
+  padding: 20px 0 70px; }
   .section-sub-press .press-container {
     padding: 15px; }
   .section-sub-press .press-wrapper {
@@ -1394,18 +1393,20 @@ p {
     overflow: hidden; }
   .section-sub-press .press-company {
     float: left;
-    font-size: 16px;
-    font-weight: 300; }
+    font-size: 14px;
+    font-weight: 300;
+    color: #ccc; }
   .section-sub-press .press-date {
     float: left;
-    margin-top: 14px;
-    font-size: 16px;
-    color: #999; }
+    margin-left: 8px;
+    font-size: 14px;
+    color: #ccc; }
   .section-sub-press .press-header {
+    margin-top: 22px;
     font-size: 18px;
     font-weight: 700; }
   .section-sub-press .press-content {
-    margin-top: 12px;
+    margin-top: 16px;
     font-size: 16px;
     color: #666;
     word-break: normal; }
@@ -1443,7 +1444,17 @@ p {
     .section-sub-press .pagenation-wrapper .inline-list {
       display: inline-block; }
 
-/* press.html End */
+@media (max-width: 850px) {
+  .section-sub-press {
+    padding-bottom: 40px; }
+    .section-sub-press .press-container {
+      padding: 15px 0; }
+    .section-sub-press .press-wrapper {
+      padding: 45px 35px 40px; }
+    .section-sub-press .press-header {
+      line-height: 1.5em; }
+    .section-sub-press .pagenation-wrapper {
+      padding-top: 0px; } }
 .section-sub-contact .header, .section-sub-address .header {
   display: inline-block;
   font-size: 25px;

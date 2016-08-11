@@ -215,7 +215,7 @@
   body { margin-top: 110px !important; }
   .section { padding: 75px 0; }
   .mobile-show { display: block !important; }
-  .mobile-none { display: none; }
+  .mobile-none { display: none !important; }
   .header-link, .header-description { font-size: 14px; }
   .btn {
     &-wrapper {
