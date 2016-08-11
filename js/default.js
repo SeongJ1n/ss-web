@@ -70,7 +70,7 @@ function resizeSection(){
     $contentWrapper.css('margin-top', ($sectionIntro.height()/2)-80);
   }
   else {
-    $sectionIntro.height(450);
-    $contentWrapper.css('margin-top', 115);
+    $sectionIntro.height(400);
+    $contentWrapper.css('margin-top', 80);
   }
 };
