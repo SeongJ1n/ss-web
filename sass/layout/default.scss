@@ -89,6 +89,7 @@
     font-weight: 300;
     color: $primary;
     border: 1px solid $primary;
+    text-decoration: none;
     transition: 0.2s all ease;
     @include border-radius(4px);
   }

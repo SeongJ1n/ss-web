@@ -346,6 +346,7 @@ p {
   font-weight: 300;
   color: #4adaaf;
   border: 1px solid #4adaaf;
+  text-decoration: none;
   transition: 0.2s all ease;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -779,8 +780,7 @@ p {
     margin-top: 20px; }
   .section-blog .btn-round {
     color: white;
-    border: 1px solid white;
-    text-decoration: none; }
+    border: 1px solid white; }
   .section-blog .btn-round:hover {
     border: 1px solid #4adaaf; }
 
@@ -1276,7 +1276,7 @@ p {
   background-size: cover; }
 
 .section-hiring-process {
-  padding: 50px 0 70px;
+  padding: 30px 0;
   text-align: left; }
   .section-hiring-process .header {
     display: inline-block;
@@ -1436,7 +1436,7 @@ p {
   background-size: cover; }
 
 .section-sub-press {
-  padding: 20px 0 70px; }
+  padding: 15px 0 40px; }
   .section-sub-press .press-container {
     padding: 15px; }
   .section-sub-press .press-wrapper {
@@ -1528,7 +1528,7 @@ p {
   border-bottom: 2px solid #4adaaf; }
 
 .section-sub-contact {
-  padding: 50px 0; }
+  padding: 30px 0; }
   .section-sub-contact .cowork-container {
     padding: 35px 40px 30px;
     text-align: left;
@@ -1548,7 +1548,7 @@ p {
 
 .section-sub-address {
   position: relative;
-  padding: 20px 25px 70px;
+  padding: 30px 25px 60px;
   text-align: left; }
   .section-sub-address .email-container {
     position: relative;
@@ -1582,10 +1582,10 @@ p {
     font-size: 16px;
     font-weight: 100;
     color: #666; }
-  .section-sub-address .map-wrapper {
-    position: relative;
-    height: 600px;
-    margin-top: 70px; }
+
+.map-wrapper {
+  position: relative;
+  height: 600px; }
 
 @media (max-width: 850px) {
   .section-sub-contact {
@@ -1630,8 +1630,8 @@ p {
   .section-sub-address .address-body-eng {
     margin-top: 10px;
     font-size: 14px; }
-  .section-sub-address .map-wrapper {
-    height: 300px;
-    margin-top: 50px; } }
+
+  .map-wrapper {
+    height: 300px; } }
 
 /*# sourceMappingURL=style.css.map */
