@@ -57,7 +57,7 @@ img {
   font-family: 'Euclid Flex';
   font-style: normal;
   font-weight: 300;
-  src: url("../font/EuclidFlex-Medium.otf"); }
+  src: url("../font/EuclidFlex-Regular.otf"); }
 @font-face {
   font-family: 'Euclid Flex';
   font-style: normal;
@@ -1006,27 +1006,27 @@ p {
   padding: 20px 0 70px;
   text-align: left; }
   .section-sub-about .about-content-wrapper {
-    max-width: 860px;
+    max-width: 720px;
     margin: 0 auto; }
     .section-sub-about .about-content-wrapper .about-description {
-      margin-top: 30px;
-      padding: 0 20px; }
+      margin-top: 25px; }
     .section-sub-about .about-content-wrapper .about-description:nth-child(n+2) {
       margin-top: 20px; }
     .section-sub-about .about-content-wrapper .mission-list {
       font-size: 16px;
-      margin-left: 50px; }
+      margin-top: 18px;
+      margin-left: 25px; }
       .section-sub-about .about-content-wrapper .mission-list-item {
         max-width: 600px;
-        margin-top: 20px;
+        margin-top: 16px;
         line-height: 1.6em;
         list-style-type: initial; }
       .section-sub-about .about-content-wrapper .mission-list-item:first-child {
         margin-top: 15px; }
   .section-sub-about .about-history-wrapper {
-    max-width: 860px;
+    max-width: 720px;
     margin: 0 auto;
-    padding: 80px 0; }
+    padding: 50px 0 80px; }
   .section-sub-about .history-wrapper {
     position: relative;
     padding-left: 20px;
@@ -1076,7 +1076,8 @@ p {
   .section-sub-about .history-list:first-child {
     margin-top: 70px; }
   .section-sub-about .history-body {
-    color: #666; }
+    font-size: 16px;
+    color: #999; }
 
 @media (max-width: 850px) {
   .about-header {
@@ -1106,10 +1107,16 @@ p {
       font-size: 18px; }
       .section-sub-about .about-history-wrapper .history-list-item {
         margin-left: 100px; }
+      .section-sub-about .about-history-wrapper .history-list-item:before {
+        top: 6px; }
     .section-sub-about .about-history-wrapper .history-list:before {
       left: 67px; }
     .section-sub-about .about-history-wrapper .history-list:first-child {
-      margin-top: 50px; } }
+      margin-top: 50px; }
+    .section-sub-about .about-history-wrapper .history-date {
+      font-size: 14px; }
+    .section-sub-about .about-history-wrapper .history-body {
+      font-size: 14px; } }
 .sub-team {
   background: url("../img/section-team-bg.png");
   background-position: center;
@@ -1280,11 +1287,11 @@ p {
   .section-hiring-process .process-header {
     padding: 0 6px;
     font-size: 18px;
-    font-weight: 700; }
+    font-weight: 300; }
   .section-hiring-process .process-description {
     padding: 0 6px;
     font-size: 16px;
-    color: #222; }
+    color: #999; }
   .section-hiring-process .process-footnote {
     display: inline-block;
     margin-top: 30px;

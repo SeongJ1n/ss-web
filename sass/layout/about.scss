@@ -14,22 +14,20 @@
   padding: 20px 0 70px;
   text-align: left;
   .about-content-wrapper {
-    max-width: 860px;
+    max-width: 720px;
     margin: 0 auto;
     .about {
-      &-description {
-        margin-top: 30px;
-        padding: 0 20px;
-      }
+      &-description { margin-top: 25px; }
       &-description:nth-child(n+2){ margin-top: 20px; }
     }
     .mission {
       &-list {
         font-size: 16px;
-        margin-left: 50px;
+        margin-top: 18px;
+        margin-left: 25px;
         &-item {
           max-width: 600px;
-          margin-top: 20px;
+          margin-top: 16px;
           line-height: 1.6em;
           list-style-type: initial;
         }
@@ -38,9 +36,9 @@
     }
   }
   .about-history-wrapper {
-      max-width: 860px;
+      max-width: 720px;
       margin: 0 auto;
-      padding: 80px 0;
+      padding: 50px 0 80px;
     }
   .history {
     &-wrapper {
@@ -87,7 +85,10 @@
       @include border-radius(7px);
     }
     &-list:first-child { margin-top: 70px; }
-    &-body { color: $gray-dark; }
+    &-body {
+      font-size: 16px;
+      color: $gray;
+    }
   }
 }
 
@@ -124,10 +125,12 @@
         &-list {
           font-size: 18px;
           &-item { margin-left: 100px; }
-          &-item:before { }
+          &-item:before { top: 6px; }
         }
         &-list:before { left: 67px; }
         &-list:first-child { margin-top: 50px; }
+        &-date { font-size: 14px; }
+        &-body { font-size: 14px; }
       }
     }
   }
