@@ -99,8 +99,8 @@
     font-size: 18px;
   }
   .section-sub-about {
+    .container { padding: 0 35px; }
     .about-content-wrapper {
-      padding: 0 20px;
       .about {
         &-description {
           margin-top: 20px;

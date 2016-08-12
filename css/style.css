@@ -238,6 +238,10 @@ p {
   width: 8.333333333333332%; }
 
 @media (max-width: 850px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px; }
+
   .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
     width: 100%; } }
 /* default */
@@ -656,7 +660,7 @@ p {
   .section-press .row {
     margin-top: 45px; }
   .section-press .row:last-child {
-    margin-top: 40px; }
+    margin-top: 24px; }
   .section-press .press-wrapper {
     border: 1px solid #dedede;
     -webkit-border-radius: 4px;
@@ -716,13 +720,19 @@ p {
     text-align: left; }
     .section-hiring .header-wrapper .header {
       color: white; }
+    .section-hiring .header-wrapper .header-description {
+      font-weight: 100;
+      line-height: 1.8em; }
     .section-hiring .header-wrapper .divider {
-      margin: 25px 0 20px;
-      background-color: white; }
+      margin: 28px 0 25px;
+      background-color: white;
+      opacity: 0.4; }
   .section-hiring .row-wrapper {
     margin-top: -30px; }
   .section-hiring .row {
     margin-top: 30px; }
+  .section-hiring .row:last-child {
+    margin-top: 24px; }
   .section-hiring .hiring-card {
     float: right;
     width: 29%;
@@ -756,17 +766,23 @@ p {
 /* section-hiring End */
 /* section-blog */
 .section-blog {
-  padding: 215px 0 225px;
+  padding: 215px 0;
   background: url("../img/section-blog-bg1.png") no-repeat;
   background-position: center;
   background-size: cover; }
   .section-blog .header {
     color: white; }
-  .section-blog .header-link {
+  .section-blog .header-description {
+    margin-top: 10px;
+    font-weight: 100; }
+  .section-blog .btn-wrapper {
+    margin-top: 20px; }
+  .section-blog .btn-round {
     color: white;
-    border-bottom: 0; }
-    .section-blog .header-link span {
-      color: #4adaaf; }
+    border: 1px solid white;
+    text-decoration: none; }
+  .section-blog .btn-round:hover {
+    border: 1px solid #4adaaf; }
 
 /* section-blog End */
 /* seciton-contact */
@@ -781,7 +797,7 @@ p {
     text-align: left;
     color: #222; }
     .section-contact .contact-wrapper .divider {
-      margin: 35px 0;
+      margin: 30px 0;
       background-color: #dedede;
       opacity: 0.5; }
     .section-contact .contact-wrapper .address-wrapper {
@@ -968,9 +984,10 @@ p {
     margin: 0; }
 
   .section-blog {
-    padding: 130px 0; }
-    .section-blog .header-link {
-      max-width: 240px;
+    padding: 130px 0 120px; }
+    .section-blog .header-description {
+      max-width: 250px;
+      margin: 10px auto 0;
       line-height: 1.65em; }
 
   .section-contact {
@@ -1084,18 +1101,18 @@ p {
     margin-top: 30px;
     font-size: 18px; }
 
-  .section-sub-about .about-content-wrapper {
-    padding: 0 20px; }
-    .section-sub-about .about-content-wrapper .about-description {
-      margin-top: 20px;
-      padding: 0; }
-    .section-sub-about .about-content-wrapper .about-description:nth-child(n+2) {
+  .section-sub-about .container {
+    padding: 0 35px; }
+  .section-sub-about .about-content-wrapper .about-description {
+    margin-top: 20px;
+    padding: 0; }
+  .section-sub-about .about-content-wrapper .about-description:nth-child(n+2) {
+    margin-top: 15px; }
+  .section-sub-about .about-content-wrapper .mission-list {
+    margin-left: 30px;
+    font-size: 14px; }
+    .section-sub-about .about-content-wrapper .mission-list-item {
       margin-top: 15px; }
-    .section-sub-about .about-content-wrapper .mission-list {
-      margin-left: 30px;
-      font-size: 14px; }
-      .section-sub-about .about-content-wrapper .mission-list-item {
-        margin-top: 15px; }
   .section-sub-about .about-history-wrapper {
     margin-top: 40px;
     padding: 0 20px; }
@@ -1212,7 +1229,7 @@ p {
     text-align: left;
     word-break: normal; }
   .section-member .divider {
-    margin: 20px 0px 18px;
+    margin: 16px 0px 14px;
     width: 100%;
     height: 1px;
     background-color: #dedede; }

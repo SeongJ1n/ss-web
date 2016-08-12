@@ -120,7 +120,7 @@
   background-color: #f7f7f7;
   padding: 140px 0 120px;
   .row { margin-top: 45px; }
-  .row:last-child { margin-top: 40px; }
+  .row:last-child { margin-top: 24px; }
   .press-wrapper {
     border: 1px solid $border;
     @include border-radius(4px);
@@ -152,12 +152,10 @@
       color: $gray;
     }
   }
-
   .logo {
     &-besuccess { height: 32px; margin-top: -10px; }
     &-platum, &-chosunbiz { height: 27px; margin-top: -5px; }
   }
-
   .press-wrapper.col.col-6 { width: 49%; }
   .press-wrapper.col.col-6:last-child { margin-left: 2%; }
   .press-wrapper.col.col-9 { width: 73.5%; }
@@ -175,15 +173,19 @@
     float: left;
     text-align: left;
     .header { color: white; }
+    .header-description {
+      font-weight: 100;
+      line-height: 1.8em;
+    }
     .divider {
-      margin: 25px 0 20px;
+      margin: 28px 0 25px;
       background-color: white;
+      opacity: 0.4;
     }
   }
   .row-wrapper { margin-top: -30px; }
-  .row {
-    margin-top: 30px;
-  }
+  .row { margin-top: 30px; }
+  .row:last-child { margin-top: 24px; }
   .hiring {
     &-card {
       float: right;
@@ -218,17 +220,23 @@
 
 /* section-blog */
 .section-blog {
-  padding: 215px 0 225px;
+  padding: 215px 0;
   background: url('../img/section-blog-bg1.png') no-repeat;
   background-position: center;
   background-size: cover;
-  .header {
-    color: white;
+  .header { color: white; }
+  .header-description {
+    margin-top: 10px;
+    font-weight: 100;
   }
-  .header-link {
-    color: white;
-    border-bottom: 0;
-    & span { color: $primary; }
+  .btn {
+    &-wrapper { margin-top: 20px; }
+    &-round {
+        color: white;
+        border: 1px solid white;
+        text-decoration: none;
+      }
+    &-round:hover { border: 1px solid $primary; }
   }
 }
 /* section-blog End */
@@ -246,7 +254,7 @@
     text-align: left;
     color: $black;
     .divider {
-      margin: 35px 0;
+      margin: 30px 0;
       background-color: $border;
       opacity: 0.5;
     }
@@ -452,9 +460,10 @@
     }
   }
   .section-blog {
-    padding: 130px 0;
-    .header-link {
-      max-width: 240px;
+    padding: 130px 0 120px;
+    .header-description {
+      max-width: 250px;
+      margin: 10px auto 0;
       line-height: 1.65em;
     }
   }
