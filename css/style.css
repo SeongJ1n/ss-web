@@ -1046,13 +1046,12 @@ p {
     padding: 50px 0 80px; }
   .section-sub-about .history-wrapper {
     position: relative;
-    padding-left: 20px;
     padding-bottom: 60px; }
   .section-sub-about .history-wrapper:before {
     content: '';
     position: absolute;
     top: 0;
-    left: 103px;
+    left: 83px;
     bottom: 0;
     width: 1px;
     background-color: #dedede; }
@@ -1061,7 +1060,7 @@ p {
   .section-sub-about .history-list {
     position: relative;
     margin-top: 60px;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 300; }
     .section-sub-about .history-list-item {
       position: relative;

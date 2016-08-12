@@ -43,13 +43,12 @@
   .history {
     &-wrapper {
       position: relative;
-      padding-left: 20px;
       padding-bottom: 60px;
     }
     &-wrapper:before {
       content: '';
       position: absolute;
-      top: 0; left: 103px; bottom: 0;
+      top: 0; left: 83px; bottom: 0;
       width: 1px;
       background-color: $border;
     }
@@ -57,7 +56,7 @@
     &-list {
       position: relative;
       margin-top: 60px;
-      font-size: 25px;
+      font-size: 22px;
       font-weight: 300;
       &-item {
         position: relative;
