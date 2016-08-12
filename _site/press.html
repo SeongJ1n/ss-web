@@ -330,53 +330,82 @@
       $nav.headroom();
     }
   };
-    function pagenation() {
-      var pagenation = 1;
-      var $pressContainer = $('#pressContainer');
-      var $slideContainer = $('#slideContainer');
-      var $pageNum = $('#pageNum');
-      var $pageNext = $('#pageNext');
-      var $pagePrev = $('#pagePrev');
-      $pagePrev.click(function(){
-        if( pagenation > 1 ){
-          pagenation = pagenation - 1;
-          $pageNum.find('.page-list-item').removeClass('active').end()
-                  .find('.page-list-item[page-num=' + pagenation + ']').addClass('active');
-          pageView();
-          disabledCheck();
-        };
-      });
-      $pageNext.click(function(){
-        if( pagenation < 3 ){
-          pagenation = pagenation + 1;
-          $pageNum.find('.page-list-item').removeClass('active').end()
-                  .find('.page-list-item[page-num=' + pagenation + ']').addClass('active');
-          pageView();
-          disabledCheck();
-        };
-      });
 
-      function pageView() {
-        $pressContainer.find('.press-page').removeClass('show').end()
-                       .find('.press-page[page-num=' + pagenation + ']').addClass('show');
-      }
+  function pagenation() {
+    var pagenation = 1;
+    var $pressContainer = $('#pressContainer');
+    var $slideContainer = $('#slideContainer');
+    var $pageNum = $('#pageNum');
+    var $pageNext = $('#pageNext');
+    var $pagePrev = $('#pagePrev');
+    var $pageListItem = $('.page-list-item');
 
-      function disabledCheck() {
-        if ( pagenation == 1 ) {
-          $pagePrev.addClass('disabled');
-          $pageNext.removeClass('disabled');
-        }
-        else if ( pagenation == 3 ) {
-          $pageNext.addClass('disabled');
-          $pagePrev.removeClass('disabled');
-        }
-        else {
-          $pageNext.removeClass('disabled');
-          $pagePrev.removeClass('disabled');
-        }
+    $pagePrev.click(function(){
+      if( pagenation > 1 ){
+        pagenation = pagenation - 1;
+        addClass();
+        pageView();
+        disabledCheck();
       };
+    });
+    $pageNext.click(function(){
+      if( pagenation < 3 ){
+        pagenation = pagenation + 1;
+        addClass();
+        pageView();
+        disabledCheck();
+      };
+    });
 
+    $pageListItem.click(function(){
+      var index = $pageListItem.index(this);
+      switch ( index ) {
+        case 0 :
+          pagenation = 1;
+          addClass();
+          pageView();
+          disabledCheck();
+          break;
+        case 1 :
+          pagenation = 2;
+          addClass();
+          pageView();
+          disabledCheck();
+          break;
+        case 2 :
+          pagenation = 3;
+          addClass();
+          pageView();
+          disabledCheck();
+          break;
+      }
+    });
+
+    function addClass() {
+      $pageNum.find('.page-list-item').removeClass('active').end()
+              .find('.page-list-item[page-num=' + pagenation + ']').addClass('active');
+    }
+
+    function pageView() {
+      $pressContainer.find('.press-page').removeClass('show').end()
+                     .find('.press-page[page-num=' + pagenation + ']').addClass('show');
+    }
+
+    function disabledCheck() {
+      if ( pagenation == 1 ) {
+        $pagePrev.addClass('disabled');
+        $pageNext.removeClass('disabled');
+      }
+      else if ( pagenation == 3 ) {
+        $pageNext.addClass('disabled');
+        $pagePrev.removeClass('disabled');
+      }
+      else {
+        $pageNext.removeClass('disabled');
+        $pagePrev.removeClass('disabled');
+      }
     };
+  };
 </script>
 
 </body>
