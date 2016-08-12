@@ -39,9 +39,8 @@
       </div>
       <div class="btn-arrow">↓</div>
     </div>
-    <video class="section-intro-video" autoplay="autoplay" loop="loop">
-        <source src="mov/test.webm" type="video/webm">
-    </video>
+    <div id="video"></div>
+    <div class="section-intro-bg mobile-show"></div>
   </section>
 
   <section id="sectionAbout" class="section section-about">
@@ -353,6 +352,15 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK4A89UfqdgNZmuQLc1kZpgX5RwcLXTdI"></script>
 <script src="js/default.js"></script>
 <script type="text/javascript">
+  $(document).ready(function () {
+    var $video = $('#video');
+    var videoTag = "<video id='video' class='section-intro-video' autoplay='autoplay' loop='loop'><source src='mov/test.webm' type='video/webm'></video>";
+    var winWidth = $(window).width();
+    if(winWidth >= 850){
+      $video.append(videoTag);
+    }
+
+  });
   $(window).scroll(function() {
     var $nav = $('#nav');
     var $sectionAbout = $('#sectionAbout');

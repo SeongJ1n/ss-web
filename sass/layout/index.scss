@@ -2,6 +2,7 @@
 .section-intro {
   position: relative;
   max-height: 800px;
+  height: 800px;
   overflow: hidden;
   z-index: 15;
   .content {
@@ -51,7 +52,23 @@
        -moz-transform: translateX(-50%) translateY(-50%);
         -ms-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
+    background: url('../img/section-intro-bg1.png') no-repeat;
+    z-index: -100;
+  }
+  &-bg {
+    position: absolute;
+    top: 50%; left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+       -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
     background: url('../img/section-intro-bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
     z-index: -100;
   }
 }
