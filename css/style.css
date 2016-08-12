@@ -1506,9 +1506,9 @@ p {
 
 @media (max-width: 850px) {
   .section-sub-press {
-    padding-bottom: 40px; }
+    padding: 10px 0 40px; }
     .section-sub-press .press-container {
-      padding: 15px 0; }
+      padding: 10px 0; }
     .section-sub-press .press-wrapper {
       padding: 45px 35px 40px; }
     .section-sub-press .press-header {
@@ -1593,7 +1593,7 @@ p {
     .section-sub-contact .header {
       font-size: 18px; }
     .section-sub-contact .cowork-container {
-      padding: 30px 0 25px; }
+      padding: 20px 0; }
     .section-sub-contact .cowork-wrapper {
       padding: 10px 25px; }
     .section-sub-contact .cowork-wrapper:last-child {

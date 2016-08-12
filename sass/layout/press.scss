@@ -85,9 +85,9 @@
 
 @include respond-to('narrow') {
   .section-sub-press {
-    padding-bottom: 40px;
+    padding: 10px 0 40px;
     .press {
-      &-container { padding: 15px 0; }
+      &-container { padding: 10px 0; }
       &-wrapper { padding: 45px 35px 40px; }
       &-header {
         margin-top: 12px;
