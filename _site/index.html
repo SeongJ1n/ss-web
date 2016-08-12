@@ -353,14 +353,18 @@
 <script src="js/default.js"></script>
 <script type="text/javascript">
   $(document).ready(function () {
+    videoAppend();
+  });
+
+  function videoAppend() {
     var $video = $('#video');
     var videoTag = "<video id='video' class='section-intro-video' autoplay='autoplay' loop='loop'><source src='mov/test.webm' type='video/webm'></video>";
     var winWidth = $(window).width();
     if(winWidth >= 850){
       $video.append(videoTag);
     }
+  };
 
-  });
   $(window).scroll(function() {
     var $nav = $('#nav');
     var $sectionAbout = $('#sectionAbout');
