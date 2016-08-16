@@ -52,7 +52,7 @@ img {
   font-family: 'Euclid Flex';
   font-style: normal;
   font-weight: 700;
-  src: url("../font/EuclidFlex-Bold.otf"); }
+  src: url("../font/EuclidFlex-Medium.otf"); }
 @font-face {
   font-family: 'Euclid Flex';
   font-style: normal;
@@ -1029,40 +1029,77 @@ p {
 
 .about-header {
   display: inline-block;
-  margin-top: 80px;
   font-size: 25px;
   font-weight: 700;
   border-bottom: 2px solid #4adaaf; }
+.about-description {
+  margin-top: 30px; }
+.about-description:nth-child(n+2) {
+  margin-top: 16px; }
 
 .section-sub-about {
-  padding: 20px 0 70px;
+  padding: 20px 0 90px;
   text-align: left; }
   .section-sub-about .about-content-wrapper {
-    max-width: 720px;
+    max-width: 750px;
     margin: 0 auto; }
-    .section-sub-about .about-content-wrapper .about-description {
-      margin-top: 25px; }
-    .section-sub-about .about-content-wrapper .about-description:nth-child(n+2) {
+    .section-sub-about .about-content-wrapper .about-header {
+      margin-top: 80px; }
+
+.section-sub-believe {
+  padding: 0;
+  text-align: left;
+  background-color: #f7f7f7;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede; }
+  .section-sub-believe .believe-container {
+    max-width: 750px;
+    padding: 90px 0 100px;
+    margin: 0 auto; }
+    .section-sub-believe .believe-container .believe-content-wrapper {
+      margin-top: 45px;
+      padding: 0 10px;
+      border-top: 1px solid #dedede; }
+    .section-sub-believe .believe-container .about-sub-header {
+      display: inline-block;
+      margin-top: 45px;
+      font-size: 20px;
+      font-weight: 700;
+      border-bottom: 2px solid #ccc; }
+    .section-sub-believe .believe-container .about-sub-header:nth-child(n+2) {
+      margin-top: 55px; }
+    .section-sub-believe .believe-container .about-description {
+      max-width: 570px;
       margin-top: 20px; }
-    .section-sub-about .about-content-wrapper .mission-list {
+    .section-sub-believe .believe-container .mission-img-wrapper {
+      margin-top: 40px; }
+    .section-sub-believe .believe-container .mission-img {
+      width: 608px;
+      height: auto; }
+    .section-sub-believe .believe-container .mission-list {
+      margin-top: 35px;
       font-size: 16px;
-      margin-top: 18px;
-      margin-left: 25px; }
-      .section-sub-about .about-content-wrapper .mission-list-item {
-        max-width: 600px;
-        margin-top: 16px;
-        line-height: 1.6em;
-        list-style-type: initial; }
-      .section-sub-about .about-content-wrapper .mission-list-item:first-child {
-        margin-top: 15px; }
-  .section-sub-about .about-history-wrapper {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 50px 0 80px; }
-  .section-sub-about .history-wrapper {
+      line-height: 1.6em;
+      overflow: hidden; }
+      .section-sub-believe .believe-container .mission-list-item {
+        padding-right: 45px; }
+    .section-sub-believe .believe-container .mission-list-header {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #4adaaf; }
+
+.section-sub-history {
+  padding: 80px 0 100px;
+  text-align: left; }
+  .section-sub-history .history-container {
+    max-width: 750px;
+    margin: 0 auto; }
+  .section-sub-history .history-wrapper {
     position: relative;
     padding-bottom: 60px; }
-  .section-sub-about .history-wrapper:before {
+  .section-sub-history .history-wrapper:before {
     content: '';
     position: absolute;
     top: 0;
@@ -1070,18 +1107,18 @@ p {
     bottom: 0;
     width: 1px;
     background-color: #dedede; }
-  .section-sub-about .history-date {
+  .section-sub-history .history-date {
     font-size: 16px; }
-  .section-sub-about .history-list {
+  .section-sub-history .history-list {
     position: relative;
     margin-top: 60px;
     font-size: 22px;
     font-weight: 300; }
-    .section-sub-about .history-list-item {
+    .section-sub-history .history-list-item {
       position: relative;
       margin-top: 40px;
       margin-left: 110px; }
-    .section-sub-about .history-list-item:before {
+    .section-sub-history .history-list-item:before {
       content: '';
       position: absolute;
       top: 8px;
@@ -1092,7 +1129,7 @@ p {
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       border-radius: 5px; }
-  .section-sub-about .history-list:before {
+  .section-sub-history .history-list:before {
     content: '';
     position: absolute;
     top: 5px;
@@ -1104,50 +1141,76 @@ p {
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px; }
-  .section-sub-about .history-list:first-child {
+  .section-sub-history .history-list:first-child {
     margin-top: 70px; }
-  .section-sub-about .history-body {
+  .section-sub-history .history-body {
     font-size: 16px;
     color: #999; }
 
 @media (max-width: 850px) {
   .about-header {
-    margin-top: 30px;
     font-size: 18px; }
-
-  .section-sub-about .container {
-    padding: 0 35px; }
-  .section-sub-about .about-content-wrapper .about-description {
+  .about-description {
     margin-top: 20px;
     padding: 0; }
-  .section-sub-about .about-content-wrapper .about-description:nth-child(n+2) {
+  .about-description:nth-child(n+2) {
     margin-top: 15px; }
-  .section-sub-about .about-content-wrapper .mission-list {
-    margin-left: 30px;
-    font-size: 14px; }
-    .section-sub-about .about-content-wrapper .mission-list-item {
-      margin-top: 15px; }
-  .section-sub-about .about-history-wrapper {
-    margin-top: 40px;
-    padding: 0 20px; }
-    .section-sub-about .about-history-wrapper .history-wrapper {
-      padding: 0; }
-    .section-sub-about .about-history-wrapper .history-wrapper:before {
-      left: 73px; }
-    .section-sub-about .about-history-wrapper .history-list {
-      font-size: 18px; }
-      .section-sub-about .about-history-wrapper .history-list-item {
-        margin-left: 100px; }
-      .section-sub-about .about-history-wrapper .history-list-item:before {
-        top: 6px; }
-    .section-sub-about .about-history-wrapper .history-list:before {
-      left: 67px; }
-    .section-sub-about .about-history-wrapper .history-list:first-child {
-      margin-top: 50px; }
-    .section-sub-about .about-history-wrapper .history-date {
+
+  .section-sub-about {
+    padding: 60px 0 55px; }
+    .section-sub-about .container {
+      padding: 0 35px; }
+    .section-sub-about .about-content-wrapper .about-header {
+      margin-top: 40px; }
+    .section-sub-about .about-content-wrapper .about-header:first-child {
+      margin-top: 0; }
+
+  .section-sub-believe .believe-container {
+    padding: 60px 35px; }
+    .section-sub-believe .believe-container .about-sub-header {
+      margin-top: 40px;
+      font-size: 16px; }
+    .section-sub-believe .believe-container .about-sub-header:nth-child(n+2) {
+      margin-top: 45px; }
+    .section-sub-believe .believe-container .believe-content-wrapper {
+      margin-top: 30px; }
+    .section-sub-believe .believe-container .mission-img-wrapper {
+      display: none; }
+    .section-sub-believe .believe-container .mission-list-header {
+      margin-bottom: 5px;
+      font-size: 16px; }
+    .section-sub-believe .believe-container .mission-list {
+      margin-top: 30px;
       font-size: 14px; }
-    .section-sub-about .about-history-wrapper .history-body {
-      font-size: 14px; } }
+      .section-sub-believe .believe-container .mission-list-item {
+        margin-top: 20px;
+        padding: 0; }
+      .section-sub-believe .believe-container .mission-list-item:first-child {
+        margin-top: 0; }
+
+  .section-sub-history {
+    padding: 60px 0; }
+    .section-sub-history .history-container {
+      padding: 0 35px; }
+      .section-sub-history .history-container .history-wrapper {
+        padding: 0; }
+      .section-sub-history .history-container .history-wrapper:before {
+        left: 73px; }
+      .section-sub-history .history-container .history-list {
+        padding-top: 3px;
+        font-size: 18px; }
+        .section-sub-history .history-container .history-list-item {
+          margin-left: 100px; }
+        .section-sub-history .history-container .history-list-item:before {
+          top: 6px; }
+      .section-sub-history .history-container .history-list:before {
+        left: 67px; }
+      .section-sub-history .history-container .history-list:first-child {
+        margin-top: 50px; }
+      .section-sub-history .history-container .history-date {
+        font-size: 14px; }
+      .section-sub-history .history-container .history-body {
+        font-size: 14px; } }
 .sub-team {
   background: url("../img/section-team-bg.png");
   background-position: center;
