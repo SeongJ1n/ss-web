@@ -666,7 +666,7 @@ p {
 /* section-about End */
 /* section-press */
 .section-press {
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   padding: 140px 0 120px; }
   .section-press .row {
     margin-top: 45px; }
@@ -733,7 +733,7 @@ p {
       color: white; }
     .section-hiring .header-wrapper .header-description {
       font-weight: 100;
-      line-height: 1.8em; }
+      line-height: 1.6em; }
     .section-hiring .header-wrapper .divider {
       margin: 28px 0 25px;
       background-color: white;
@@ -778,7 +778,7 @@ p {
 /* section-blog */
 .section-blog {
   padding: 215px 0;
-  background: url("../img/section-blog-bg.png") no-repeat;
+  background: url("../img/section-blog-bg1.png") no-repeat;
   background-position: center;
   background-size: cover; }
   .section-blog .header {
@@ -1059,7 +1059,7 @@ p {
     .section-sub-believe .believe-container .believe-content-wrapper {
       margin-top: 45px;
       padding: 0 10px;
-      border-top: 1px solid #dedede; }
+      border-top: 1px solid #e9e9e9; }
     .section-sub-believe .believe-container .about-sub-header {
       display: inline-block;
       margin-top: 45px;
@@ -1069,10 +1069,9 @@ p {
     .section-sub-believe .believe-container .about-sub-header:nth-child(n+2) {
       margin-top: 55px; }
     .section-sub-believe .believe-container .about-description {
-      max-width: 570px;
-      margin-top: 20px; }
+      max-width: 570px; }
     .section-sub-believe .believe-container .mission-img-wrapper {
-      margin-top: 40px; }
+      margin-top: 50px; }
     .section-sub-believe .believe-container .mission-img {
       width: 608px;
       height: auto; }
@@ -1082,7 +1081,7 @@ p {
       line-height: 1.6em;
       overflow: hidden; }
       .section-sub-believe .believe-container .mission-list-item {
-        padding-right: 45px; }
+        padding-right: 55px; }
     .section-sub-believe .believe-container .mission-list-header {
       display: block;
       margin-bottom: 10px;
@@ -1661,8 +1660,10 @@ p {
   .section-sub-address .address-wrapper {
     margin-top: 25px; }
   .section-sub-address .address-body-kor {
+    max-width: 400px;
     font-size: 16px; }
   .section-sub-address .address-body-eng {
+    max-width: 400px;
     margin-top: 14px;
     font-size: 16px;
     font-weight: 100;

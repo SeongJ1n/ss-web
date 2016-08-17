@@ -37,7 +37,7 @@
     .believe-content-wrapper {
       margin-top: 45px;
       padding: 0 10px;
-      border-top: 1px solid $border;
+      border-top: 1px solid #e9e9e9;
     }
     .about {
       &-sub-header {
@@ -50,11 +50,10 @@
       &-sub-header:nth-child(n+2) { margin-top: 55px; }
       &-description {
         max-width: 570px;
-        margin-top: 20px;
       }
     }
     .mission {
-      &-img-wrapper { margin-top: 40px; }
+      &-img-wrapper { margin-top: 50px; }
       &-img {
         width: 608px;
         height: auto;
@@ -64,7 +63,7 @@
         font-size: 16px;
         line-height: 1.6em;
         overflow: hidden;
-        &-item { padding-right: 45px; }
+        &-item { padding-right: 55px; }
       }
       &-list-header {
         display: block;
