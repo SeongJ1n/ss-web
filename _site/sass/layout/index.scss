@@ -16,7 +16,6 @@ body {
     }
     &-kor {
       text-align: center;
-      font-weight: 700;
       color: white;
       line-height: 1.5em;
     }
@@ -27,7 +26,7 @@ body {
       position: absolute;
       left: -4px; bottom: 1px;
       width: 102%;
-      height: 4px;
+      height: 3px;
       background-color: $primary;
       z-index: -20;
     }
@@ -132,8 +131,10 @@ body {
 
 /* section-press */
 .section-press {
-  background-color: #f9f9f9;
   padding: 140px 0 120px;
+  // background-color: #f9f9f9;
+  background: url('../img/section-press-bg1.png');
+  background-size: cover;
   .row { margin-top: 45px; }
   .row:last-child { margin-top: 24px; }
   .press-wrapper {
@@ -181,21 +182,22 @@ body {
 
 /* section-hiring */
 .section-hiring {
-  background: url('../img/section-hiring-bg.png') no-repeat;
-  background-position: center;
-  background-size: cover;
+  // background: url('../img/section-hiring-bg.png') no-repeat;
+  // background-position: center;
+  // background-size: cover;
   .header-wrapper {
     float: left;
     text-align: left;
-    .header { color: white; }
+    // .header { color: white; }
     .header-description {
       font-weight: 100;
       line-height: 1.6em;
+      color: $gray;
     }
     .divider {
       margin: 28px 0 25px;
-      background-color: white;
-      opacity: 0.4;
+      background-color: $border;
+      // opacity: 0.4;
     }
   }
   .row-wrapper { margin-top: -30px; }
@@ -410,9 +412,10 @@ body {
     .iphone {
       &-wrapper { padding: 0; }
       &-img {
-        width: 312px;
+        max-width: 312px;
+        width: 100%;
         height: auto;
-        margin-top: 20px;
+        margin-top: 15px;
       }
       &-feed-wrapper { overflow: hidden; }
       &-feed {
@@ -429,8 +432,9 @@ body {
 
   .section-press-slider {
     padding: 50px 0 60px;
-    background-color: #f7f7f7;
     text-align: center;
+    background: url('../img/section-press-bg1.png');
+    background-size: cover;
     .container { padding: 0; }
     .press {
       &-container { margin-top: 35px; }
@@ -529,7 +533,7 @@ body {
     .iphone {
       &-feed {
         position: absolute;
-        top: 440px; left: -30px;
+        top: 420px; left: -30px;
         width: 170%;
         height: 380px;
         background: url('../img/section-app-feed.png') no-repeat;
