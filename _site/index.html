@@ -359,16 +359,6 @@
     videoAppend();
   });
 
-  // mobile에서는 video 자체를 안불러오게 함
-  function videoAppend() {
-    var $video = $('#video');
-    var videoTag = "<video id='video' class='section-intro-video' autoplay='autoplay' loop='loop'><source src='mov/test2.webm' type='video/webm'></video>";
-    var winWidth = $(window).width();
-    if(winWidth >= 850){
-      $video.append(videoTag);
-    }
-  };
-
   // scroll 했을 때, iphone 애니메이션
   $(window).scroll(function() {
     var $nav = $('#nav');
@@ -386,19 +376,52 @@
     }
   });
 
+
   $('#hiringContainer').owlCarousel({
     loop: true,
     autoWidth: true,
     center: true,
     margin: 15
   });
+
   $('#pressContainer').owlCarousel({
     loop: true,
     autoWidth: true,
     center: true,
     margin: 15
   });
+
+  // mobile에서는 video 자체를 안불러오게 함
+  function videoAppend() {
+    var $video = $('#video');
+    var videoTag = "<video id='video' class='section-intro-video' autoplay='autoplay' loop='loop'><source src='mov/test2.webm' type='video/webm'></video>";
+    var winWidth = $(window).width();
+    if(winWidth >= 850){
+      $video.append(videoTag);
+    }
+  };
+
 </script>
+<!--[if lte IE 9]>
+<script type="text/javascript">
+  $(document).ready(function() {
+    iphoneFix();
+  });
+  $(window).scroll(function() {
+    iphoneFix();
+  });
+
+  // 아이콘 위치 고정
+  function iphoneFix() {
+    var $iphoneImg = $('#iphoneImg');
+    var $iphoneShadow = $('#iphoneShadow');
+    $iphoneImg.css('top', -170);
+    $iphoneShadow.css('opacity', 1);
+  }
+</script>
+<![endif]-->
+
+
 
 </body>
 </html>
