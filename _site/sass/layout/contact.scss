@@ -72,12 +72,10 @@
     }
   }
 }
-
-.map-wrapper {
+.contact-map-wrapper {
   position: relative;
   height: 600px;
 }
-
 
 @include respond-to('narrow') {
   .section-sub-contact {

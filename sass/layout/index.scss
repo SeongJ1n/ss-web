@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 /* section-intro */
 .section-intro {
   position: relative;
@@ -53,6 +56,7 @@
         -ms-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
     background: url('../img/section-intro-bg1.png') no-repeat;
+    background-size: cover;
     z-index: -100;
   }
   &-bg {
@@ -68,8 +72,8 @@
 }
 /* section-intro End */
 
-/* section-about */
-.section-about {
+/* section-app */
+.section-app {
   position: relative;
   padding: 170px 0 160px;
   text-align: left;
@@ -93,19 +97,19 @@
       position: relative;
       padding-left: 1%;
     }
-    &-img {
+    &-img-rotate {
       position: absolute;
-      top: -280px;
+      top: -260px;
       width: 476px*0.9;
-      height: 730px*0.9;
-      background: url('../img/section-app-iphone.png') no-repeat;
+      height: 741px*0.9;
+      background: url('../img/section-app-iphone-rotate.png') no-repeat;
       background-size: cover;
       @include easeOutBack(2000ms);
       z-index: 10;
     }
     &-shadow {
       position: absolute;
-      top: 490px;
+      top: 500px;
       width: 385px;
       height: 20px;
       background: url('../img/section-app-shadow.png') no-repeat;
@@ -124,11 +128,11 @@
     z-index: -200;
   }
 }
-/* section-about End */
+/* section-app End */
 
 /* section-press */
 .section-press {
-  background-color: #fafafa;
+  background-color: #f9f9f9;
   padding: 140px 0 120px;
   .row { margin-top: 45px; }
   .row:last-child { margin-top: 24px; }
@@ -387,8 +391,8 @@
       height: 460px;
     }
   }
-  .section-about {
-    padding: 75px 0 70px;
+  .section-app {
+    padding: 75px 0 30px;
     text-align: center;
     background: none;
     .content {
@@ -402,6 +406,24 @@
     &-pattern {
       height: 120px;
       background-size: cover;
+    }
+    .iphone {
+      &-wrapper { padding: 0; }
+      &-img {
+        width: 312px;
+        height: auto;
+        margin-top: 20px;
+      }
+      &-feed-wrapper { overflow: hidden; }
+      &-feed {
+        position: absolute;
+        top: 360px; left: -30px;
+        width: 150%;
+        height: 380px;
+        background: url('../img/section-app-feed.png') no-repeat;
+        background-size: 100%;
+        z-index: -100;
+      }
     }
   }
 
@@ -500,3 +522,23 @@
   }
 }
 /* narrow End */
+
+/* section-app-feed size */
+@media (max-width: 550px) {
+  .section-app {
+    .iphone {
+      &-feed {
+        position: absolute;
+        top: 440px; left: -30px;
+        width: 170%;
+        height: 380px;
+        background: url('../img/section-app-feed.png') no-repeat;
+        background-size: 100%;
+        z-index: -100;
+      }
+    }
+  }
+}
+/* section-app-feed size End */
+
+

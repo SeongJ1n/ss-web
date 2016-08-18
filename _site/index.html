@@ -42,7 +42,7 @@
     <div class="section-intro-bg mobile-show"></div>
   </section>
 
-  <section id="sectionAbout" class="section section-about">
+  <section id="sectionApp" class="section section-app">
     <div class="container">
       <div class="content-wrapper col col-6">
         <h2 class="content-header">지금 이 순간 인기스타일과 트렌드를 한 눈에 보세요</h2>
@@ -53,11 +53,15 @@
         </div>
       </div>
       <div class="iphone-wrapper col col-6 mobile-none">
-        <div id="iphoneImg" class="iphone-img"></div>
+        <div id="iphoneImg" class="iphone-img-rotate"></div>
         <div id="iphoneShadow" class="iphone-shadow"></div>
       </div>
+      <div class="iphone-wrapper mobile-show">
+        <img class="iphone-img" src="img/section-app-iphone.png">
+        <div class="iphone-feed"></div>
+      </div>
     </div>
-    <div class="section-about-pattern"></div>
+    <div class="section-app-pattern"></div>
   </section>
 
   <section class="section section-press mobile-none">
@@ -355,27 +359,29 @@
     videoAppend();
   });
 
+  // mobile에서는 video 자체를 안불러오게 함
   function videoAppend() {
     var $video = $('#video');
-    var videoTag = "<video id='video' class='section-intro-video' autoplay='autoplay' loop='loop'><source src='mov/test.webm' type='video/webm'></video>";
+    var videoTag = "<video id='video' class='section-intro-video' autoplay='autoplay' loop='loop'><source src='mov/test2.webm' type='video/webm'></video>";
     var winWidth = $(window).width();
     if(winWidth >= 850){
       $video.append(videoTag);
     }
   };
 
+  // scroll 했을 때, iphone 애니메이션
   $(window).scroll(function() {
     var $nav = $('#nav');
-    var $sectionAbout = $('#sectionAbout');
+    var $sectionApp = $('#sectionApp');
     var $iphoneImg = $('#iphoneImg');
     var $iphoneShadow = $('#iphoneShadow');
-    /* sectionAbout animation */
-    if( ($nav.offset().top)+200 > $sectionAbout.offset().top){
+    /* sectionApp animation */
+    if( ($nav.offset().top)+200 > $sectionApp.offset().top){
       $iphoneImg.css('top', -170);
       $iphoneShadow.css('opacity', 1);
     }
     else {
-      $iphoneImg.css('top', -280);
+      $iphoneImg.css('top', -260);
       $iphoneShadow.css('opacity', 0);
     }
   });
