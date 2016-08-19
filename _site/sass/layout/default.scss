@@ -31,9 +31,11 @@
 }
 .btn {
   &-wrapper {
+    position: relative;
     margin-top: 28px;
     padding-bottom: 4px; // 그림자 때문에 넣음, overflow 제거 후에 삭제
     overflow: hidden;
+    z-index: 100;
   }
   &-appstore {
     float: left;

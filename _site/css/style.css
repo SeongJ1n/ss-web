@@ -282,9 +282,11 @@ p {
   color: white; }
 
 .btn-wrapper {
+  position: relative;
   margin-top: 28px;
   padding-bottom: 4px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 100; }
 .btn-appstore {
   float: left;
   width: 144px;
