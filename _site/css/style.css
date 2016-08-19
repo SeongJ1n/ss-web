@@ -87,7 +87,7 @@ body {
   color: #222; }
 
 h1 {
-  font-weight: 300;
+  font-weight: 700;
   font-size: 55px;
   letter-spacing: -.01em; }
 
@@ -726,51 +726,55 @@ body {
 
 /* section-press End */
 /* section-hiring */
-.section-hiring .header-wrapper {
-  float: left;
-  text-align: left; }
-  .section-hiring .header-wrapper .header-description {
-    font-weight: 100;
-    line-height: 1.6em;
-    color: #999; }
-  .section-hiring .header-wrapper .divider {
-    margin: 28px 0 25px;
-    background-color: #dedede; }
-.section-hiring .row-wrapper {
-  margin-top: -30px; }
-.section-hiring .row {
-  margin-top: 30px; }
-.section-hiring .row:last-child {
-  margin-top: 24px; }
-.section-hiring .hiring-card {
-  float: right;
-  width: 29%;
-  margin-left: 2.5%;
-  padding: 50px 0 50px 30px;
-  text-align: left;
-  background-color: white;
-  border: 1px solid #dedede;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
-  -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
-  box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
-.section-hiring .hiring-team-wrapper {
-  overflow: hidden; }
-.section-hiring .hiring-team {
-  float: left;
-  font-size: 16px;
-  font-weight: 700; }
-.section-hiring .hiring-position {
-  margin-top: 8px;
-  font-size: 18px; }
-  .section-hiring .hiring-position span {
-    color: #999; }
-.section-hiring .empty {
-  border: none;
-  background: none;
-  box-shadow: none; }
+.section-hiring {
+  background: url("../img/section-hiring-pattern.png") no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .section-hiring .header-wrapper {
+    float: left;
+    text-align: left; }
+    .section-hiring .header-wrapper .header-description {
+      font-weight: 100;
+      line-height: 1.6em;
+      color: #999; }
+    .section-hiring .header-wrapper .divider {
+      margin: 28px 0 25px;
+      background-color: #dedede; }
+  .section-hiring .row-wrapper {
+    margin-top: -30px; }
+  .section-hiring .row {
+    margin-top: 30px; }
+  .section-hiring .row:last-child {
+    margin-top: 24px; }
+  .section-hiring .hiring-card {
+    float: right;
+    width: 29%;
+    margin-left: 2.5%;
+    padding: 50px 0 50px 30px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #dedede;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05);
+    box-shadow: 0px 2px 2px 0px rgba(34, 34, 34, 0.05); }
+  .section-hiring .hiring-team-wrapper {
+    overflow: hidden; }
+  .section-hiring .hiring-team {
+    float: left;
+    font-size: 16px;
+    font-weight: 700; }
+  .section-hiring .hiring-position {
+    margin-top: 8px;
+    font-size: 18px; }
+    .section-hiring .hiring-position span {
+      color: #999; }
+  .section-hiring .empty {
+    border: none;
+    background: none;
+    box-shadow: none; }
 
 /* section-hiring End */
 /* section-blog */
