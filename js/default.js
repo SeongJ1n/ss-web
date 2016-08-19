@@ -59,7 +59,6 @@ function initMap() {
     center: myLatLng,
     mapTypeControl: false,
     streetViewControl: false,
-    zoomControl: false,
     scrollwheel: false,
     draggable: dragflag,
     zoom: 17,
