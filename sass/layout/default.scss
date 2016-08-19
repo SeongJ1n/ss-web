@@ -247,7 +247,10 @@
     padding: 110px 0 50px;
     .header {
       font-size: 24px;
-      &-description { margin-top: 5px; }
+      &-description {
+        max-width: 250px;
+        margin: 5px auto 0;
+      }
     }
   }
   .nav {

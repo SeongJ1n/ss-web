@@ -512,7 +512,8 @@ p {
     .section-sub .header {
       font-size: 24px; }
       .section-sub .header-description {
-        margin-top: 5px; }
+        max-width: 250px;
+        margin: 5px auto 0; }
 
   .nav {
     height: 110px;
@@ -953,6 +954,7 @@ body {
   .section-press-slider {
     padding: 50px 0 60px;
     text-align: center;
+    border-top: 1px solid #f9f9f9;
     background: url("../img/section-press-bg1.png");
     background-size: cover; }
     .section-press-slider .container {
@@ -1203,60 +1205,76 @@ body {
     margin-top: 15px; }
 
   .section-sub-about {
-    padding: 60px 0 55px; }
+    padding: 50px 0 0; }
     .section-sub-about .container {
       padding: 0 35px; }
-    .section-sub-about .about-content-wrapper .about-header {
-      margin-top: 40px; }
-    .section-sub-about .about-content-wrapper .about-header:first-child {
-      margin-top: 0; }
-
-  .section-sub-believe .believe-container {
-    padding: 60px 35px; }
-    .section-sub-believe .believe-container .about-sub-header {
-      margin-top: 40px;
-      font-size: 16px; }
-    .section-sub-believe .believe-container .about-sub-header:nth-child(n+2) {
-      margin-top: 45px; }
-    .section-sub-believe .believe-container .believe-content-wrapper {
-      margin-top: 30px; }
-    .section-sub-believe .believe-container .mission-img-wrapper {
-      display: none; }
-    .section-sub-believe .believe-container .mission-list-header {
-      margin-bottom: 5px;
-      font-size: 16px; }
-    .section-sub-believe .believe-container .mission-list {
-      margin-top: 30px;
-      font-size: 14px; }
-      .section-sub-believe .believe-container .mission-list-item {
-        margin-top: 20px;
-        padding: 0; }
-      .section-sub-believe .believe-container .mission-list-item:first-child {
+    .section-sub-about .about-content-wrapper {
+      margin-top: 50px; }
+      .section-sub-about .about-content-wrapper .about-header {
+        margin-top: 40px; }
+      .section-sub-about .about-content-wrapper .about-header:first-child {
         margin-top: 0; }
+    .section-sub-about .about-content-wrapper:first-child {
+      margin: 0; }
+    .section-sub-about .description-wrapper {
+      margin-top: 0;
+      padding: 0; }
+
+  .section-sub-believe {
+    padding: 70px 0; }
+    .section-sub-believe .container {
+      padding: 0 35px; }
+    .section-sub-believe .description-wrapper {
+      margin: 0px;
+      padding: 0; }
+    .section-sub-believe .believe-content-wrapper {
+      margin-top: 25px; }
+    .section-sub-believe .about-sub-header {
+      margin-top: 25px;
+      font-size: 16px; }
+    .section-sub-believe .about-sub-header:nth-child(n+2) {
+      margin-top: 25px; }
+    .section-sub-believe .mission-img-wrapper {
+      margin-top: 30px; }
+    .section-sub-believe .mission-list {
+      margin-top: 15px; }
+      .section-sub-believe .mission-list-item {
+        margin-top: 15px;
+        padding: 0; }
+      .section-sub-believe .mission-list-item:first-child {
+        padding: 0; }
+      .section-sub-believe .mission-list-item:last-child {
+        padding: 0; }
+      .section-sub-believe .mission-list-header {
+        font-size: 17px;
+        margin-bottom: 6px; }
 
   .section-sub-history {
     padding: 60px 0; }
-    .section-sub-history .history-container {
+    .section-sub-history .container {
       padding: 0 35px; }
-      .section-sub-history .history-container .history-wrapper {
-        padding: 0; }
-      .section-sub-history .history-container .history-wrapper:before {
-        left: 73px; }
-      .section-sub-history .history-container .history-list {
-        padding-top: 3px;
-        font-size: 18px; }
-        .section-sub-history .history-container .history-list-item {
-          margin-left: 100px; }
-        .section-sub-history .history-container .history-list-item:before {
-          top: 6px; }
-      .section-sub-history .history-container .history-list:before {
-        left: 67px; }
-      .section-sub-history .history-container .history-list:first-child {
-        margin-top: 50px; }
-      .section-sub-history .history-container .history-date {
-        font-size: 14px; }
-      .section-sub-history .history-container .history-body {
-        font-size: 14px; } }
+    .section-sub-history .description-wrapper {
+      margin: 0;
+      padding: 0; }
+    .section-sub-history .history-wrapper {
+      padding: 0; }
+    .section-sub-history .history-wrapper:before {
+      left: 73px; }
+    .section-sub-history .history-list {
+      padding-top: 3px;
+      font-size: 18px; }
+      .section-sub-history .history-list-item {
+        margin-left: 100px; }
+      .section-sub-history .history-list-item:before {
+        top: 6px; }
+    .section-sub-history .history-list:before {
+      left: 67px; }
+    .section-sub-history .history-list:first-child {
+      margin-top: 50px; }
+    .section-sub-history .history-date {
+      font-size: 14px; }
+    .section-sub-history .history-body {
+      font-size: 14px; } }
 .sub-team {
   background: url("../img/section-team-bg.png");
   background-position: center;

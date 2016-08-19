@@ -156,57 +156,53 @@
   }
 
   .section-sub-about {
-    padding: 60px 0 55px;
+    padding: 50px 0 0;
     .container { padding: 0 35px; }
     .about-content-wrapper {
+      margin-top: 50px;
       .about-header { margin-top: 40px; }
       .about-header:first-child { margin-top: 0; }
     }
+    .about-content-wrapper:first-child { margin: 0; }
+    .description-wrapper { margin-top: 0; padding: 0; }
   }
 
   .section-sub-believe {
-    .believe-container {
-      padding: 60px 35px;
-      .about-sub-header {
-        margin-top: 40px;
-        font-size: 16px;
-      }
-      .about-sub-header:nth-child(n+2) { margin-top: 45px; }
-      .believe-content-wrapper { margin-top: 30px; }
-      .mission {
-        &-img-wrapper { display: none; }
-        &-list-header {
-          margin-bottom: 5px;
-          font-size: 16px;
-        }
-        &-list {
-          margin-top: 30px;
-          font-size: 14px;
-          &-item { margin-top: 20px; padding: 0; }
-          &-item:first-child { margin-top: 0; }
-        }
+    padding: 70px 0;
+    .container { padding: 0 35px; }
+    .description-wrapper { margin: 0px; padding: 0; }
+    .believe-content-wrapper {  margin-top: 25px; }
+    .about-sub-header { margin-top: 25px; font-size: 16px; }
+    .about-sub-header:nth-child(n+2) { margin-top: 25px; }
+    .mission {
+      &-img-wrapper { margin-top: 30px; }
+      &-list {
+        margin-top: 15px;
+        &-item { margin-top: 15px; padding: 0; }
+        &-item:first-child { padding: 0; }
+        &-item:last-child { padding: 0; }
+        &-header { font-size: 17px; margin-bottom: 6px; }
       }
     }
   }
 
   .section-sub-history {
     padding: 60px 0;
-    .history-container {
-      padding: 0 35px;
-      .history {
-        &-wrapper { padding: 0; }
-        &-wrapper:before { left: 73px; }
-        &-list {
-          padding-top: 3px;
-          font-size: 18px;
-          &-item { margin-left: 100px; }
-          &-item:before { top: 6px; }
-        }
-        &-list:before { left: 67px; }
-        &-list:first-child { margin-top: 50px; }
-        &-date { font-size: 14px; }
-        &-body { font-size: 14px; }
+    .container { padding: 0 35px; }
+    .description-wrapper { margin: 0; padding: 0; }
+    .history {
+      &-wrapper { padding: 0; }
+      &-wrapper:before { left: 73px; }
+      &-list {
+        padding-top: 3px;
+        font-size: 18px;
+        &-item { margin-left: 100px; }
+        &-item:before { top: 6px; }
       }
+      &-list:before { left: 67px; }
+      &-list:first-child { margin-top: 50px; }
+      &-date { font-size: 14px; }
+      &-body { font-size: 14px; }
     }
   }
 }
