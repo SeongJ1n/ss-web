@@ -35,7 +35,8 @@
     <div class="container">
       <div id="contentWrapper" class="content-wrapper row">
         <h1 class="content-kor">더 많은 사람들이 더 쉽게</br><span>자신만의 멋</span>을 찾아갈 수 있도록</h1>
-        <!-- <h2>Look good. Feel good. Do good.</h2> -->
+        <div class="content-slash mobile-none"></div>
+        <h2 class="content-eng mobile-none">Look good. Feel good. Do good.</h2>
       </div>
       <div class="btn-arrow">↓</div>
     </div>
@@ -395,7 +396,7 @@
   // mobile에서는 video 자체를 안불러오게 함
   function videoAppend() {
     var $video = $('#video');
-    var videoTag = "<video id='video' class='section-intro-video' autoplay='autoplay' loop='loop'><source src='mov/test2.webm' type='video/webm'></video>";
+    var videoTag = "<video id='video' class='section-intro-video' autoplay='autoplay' loop='loop'><source src='mov/test4.webm' type='video/webm'></video>";
     var winWidth = $(window).width();
     if(winWidth >= 850){
       $video.append(videoTag);

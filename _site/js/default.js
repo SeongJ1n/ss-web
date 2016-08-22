@@ -81,7 +81,8 @@ function resizeSection(){
   $sectionIntro.height(winHeight);
   if( winWidth > 850 ){
     $sectionIntro.height(winHeight);
-    $contentWrapper.css('margin-top', ($sectionIntro.height()/2)-80);
+    $contentWrapper.css('margin-top', ($sectionIntro.height()/2)-125);
+    // $contentWrapper.css('margin-top', ($sectionIntro.height()/2)-80);
   }
   else {
     $sectionIntro.height(460);
