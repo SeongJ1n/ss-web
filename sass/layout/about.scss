@@ -29,7 +29,7 @@
     max-width: 850px;
     margin: 0 auto;
   }
-  .inyourhand {
+  .shopping {
     border: none;
     .underline { border-bottom: 2px solid $primary; }
   }
@@ -166,6 +166,10 @@
     }
     .about-content-wrapper:first-child { margin: 0; }
     .description-wrapper { margin-top: 0; padding: 0; }
+    .shopping {
+      border-bottom: 2px solid $primary;
+      .underline { border: none; }
+    }
   }
 
   .section-sub-believe {

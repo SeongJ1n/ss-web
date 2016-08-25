@@ -1089,9 +1089,9 @@ body {
   .section-sub-about .container {
     max-width: 850px;
     margin: 0 auto; }
-  .section-sub-about .inyourhand {
+  .section-sub-about .shopping {
     border: none; }
-    .section-sub-about .inyourhand .underline {
+    .section-sub-about .shopping .underline {
       border-bottom: 2px solid #4adaaf; }
   .section-sub-about .margin-amend {
     margin-top: 115px; }
@@ -1222,6 +1222,10 @@ body {
     .section-sub-about .description-wrapper {
       margin-top: 0;
       padding: 0; }
+    .section-sub-about .shopping {
+      border-bottom: 2px solid #4adaaf; }
+      .section-sub-about .shopping .underline {
+        border: none; }
 
   .section-sub-believe {
     padding: 70px 0; }
